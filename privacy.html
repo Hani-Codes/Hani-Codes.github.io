@@ -6,89 +6,203 @@
   <title>Privacy Policy | سياسة الخصوصية</title>
 
   <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f7fb;
-      color: #111827;
-      line-height: 1.7;
+    :root {
+      --bg-gradient-start: #0f172a;
+      --bg-gradient-end: #020617;
+      --card-bg: #ffffff;
+      --accent: #22c55e;
+      --accent-soft: rgba(34, 197, 94, 0.12);
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --border-subtle: #e2e8f0;
+      --code-bg: #0b1220;
     }
 
-    .wrapper {
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #1e293b, #020617);
+      padding: 24px 12px 40px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      color: var(--text-main);
+    }
+
+    .shell {
+      width: 100%;
       max-width: 900px;
-      margin: 24px auto 32px;
-      padding: 0 12px;
+    }
+
+    .top-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(15, 23, 42, 0.8);
+      color: #e2e8f0;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .top-badge span.dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 12px rgba(34, 197, 94, 0.9);
     }
 
     .card {
-      background: #ffffff;
-      border-radius: 14px;
-      padding: 24px 18px 26px;
-      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.10);
-      border: 1px solid #e5e7eb;
+      background: radial-gradient(circle at top left, #f9fafb, #ffffff);
+      border-radius: 18px;
+      padding: 24px 20px 28px;
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      box-shadow:
+        0 24px 60px rgba(15, 23, 42, 0.9),
+        0 0 0 1px rgba(15, 23, 42, 0.3);
     }
 
-    h1 {
-      font-size: 24px;
+    .header {
       text-align: center;
-      margin-bottom: 6px;
-      color: #111827;
-    }
-
-    .updated {
-      text-align: center;
-      font-size: 13px;
-      color: #6b7280;
       margin-bottom: 20px;
     }
 
-    h2 {
+    .header-title {
+      font-size: 24px;
+      font-weight: 700;
+      color: #020617;
+    }
+
+    .header-sub {
+      margin-top: 6px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .tagline {
+      margin-top: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 11px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: #16a34a;
+      font-size: 11px;
+    }
+
+    .divider {
+      margin: 20px 0 22px;
+      border: none;
+      border-top: 1px dashed var(--border-subtle);
+    }
+
+    .section {
+      margin-bottom: 26px;
+    }
+
+    .section h2 {
       font-size: 18px;
-      margin-top: 22px;
       margin-bottom: 6px;
-      color: #111827;
+      color: #020617;
     }
 
-    h3 {
+    .section h3 {
       font-size: 15px;
-      margin-top: 14px;
-      margin-bottom: 4px;
+      margin: 16px 0 4px;
       color: #111827;
     }
 
-    p {
+    .section p {
       font-size: 14px;
-      color: #4b5563;
-      margin-bottom: 4px;
+      line-height: 1.7;
+      color: var(--text-muted);
     }
 
-    ul {
-      margin: 6px 0 6px 20px;
-      padding: 0;
+    .section ul {
+      margin-top: 6px;
+      padding-left: 18px;
     }
 
-    ul li {
+    .section ul li {
       font-size: 14px;
-      color: #4b5563;
+      line-height: 1.6;
+      color: var(--text-muted);
       margin-bottom: 2px;
     }
 
-    hr {
-      border: none;
-      height: 1px;
-      background: #e5e7eb;
-      margin: 26px 0;
+    .pill {
+      display: inline-block;
+      margin-bottom: 4px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #0f172a;
+      background: #e5f9ef;
     }
 
+    .lang-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #94a3b8;
+      margin-bottom: 4px;
+    }
+
+    .code-strip {
+      margin-top: 10px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      font-size: 11px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      background: var(--code-bg);
+      color: #e5e7eb;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .code-strip span.path {
+      opacity: 0.85;
+    }
+
+    .code-strip span.status {
+      color: #4ade80;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .code-strip span.status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: #4ade80;
+    }
+
+    /* صندوق الإيميل */
     .contact-box {
       margin-top: 10px;
       padding: 10px 12px;
       border-radius: 10px;
-      background: #eef2ff;
-      border: 1px solid #c7d2fe;
-      font-size: 14px;
-      color: #1f2937;
+      background: rgba(34, 197, 94, 0.06);
+      border: 1px solid #bbf7d0;
+      font-size: 13px;
+      color: #0f172a;
     }
 
     .contact-box strong {
@@ -97,172 +211,233 @@
     }
 
     /* Arabic section */
-    .rtl {
+    .section-ar {
       direction: rtl;
       text-align: right;
     }
 
-    .rtl h1,
-    .rtl h2,
-    .rtl h3 {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    .section-ar h2,
+    .section-ar h3 {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
     }
 
-    .rtl ul {
-      margin-left: 0;
-      margin-right: 20px;
+    .section-ar ul {
+      padding-left: 0;
+      padding-right: 18px;
     }
 
-    .section-label {
+    .section-ar .contact-box {
+      text-align: right;
+    }
+
+    .footer-note {
+      margin-top: 4px;
       font-size: 11px;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
       color: #9ca3af;
-      margin-bottom: 4px;
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: 18px 10px 30px;
+      }
+      .card {
+        padding: 18px 14px 22px;
+        border-radius: 16px;
+      }
     }
   </style>
 </head>
-
 <body>
-  <div class="wrapper">
-    <div class="card">
+  <main class="shell">
+    <!-- Tiny “dev-style” badge -->
+    <div class="top-badge">
+      <span class="dot"></span>
+      <span>App Privacy</span>
+    </div>
 
-      <!-- English Version -->
-      <div class="section-label">ENGLISH VERSION</div>
-      <h1>Privacy Policy</h1>
-      <div class="updated">Last updated: 2025</div>
+    <article class="card">
+      <header class="header">
+        <div class="header-title">Privacy Policy – سياسة الخصوصية</div>
+        <p class="header-sub">Last updated: 2025 · آخر تحديث: 2025</p>
+        <div class="tagline">
+          <span>Minimal data · Clear rules · No tracking</span>
+        </div>
+      </header>
 
-      <h2>1. Introduction</h2>
-      <p>
-        Thank you for using our application. This Privacy Policy explains how the app handles user data
-        and clarifies what information is collected or not collected.
-      </p>
-
-      <h2>2. Information We Collect</h2>
-      <p>
-        The app does <strong>not</strong> collect, store, or share any personally identifiable information.
-        This means we do not collect:
-      </p>
-      <ul>
-        <li>Name or surname</li>
-        <li>Email address or phone number</li>
-        <li>Precise location or GPS data</li>
-        <li>Photos, files, or contacts from your device</li>
-      </ul>
-
-      <h2>3. Device Permissions</h2>
-      <p>
-        In its current version, the app does not request access to the camera, microphone, storage,
-        contacts, or location. If future features require additional permissions, we will explain
-        the purpose clearly before use and update this policy.
-      </p>
-
-      <h2>4. External Services</h2>
-      <p>
-        The app does not use external advertising SDKs or analytics tools that collect personal data.
-        If we integrate any third-party services in the future (for example, for analytics or ads),
-        this Privacy Policy will be updated to describe what data is shared and why.
-      </p>
-
-      <h2>5. Data Security</h2>
-      <p>
-        Because we do not store personal data on our own servers, most of your information remains
-        only on your device. You are encouraged to use a screen lock and keep your system updated
-        to help protect your data.
-      </p>
-
-      <h2>6. Children’s Privacy</h2>
-      <p>
-        Our app is designed for a general audience and does not intentionally collect personal
-        information from children. If you believe that a child has provided us with personal data,
-        please contact us and we will review and remove it if necessary.
-      </p>
-
-      <h2>7. Changes to This Policy</h2>
-      <p>
-        We may update this Privacy Policy from time to time. Any changes will be published on this page,
-        and the “Last updated” date will be adjusted accordingly. We recommend reviewing this page
-        periodically.
-      </p>
-
-      <h2>8. Contact</h2>
-      <p>If you have any questions about this Privacy Policy, you can contact the developer at:</p>
-      <div class="contact-box">
-        <strong>Developer Email</strong><br />
-        <!-- ✳️ عدّل هذا السطر وضع إيميلك الحقيقي -->
-        <span>hanii.ahmed209@gmail.com</span>
+      <div class="code-strip" aria-hidden="true">
+        <span class="path">/privacy.html</span>
+        <span class="status">
+          <span class="status-dot"></span>
+          live · production
+        </span>
       </div>
 
-      <hr />
+      <hr class="divider" />
 
-      <!-- Arabic Version -->
-      <div class="rtl">
-        <div class="section-label">النسخة العربية</div>
-        <h1>سياسة الخصوصية</h1>
-        <div class="updated">آخر تحديث: 2025</div>
+      <!-- ================= ENGLISH VERSION ================= -->
+      <section class="section">
+        <div class="lang-label">ENGLISH VERSION</div>
+        <span class="pill">Privacy Policy</span>
+
+        <h2>1. Introduction</h2>
+        <p>
+          Thank you for using our app. We respect your privacy and want to be
+          transparent about how the app works. This page explains what data is
+          (and is not) collected, what permissions are used, and how you can
+          contact us if you have any questions.
+        </p>
+
+        <h2>2. Data We Collect</h2>
+        <h3>2.1 Personal information</h3>
+        <p>
+          This app does <strong>not</strong> collect any personal information
+          such as your name, email address, phone number, or location. We also
+          do not ask you to create an account or sign in with any external
+          service.
+        </p>
+
+        <h3>2.2 Usage data & analytics</h3>
+        <p>
+          We do not use third-party analytics tools (such as Google Analytics)
+          inside the app. Any information about how you use the app stays on
+          your device only and is not sent to our servers.
+        </p>
+
+        <h2>3. Device Permissions</h2>
+        <p>
+          In its current version, the app does not request sensitive permissions
+          such as access to the camera, microphone, contacts, storage, or
+          precise location. If future features require additional permissions,
+          we will clearly explain the purpose before they are used.
+        </p>
+
+        <h2>4. Third-Party Services</h2>
+        <p>
+          The app does not integrate advertising SDKs or third-party tracking
+          libraries. If a future update adds third-party services (for example,
+          for crash reporting or analytics), this privacy policy will be
+          updated, and we will describe exactly what data is shared.
+        </p>
+
+        <h2>5. Data Security</h2>
+        <p>
+          Because the app does not transmit personal data to our servers, most
+          of your information remains safely stored on your device. Please keep
+          your device protected with a screen lock and up-to-date operating
+          system to help maintain security.
+        </p>
+
+        <h2>6. Children’s Privacy</h2>
+        <p>
+          Our app is designed for general audiences. We do not knowingly collect
+          personal information from children. If you believe that a child has
+          provided us with personal data, please contact us and we will remove
+          it if stored anywhere under our control.
+        </p>
+
+        <h2>7. Changes to This Policy</h2>
+        <p>
+          We may update this privacy policy from time to time to reflect changes
+          in the app or in legal requirements. When we make changes, we will
+          update the “Last updated” date at the top of this page. We recommend
+          that you review this page periodically.
+        </p>
+
+        <h2>8. Contact</h2>
+        <p>
+          If you have any questions or feedback about this privacy policy or
+          about the app, you can contact the developer at:
+        </p>
+        <div class="contact-box">
+          <strong>Developer Email</strong><br />
+          <!-- ✳️ ضع بريدك هنا -->
+          <span>your-email@example.com</span>
+        </div>
+      </section>
+
+      <hr class="divider" />
+
+      <!-- ================= ARABIC VERSION ================= -->
+      <section class="section section-ar">
+        <div class="lang-label">النسخة العربية</div>
+        <span class="pill">سياسة الخصوصية</span>
 
         <h2>١. المقدّمة</h2>
         <p>
-          شكرًا لاستخدامك لتطبيقنا. تهدف هذه السياسة إلى توضيح كيفية تعامل التطبيق مع بيانات المستخدم
-          وبيان ما يتم جمعه أو عدم جمعه من معلومات.
+          شكرًا لاستخدامك لتطبيقنا. نحن نحترم خصوصيتك ونحرص على توضيح طريقة عمل
+          التطبيق. تهدف هذه الصفحة إلى شرح نوع البيانات التي يتم (أو لا يتم)
+          جمعها، والأذونات المستخدمة، وكيف يمكنك التواصل معنا عند وجود أي
+          استفسار.
         </p>
 
-        <h2>٢. المعلومات التي نقوم بجمعها</h2>
+        <h2>٢. البيانات التي نقوم بجمعها</h2>
+        <h3>٢.١ البيانات الشخصية</h3>
         <p>
-          لا يقوم التطبيق <strong>بجمع أو تخزين أو مشاركة</strong> أي بيانات شخصية يمكن من خلالها التعرف عليك.
-          على سبيل المثال، نحن لا نجمع:
+          لا يقوم التطبيق بجمع أي بيانات شخصية مثل الاسم، أو عنوان البريد
+          الإلكتروني، أو رقم الهاتف، أو الموقع الجغرافي. كما لا نطلب منك إنشاء
+          حساب أو تسجيل الدخول عبر أي خدمة خارجية.
         </p>
-        <ul>
-          <li>الاسم أو اسم العائلة</li>
-          <li>البريد الإلكتروني أو رقم الهاتف</li>
-          <li>الموقع الجغرافي الدقيق أو بيانات GPS</li>
-          <li>الصور أو الملفات أو جهات الاتصال من جهازك</li>
-        </ul>
+
+        <h3>٢.٢ بيانات الاستخدام والتحليلات</h3>
+        <p>
+          لا نستخدم أدوات تحليلات خارجية داخل التطبيق مثل Google Analytics. أي
+          معلومات عن استخدامك للتطبيق تظل مخزّنة على جهازك فقط، ولا يتم إرسالها
+          إلى خوادمنا.
+        </p>
 
         <h2>٣. أذونات الجهاز</h2>
         <p>
-          في نسخته الحالية، لا يطلب التطبيق أذونات للوصول إلى الكاميرا، أو الميكروفون، أو التخزين،
-          أو جهات الاتصال، أو الموقع. وفي حال إضافة مزايا جديدة تحتاج لأذونات إضافية في المستقبل،
-          سيتم توضيح سبب استخدامها وتحديث هذه السياسة.
+          في النسخة الحالية من التطبيق، لا نطلب أذونات حسّاسة مثل الوصول إلى
+          الكاميرا أو الميكروفون أو جهات الاتصال أو التخزين أو الموقع الدقيق.
+          إذا احتاجت بعض المزايا المستقبلية إلى أذونات إضافية، فسنقوم بشرح سبب
+          استخدامها بوضوح قبل تفعيلها.
         </p>
 
-        <h2>٤. الخدمات الخارجية</h2>
+        <h2>٤. الخدمات والأطراف الخارجية</h2>
         <p>
-          لا يستخدم التطبيق حاليًا أدوات إعلانية أو تحليلات تجمع بيانات شخصية. وفي حال إضافة أي خدمة
-          خارجية مستقبلاً (مثل خدمات إحصاءات الاستخدام أو الإعلانات)، سيتم تعديل سياسة الخصوصية هذه
-          لشرح نوع البيانات التي قد يتم جمعها وسبب ذلك.
+          لا يتضمّن التطبيق حاليًا مكتبات إعلانية أو أدوات تتبّع تابعة لطرف
+          ثالث. في حال إضافة أي خدمات خارجية مستقبلًا (مثل أدوات تقارير
+          الأعطال أو التحليلات)، سنقوم بتحديث سياسة الخصوصية هذه وشرح نوع
+          البيانات التي قد تتم مشاركتها.
         </p>
 
         <h2>٥. حماية البيانات</h2>
         <p>
-          بما أنّ التطبيق لا يخزّن بيانات شخصية على خوادم خاصة بنا، فإن معظم معلوماتك تبقى على جهازك فقط.
-          ننصحك بحماية جهازك بكلمة مرور أو قفل شاشة، والحفاظ على تحديث نظام التشغيل لتعزيز حماية بياناتك.
+          بما أن التطبيق لا يرسل بيانات شخصية إلى خوادمنا، فإن معظم معلوماتك
+          تبقى محفوظة على جهازك فقط. ننصحك بحماية جهازك باستخدام كلمة مرور أو
+          قفل شاشة، والحرص على تحديث نظام التشغيل للمساعدة في الحفاظ على أمان
+          بياناتك.
         </p>
 
         <h2>٦. خصوصية الأطفال</h2>
         <p>
-          صُمّم التطبيق للاستخدام العام، ولا يستهدف جمع بيانات شخصية من الأطفال عن قصد. إذا اعتقدت
-          أنّ طفلًا قد زوّدنا ببيانات شخصية، يُرجى التواصل معنا لمراجعتها وحذفها إن وُجدت.
+          تم تصميم التطبيق للاستخدام العام، ولا نستهدف جمع بيانات شخصية من
+          الأطفال. إذا كنت تعتقد أن طفلًا قد قام بتزويدنا ببيانات شخصية، يُرجى
+          التواصل معنا لنتمكّن من مراجعتها وحذفها إن كانت محفوظة لدينا.
         </p>
 
-        <h2>٧. تعديل هذه السياسة</h2>
+        <h2>٧. تحديثات سياسة الخصوصية</h2>
         <p>
-          قد نقوم بتحديث سياسة الخصوصية من وقت لآخر. سيتم نشر أي تعديلات في هذه الصفحة، مع تحديث تاريخ
-          "آخر تحديث" في الأعلى. يُستحسن مراجعة هذه الصفحة دوريًا للاطلاع على أحدث نسخة.
+          قد نقوم بتحديث سياسة الخصوصية من وقت لآخر لتعكس أي تغييرات في التطبيق
+          أو في المتطلبات القانونية. عند إجراء أي تعديل، سنحدّث تاريخ “آخر
+          تحديث” أعلى هذه الصفحة. يُفضّل مراجعة هذه الصفحة دوريًا للاطّلاع على
+          أحدث نسخة.
         </p>
 
         <h2>٨. التواصل</h2>
         <p>
-          إذا كان لديك أي استفسار بخصوص سياسة الخصوصية هذه، يمكنك التواصل مع مطوّر التطبيق عبر البريد:
+          إذا كان لديك أي سؤال أو ملاحظة حول سياسة الخصوصية هذه أو حول التطبيق،
+          يمكنك التواصل مع المطوّر عبر البريد الإلكتروني:
         </p>
         <div class="contact-box">
-          <strong>hanii.ahmed209@gmail.com</strong><br />
-          <!-- ✳️ عدّل هذا السطر وضع نفس الإيميل أو إيميل عربي إن رغبت -->
+          <strong>بريد المطوّر</strong><br />
+          <!-- ✳️ ضع نفس البريد هنا -->
           <span>your-email@example.com</span>
         </div>
-      </div>
-
-    </div>
-  </div>
+      </section>
+    </article>
+  </main>
 </body>
 </html>
