@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - GPS & Activity Tracking Apps</title>
+    <title>Privacy Policy – سياسة الخصوصية</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -16,7 +16,7 @@
         .container {
             max-width: 850px;
             margin: 40px auto;
-            padding: 35px;
+            padding: 40px;
             background: #ffffff;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
@@ -32,14 +32,23 @@
             font-size: 32px;
             margin-bottom: 10px;
         }
-        .subtitle {
+        .badges {
+            margin: 15px 0;
+            font-size: 14px;
             color: #64748b;
-            font-size: 16px;
+        }
+        .badge {
+            background: #e2e8f0;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin: 0 4px;
+            font-weight: 600;
+            color: #334155;
         }
         .section-en {
-            margin-bottom: 45px;
-            padding-bottom: 30px;
-            border-bottom: 1px dashed #cbd5e1;
+            margin-bottom: 50px;
+            padding-bottom: 35px;
+            border-bottom: 2px dashed #cbd5e1;
         }
         .section-ar {
             direction: rtl;
@@ -48,23 +57,30 @@
         }
         h2 {
             color: #2563eb;
-            font-size: 22px;
-            margin-top: 30px;
+            font-size: 24px;
+            margin-top: 35px;
             margin-bottom: 15px;
+            border-bottom: 1px solid #f1f5f9;
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: #334155;
+            font-size: 18px;
+            margin-top: 20px;
         }
         p {
             margin-bottom: 18px;
             color: #334155;
             font-size: 16px;
         }
-        .privacy-box-en {
+        .location-card-en {
             background: #eff6ff;
             border-left: 4px solid #3b82f6;
             padding: 24px;
             border-radius: 12px;
             margin: 25px 0;
         }
-        .privacy-box-ar {
+        .location-card-ar {
             background: #f0fdf4;
             border-right: 4px solid #22c55e;
             padding: 24px;
@@ -85,50 +101,102 @@
 
     <div class="container">
         <div class="header-section">
-            <h1>Privacy Policy for GPS & Activity Tracking Applications</h1>
-            <div class="subtitle">Effective Date: May 2026 | Last Updated: May 18, 2026</div>
+            <h1>App Privacy Policy – سياسة الخصوصية</h1>
+            <div class="badges">
+                <span class="badge">Minimal data</span>
+                <span class="badge">Clear rules</span>
+                <span class="badge">No tracking</span>
+            </div>
+            <div style="color: #64748b; margin-top: 10px;">Last updated: 2026 · آخر تحديث: 2026</div>
         </div>
 
-        <!-- ENGLISH SECTION -->
+        <!-- ================= ENGLISH VERSION ================= -->
         <div class="section-en">
-            <h2>English Version</h2>
-            <p>Welcome to our Activity & GPS Tracking Mobile Applications. Your privacy and digital security are our top priorities. This universal privacy policy applies to all our mobile applications that utilize location services and physical activity tracking.</p>
+            <div style="background:#1e293b; color:#fff; display:inline-block; padding:4px 12px; border-radius:6px; font-weight:bold; margin-bottom:20px;">ENGLISH VERSION</div>
+            
+            <h2>1. Introduction</h2>
+            <p>Thank you for using our app. We respect your privacy and want to be transparent about how the app works. This page explains what data is (and is not) collected, what permissions are used, and how you can contact us if you have any questions.</p>
 
-            <div class="privacy-box-en">
-                <h3>📍 Location Data & GPS Permissions</h3>
-                <p><strong>How We Use Location:</strong> Our tracking applications request fine and coarse location access (GPS coordinates) strictly during active recording sessions. This access is required to accurately calculate distance traveled, trajectory routes, speed, and real-time pace for your personal fitness and activity logs.</p>
-                <p><strong>100% Local Data Processing:</strong> All location data, geographic coordinates, and calculated metrics are processed and stored strictly locally on your physical device within the app's secure internal database (SQLite / Room).</p>
-                <p><strong>Zero External Transmission:</strong> We do <strong>NOT</strong> transmit your live or historical location data to any external cloud servers. We do <strong>NOT</strong> track you in the background when sessions are stopped. Furthermore, we do <strong>NOT</strong> share, sell, lease, or distribute your personal location data or activity records to any third-party advertisers or external entities under any circumstances.</p>
+            <h2>2. Data We Collect</h2>
+            <h3>2.1 Personal information</h3>
+            <p>This app does not collect or transmit any personal information such as your name, email address, or phone number to our servers. We also do not ask you to create an account or sign in with any external service. For applications featuring activity logging or GPS routing, all calculated metrics remain strictly localized on your device.</p>
+
+            <h3>2.2 Usage data & analytics</h3>
+            <p>We do not use third-party analytics tools (such as Google Analytics) inside the app. Any information about how you use the app stays on your device only and is not sent to our servers.</p>
+
+            <h2>3. Device Permissions & Location Access</h2>
+            <h3>3.1 Standard Permissions</h3>
+            <p>In general, the app does not request sensitive permissions such as access to the camera, microphone, contacts, or storage unless specifically required by an active feature. If future features require additional permissions, we will clearly explain the purpose before they are used.</p>
+
+            <!-- MANDATORY GOOGLE PLAY LOCATION DISCLOSURE -->
+            <div class="location-card-en">
+                <h3 style="color: #1e40af; margin-top:0;">📍 3.2 Location Data Usage (For GPS & Tracking Applications)</h3>
+                <p>When using our GPS and activity tracking applications (such as "Dog Walk Tracker"), the app requests fine and coarse location access (GPS coordinates) strictly during active recording sessions. This access is required to accurately calculate walking distance, speed, pace, and route maps for your personal activity logs.</p>
+                <p><strong>100% Local Data Processing:</strong> All location data and geographic coordinates are processed and stored 100% locally on your physical device within the app's internal database. We do <strong>NOT</strong> transmit your location data to external servers, nor do we share, sell, or lease this data to any third parties under any circumstances.</p>
             </div>
 
-            <h2>User Profiles & Data Deletion</h2>
-            <p>All recorded profiles, user settings, active session logs, and accumulated stats remain locally encrypted on your mobile device. You maintain absolute control over your data. You may permanently erase all stored records at any time directly through the in-app settings or by uninstalling the application from your operating system.</p>
+            <h2>4. Third-Party Services</h2>
+            <p>The app integrates third-party advertising services (such as Google AdMob) to display ads within the application. These services may collect limited device information (such as device identifiers, IP address, and ad interaction data) for advertising and performance purposes. This data is processed directly by the advertising provider in accordance with their own privacy policy. We do not have direct access to this data.</p>
 
-            <h2>Contact Information</h2>
-            <p>If you have any formal questions, GDPR inquiries, or technical support requests regarding our privacy standards across any of our tracking apps, please contact developer Hani Ahmed directly at: <strong>hani.ahmed209@gmail.com</strong></p>
+            <h2>5. Data Security</h2>
+            <p>Because the app does not transmit personal data to our servers, most of your information remains safely stored on your device. Please keep your device protected with a screen lock and up-to-date operating system to help maintain security.</p>
+
+            <h2>6. Children’s Privacy</h2>
+            <p>Our app is designed for general audiences. We do not knowingly collect personal information from children. If you believe that a child has provided us with personal data, please contact us and we will remove it if stored anywhere under our control.</p>
+
+            <h2>7. Changes to This Policy</h2>
+            <p>We may update this privacy policy from time to time to reflect changes in the app or in legal requirements. When we make changes, we will update the “Last updated” date at the top of this page. We recommend that you review this page periodically.</p>
+
+            <h2>8. Contact</h2>
+            <p>If you have any questions or feedback about this privacy policy or about the app, you can contact the developer at:</p>
+            <p><strong>Developer Email:</strong> hanii.ahmed209@gmail.com</p>
         </div>
 
-        <!-- ARABIC SECTION -->
-        <div class="section-ar">
-            <h2>النسخة العربية (Arabic Version)</h2>
-            <p>مرحباً بك في تطبيقاتنا المخصصة للتتبع الجغرافي (GPS) وتسجيل الأنشطة الحركية. نحن نولي خصوصيتك وأمان بياناتك الرقمية أولوية قصوى. تنطبق سياسة الخصوصية الشاملة هذه على كافة تطبيقاتنا التي تستخدم مستشعرات الموقع الجغرافي والنشاط البدني.</p>
 
-            <div class="privacy-box-ar">
-                <h3>📍 بيانات الموقع الجغرافي والصلاحيات</h3>
-                <p><strong>كيفية استخدامنا للموقع:</strong> تطلب تطبيقات التتبع الخاصة بنا الوصول إلى موقع الجوال الدقيق والتقريبي (إحداثيات GPS) حصراً أثناء تفعيل جلسات التسجيل المباشرة. هذا الوصول ضروري لحساب المسافة الفعلية المقطوعة، رسم مسار الحركة، وحساب السرعة المباشرة لتقديم إحصائيات دقيقة لسجلك الشخصي.</p>
-                <p><strong>معالجة وحفظ محلي 100%:</strong> تتم معالجة وحفظ كافة إحداثيات الموقع، الخرائط، والبيانات المحسوبة محلياً بالكامل داخل جهازك الفعلي داخل قاعدة البيانات المشفرة للتطبيق (Room Database).</p>
-                <p><strong>انعدام النقل الخارجي للبيانات:</strong> نؤكد وبشكل قاطع أننا <strong>لا نقوم</strong> بإرسال أو رفع بيانات موقعك الحالية أو السابقة إلى أي خوادم سحابية خارجية، ولا نقوم بتتبعك في الخلفية عند إيقاف الجلسة. كما أننا <strong>لا نقوم</strong> بمشاركة، بيع، أو تأجير بيانات موقعك أو سجلات نشاطك لأي شركات إعلانية أو أطراف ثالثة تحت أي ظرف من الظروف.</p>
+        <!-- ================= النسخة العربية ================= -->
+        <div class="section-ar">
+            <div style="background:#22c55e; color:#fff; display:inline-block; padding:4px 12px; border-radius:6px; font-weight:bold; margin-bottom:20px;">النسخة العربية</div>
+            
+            <h2>١. المقدّمة</h2>
+            <p>شكرًا لاستخدامك لتطبيقنا. نحن نحترم خصوصيتك ونحرص على توضيح طريقة عمل التطبيق. تهدف هذه الصفحة إلى شرح نوع البيانات التي يتم (أو لا يتم) جمعها، والأذونات المستخدمة، وكيف يمكنك التواصل معنا عند وجود أي استفسار.</p>
+
+            <h2>٢. البيانات التي نقوم بجمعها</h2>
+            <h3>٢.١ البيانات الشخصية</h3>
+            <p>لا يقوم التطبيق بجمع أو إرسال أي بيانات شخصية مثل الاسم، أو عنوان البريد الإلكتروني، أو رقم الهاتف إلى خوادمنا. كما لا نطلب منك إنشاء حساب أو تسجيل الدخول عبر أي خدمة خارجية. بالنسبة للتطبيقات التي تحتوي على تتبع للنشاط أو الـ GPS، تظل كافة البيانات محفوظة محلياً على جهازك.</p>
+
+            <h3>٢.٢ بيانات الاستخدام والتحليلات</h3>
+            <p>لا نستخدم أدوات تحليلات خارجية داخل التطبيق مثل Google Analytics. أي معلومات عن استخدامك للتطبيق تظل مخزّنة على جهازك فقط، ولا يتم إرسالها إلى خوادمنا.</p>
+
+            <h2>٣. أذونات الجهاز والوصول للموقع</h2>
+            <h3>٣.١ الأذونات العامة</h3>
+            <p>بشكل عام، لا نطلب أذونات حسّاسة مثل الوصول إلى الكاميرا أو الميكروفون أو جهات الاتصال أو التخزين ما لم يتطلبها خيار مباشر في التطبيق. إذا احتاجت بعض المزايا المستقبلية إلى أذونات إضافية، فسنقوم بشرح سبب استخدامها بوضوح قبل تفعيلها.</p>
+
+            <!-- MANDATORY GOOGLE PLAY LOCATION DISCLOSURE (ARABIC) -->
+            <div class="location-card-ar">
+                <h3 style="color: #166534; margin-top:0;">📍 ٣.٢ استخدام بيانات الموقع (لتطبيقات التتبع والـ GPS)</h3>
+                <p>عند استخدام تطبيقات التتبع وتسجيل الأنشطة (مثل تطبيق "Dog Walk Tracker")، يطلب التطبيق الوصول إلى موقع الجوال الدقيق والتقريبي (GPS) حصراً أثناء تفعيل الجلسة المباشرة بهدف حساب المسافة المقطوعة، السرعة، ورسم مسار جولات المشي في سجلك الشخصي.</p>
+                <p><strong>معالجة وحفظ محلي 100%:</strong> نؤكد أن كافة بيانات الموقع والإحداثيات تتم معالجتها وحفظها محلياً بالكامل على جهازك داخل قاعدة بيانات التطبيق. لا يتم إرسال بيانات موقعك إلى أي خوادم خارجية، ولا يتم مشاركتها أو بيعها لأي أطراف ثالثة تحت أي ظرف من الظروف.</p>
             </div>
 
-            <h2>الملفات الشخصية وحذف البيانات</h2>
-            <p>تبقى كافة الملفات الشخصية المسجلة، الإعدادات، وسجلات الأنشطة محفوظة محلياً على هاتفك. أنت تمتلك السيطرة المطلقة والكاملة على بياناتك، ويمكنك مسح كافة السجلات نهائياً في أي وقت عبر إعدادات التطبيق أو بمجرد إلغاء تثبيت التطبيق من جوالك.</p>
+            <h2>٤. الخدمات والأطراف الخارجية</h2>
+            <p>يتضمّن التطبيق خدمات إعلانية تابعة لطرف ثالث (مثل Google AdMob) لعرض الإعلانات داخل التطبيق. قد تقوم هذه الخدمات بجمع بعض بيانات الجهاز المحدودة (مثل معرّفات الجهاز، عنوان IP، وبيانات التفاعل مع الإعلانات) لأغراض عرض الإعلانات وتحسين أدائها. تتم معالجة هذه البيانات مباشرة من قبل مزوّد الخدمة الإعلانية وفقًا لسياسة الخصوصية الخاصة بهم، ولا نملك وصولًا مباشرًا إليها.</p>
 
-            <h2>معلومات التواصل</h2>
-            <p>إذا كانت لديك أي استفسارات قانونية، أسئلة تتعلق بحماية البيانات (GDPR)، أو طلبات دعم فني حول معايير الخصوصية في أي من تطبيقاتنا للتتبع، يُرجى التواصل مباشرة مع المطور هاني أحمد عبر البريد الإلكتروني: <strong>hani.ahmed209@gmail.com</strong></p>
+            <h2>٥. حماية البيانات</h2>
+            <p>بما أن التطبيق لا يرسل بيانات شخصية إلى خوادمنا، فإن معظم معلوماتك تبقى محفوظة على جهازك فقط. ننصحك بحماية جهازك باستخدام كلمة مرور أو قفل شاشة، والحرص على تحديث نظام التشغيل للمساعدة في الحفاظ على أمان بياناتك.</p>
+
+            <h2>٦. خصوصية الأطفال</h2>
+            <p>تم تصميم التطبيق للاستخدام العام، ولا نستهدف جمع بيانات شخصية من الأطفال. إذا كنت تعتقد أن طفلًا قد قام بتزويدنا ببيانات شخصية، يُرجى التواصل معنا لنتمكّن من مراجعتها وحذفها إن كانت محفوظة لدينا.</p>
+
+            <h2>٧. تحديثات سياسة الخصوصية</h2>
+            <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر لتعكس أي تغييرات في التطبيق أو في المتطلبات القانونية. عند إجراء أي تعديل، سنحدّث تاريخ “آخر تحديث” أعلى هذه الصفحة. يُفضّل مراجعة هذه الصفحة دوريًا للاطّلاع على أحدث نسخة.</p>
+
+            <h2>٨. التواصل</h2>
+            <p>إذا كان لديك أي سؤال أو ملاحظة حول سياسة الخصوصية هذه أو حول التطبيق، يمكنك التواصل مع المطوّر عبر البريد الإلكتروني:</p>
+            <p><strong>بريد المطوّر:</strong> hanii.ahmed209@gmail.com</p>
         </div>
 
         <div class="footer">
-            &copy; 2026 Hani Apps. All rights reserved. Designed with absolute commitment to user privacy.
+            &copy; 2026 App Privacy Policy. All rights reserved.
         </div>
     </div>
 
