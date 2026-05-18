@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy – سياسة الخصوصية (Apps with Account & Location)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1e293b;
+            background-color: #f8fafc;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+        .header-section {
+            text-align: center;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 25px;
+            margin-bottom: 35px;
+        }
+        h1 {
+            color: #0f172a;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .badges {
+            margin: 15px 0;
+            font-size: 14px;
+            color: #64748b;
+        }
+        .badge {
+            background: #e2e8f0;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin: 0 4px;
+            font-weight: 600;
+            color: #334155;
+        }
+        .section-en {
+            margin-bottom: 50px;
+            padding-bottom: 35px;
+            border-bottom: 2px dashed #cbd5e1;
+        }
+        .section-ar {
+            direction: rtl;
+            text-align: right;
+            font-family: 'Tahoma', 'Segoe UI', sans-serif;
+        }
+        h2 {
+            color: #2563eb;
+            font-size: 24px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #f1f5f9;
+            padding-bottom: 8px;
+        }
+        h3 {
+            color: #334155;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        p {
+            margin-bottom: 18px;
+            color: #334155;
+            font-size: 16px;
+        }
+        .highlight-card-en {
+            background: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+        .highlight-card-ar {
+            background: #f0fdf4;
+            border-right: 4px solid #22c55e;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+        .auth-card-en {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #8b5cf6;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+        .auth-card-ar {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-right: 4px solid #8b5cf6;
+            padding: 24px;
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 14px;
+            color: #94a3b8;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-section">
+            <h1>App Privacy Policy – سياسة الخصوصية</h1>
+            <div class="badges">
+                <span class="badge">Secure Auth</span>
+                <span class="badge">Encrypted Data</span>
+                <span class="badge">Right to Delete</span>
+            </div>
+            <div style="color: #64748b; margin-top: 10px;">Last updated: 2026 · آخر تحديث: 2026</div>
+        </div>
+
+        <!-- ================= ENGLISH VERSION ================= -->
+        <div class="section-en">
+            <div style="background:#1e293b; color:#fff; display:inline-block; padding:4px 12px; border-radius:6px; font-weight:bold; margin-bottom:20px;">ENGLISH VERSION</div>
+            
+            <h2>1. Introduction</h2>
+            <p>Thank you for using our application. We respect your privacy and are deeply committed to safeguarding your personal data and digital identity. This policy details how we securely collect, process, and protect your information when you create an account and utilize location tracking features in our app.</p>
+
+            <h2>2. Data We Collect & How We Use It</h2>
+            
+            <!-- ACCOUNT DATA DISCLOSURE -->
+            <div class="auth-card-en">
+                <h3 style="color: #6d28d9; margin-top:0;">🔐 2.1 User Account Information (Authentication)</h3>
+                <p>To enable multi-device synchronization and secure personal profiles, our application requires you to create an account using an email address and password (or third-party sign-in providers such as Google or Apple). Your email address is strictly used for account identification, password recovery, and essential service notices.</p>
+                <p><strong>Strict Hashing & Security:</strong> All user passwords are securely hashed and encrypted before being transmitted and stored on our secure cloud authentication servers. We do <strong>NOT</strong> share, sell, or rent your email address or account credentials to marketing agencies or third-party advertisers.</p>
+            </div>
+
+            <!-- MANDATORY GOOGLE PLAY DATA DELETION CLAUSE -->
+            <h3>🗑️ 2.2 Right to Account & Data Deletion (GDPR Compliance)</h3>
+            <p>You maintain full ownership of your data. In strict accordance with Google Play and European GDPR regulations, you have the right to permanently delete your account and all associated personal information at any time. You can initiate instant account deletion directly inside the app by navigating to <strong>Settings > Delete Account</strong>, or by submitting an account deletion request via email to our support team. Upon deletion, all your profile data and historical logs will be permanently expunged from our active servers.</p>
+
+            <h2>3. Device Permissions & Location Access</h2>
+            <h3>3.1 Standard Permissions</h3>
+            <p>The app may request access to device permissions such as the camera or photo library solely for personalizing your account avatar or attaching photos to your activity records.</p>
+
+            <!-- MANDATORY GOOGLE PLAY LOCATION DISCLOSURE -->
+            <div class="highlight-card-en">
+                <h3 style="color: #1e40af; margin-top:0;">📍 3.2 Location Data Usage & Tracking</h3>
+                <p>To provide real-time distance tracking, navigation, and activity mapping, the app requests fine and coarse location access (GPS coordinates) strictly during active recording sessions. This data is utilized to compute walking distance, live speed, trajectory maps, and performance metrics.</p>
+                <p><strong>Secure Transmission & Storage:</strong> Location coordinates recorded during active sessions may be synced securely to your cloud account to allow you to view your activity history across multiple devices. We do <strong>NOT</strong> track your location in the background when sessions are ended, and we do <strong>NOT</strong> share your location maps with external commercial entities.</p>
+            </div>
+
+            <h2>4. Third-Party Services</h2>
+            <p>Our application integrates professional cloud infrastructure (such as Firebase Authentication) for account security and may include third-party ad networks (such as Google AdMob) to display advertisements. These providers adhere to strict international privacy frameworks and process data in accordance with their respective security policies.</p>
+
+            <h2>5. Data Security</h2>
+            <p>We deploy robust SSL/TLS encryption protocols to secure all data transmissions between your physical device and our secure cloud infrastructure. While we enforce state-of-the-art security measures, we recommend securing your mobile device with biometric locks or PIN codes.</p>
+
+            <h2>6. Children’s Privacy</h2>
+            <p>Our services are strictly intended for general audiences. We do not knowingly collect personal account credentials or location data from children under the age of 13 (or 16 in certain jurisdictions). If we discover that a child has created an account, we will immediately terminate the account and purge all associated records.</p>
+
+            <h2>7. Contact Support</h2>
+            <p>If you have any formal questions, data portability requests, or account deletion inquiries, please contact developer Hani Ahmed directly at:</p>
+            <p><strong>Developer Support Email:</strong> hanii.ahmed209@gmail.com</p>
+        </div>
+
+
+        <!-- ================= النسخة العربية ================= -->
+        <div class="section-ar">
+            <div style="background:#22c55e; color:#fff; display:inline-block; padding:4px 12px; border-radius:6px; font-weight:bold; margin-bottom:20px;">النسخة العربية</div>
+            
+            <h2>١. المقدّمة</h2>
+            <p>شكرًا لاستخدامك لتطبيقنا. نحن نحترم خصوصيتك ونلتزم التزاماً كاملاً بحماية بياناتك الشخصية وهويتك الرقمية. توضح هذه السياسة كيفية جمع ومعالجة وحماية معلوماتك عند إنشاء حساب واستخدام ميزات تتبع الموقع الجغرافي داخل التطبيق.</p>
+
+            <h2>٢. البيانات التي نقوم بجمعها وكيفية استخدامها</h2>
+            
+            <!-- ACCOUNT DATA DISCLOSURE (ARABIC) -->
+            <div class="auth-card-ar">
+                <h3 style="color: #6d28d9; margin-top:0;">🔐 ٢.١ معلومات حساب المستخدم (تسجيل الدخول)</h3>
+                <p>لتمكين مزامنة البيانات بين أجهزتك المختلفة وتأمين ملفك الشخصي، يطلب التطبيق إنشاء حساب باستخدام البريد الإلكتروني وكلمة المرور (أو عبر خدمات الدخول الخارجية مثل حساب جوجل أو أبل). يُستخدم بريدك الإلكتروني حصراً للتعريف بالحساب، استعادة كلمة المرور، وإرسال إشعارات الأمان الهامة.</p>
+                <p><strong>التشفير والحماية الصارمة:</strong> يتم تشفير كافة كلمات المرور بأحدث خوارزميات التشفير قبل نقلها وحفظها في خوادم المصادقة السحابية الآمنة. نحن <strong>لا نقوم</strong> بمشاركة، بيع، أو تأجير بريدك الإلكتروني أو بيانات حسابك لأي جهات تسويقية أو أطراف ثالثة.</p>
+            </div>
+
+            <!-- MANDATORY GOOGLE PLAY DATA DELETION CLAUSE (ARABIC) -->
+            <h3>🗑️ ٢.٢ الحق في حذف الحساب والبيانات (توافق GDPR)</h3>
+            <p>أنت تمتلك السيطرة الكاملة على بياناتك. وفقاً لسياسات Google Play وقوانين حماية البيانات الأوروبية (GDPR)، يحق لك حذف حسابك وكافة بياناتك الشخصية نهائياً في أي وقت. يمكنك تنفيذ عملية الحذف الفوري مباشرة من داخل التطبيق عبر الانتقال إلى <strong>الإعدادات > حذف الحساب (Delete Account)</strong>، أو عبر إرسال طلب حذف بالبريد الإلكتروني لفريق الدعم. عند الحذف، يتم مسح كافة سجلاتك وملفاتك الشخصية من خوادمنا بشكل لا رجعة فيه.</p>
+
+            <h2>٣. أذونات الجهاز والوصول للموقع</h2>
+            <h3>٣.١ الأذونات القياسية</h3>
+            <p>قد يطلب التطبيق أذونات مثل الوصول إلى الكاميرا أو معرض الصور حصراً لتخصيص الصورة الشخصية لحسابك أو إرفاق صور لجلسات نشاطك.</p>
+
+            <!-- MANDATORY GOOGLE PLAY LOCATION DISCLOSURE (ARABIC) -->
+            <div class="highlight-card-ar">
+                <h3 style="color: #166534; margin-top:0;">📍 ٣.٢ استخدام بيانات الموقع والتتبع</h3>
+                <p>لتقديم ميزات التتبع المباشر، الملاحة، وحساب المسافات، يطلب التطبيق الوصول إلى موقع الجوال الدقيق والتقريبي (إحداثيات GPS) حصراً أثناء تفعيل جلسات التسجيل. تُستخدم هذه البيانات لحساب المسافة المقطوعة، السرعة، ورسم الخرائط في سجلك.</p>
+                <p><strong>النقل والتخزين الآمن:</strong> قد يتم إجراء مزامنة مشفرة لإحداثيات الموقع المسجلة أثناء الجلسة مع حسابك السحابي لتتمكن من رؤية أرشيفك عبر أجهزة مختلفة. نحن <strong>لا نقوم</strong> بتتبع موقعك في الخلفية عند إغلاق الجلسة، ولا نشارك خرائطك مع أي جهات تجارية.</p>
+            </div>
+
+            <h2>٤. الخدمات والأطراف الخارجية</h2>
+            <p>يعتمد تطبيقنا على بنية تحتية سحابية احترافية (مثل Firebase Authentication) لضمان أمان المصادقة، وقد يتضمن شبكات إعلانية تابعة لطرف ثالث (مثل Google AdMob). تلتزم هذه الجهات بأعلى معايير الأمان الدولية وتعالج البيانات وفقاً لسياسات الخصوصية المعتمدة لديها.</p>
+
+            <h2>٥. حماية البيانات</h2>
+            <p>نحن نستخدم بروتوكولات تشفير متطورة (SSL/TLS) لتأمين كافة عمليات نقل البيانات بين هاتفك وخوادمنا. ورغم تطبيقنا لأقصى معايير الأمان، ننصحك دائماً بحماية هاتفك بقفل الشاشة أو البصمة.</p>
+
+            <h2>٦. خصوصية الأطفال</h2>
+            <p>خدماتنا موجهة للاستخدام العام. نحن لا نجمع عن قصد أي حسابات أو بيانات موقع من الأطفال دون سن 13 عاماً (أو 16 في بعض الدول). إذا اكتشفنا تسجيل حساب لطفل، سنقوم بإغلاقه ومسح كافة بياناته فوراً.</p>
+
+            <h2>٧. التواصل والدعم</h2>
+            <p>إذا كانت لديك أي أسئلة قانونية، طلبات تتعلق بنقل البيانات، أو استفسارات حول حذف الحساب، يُرجى التواصل مباشرة مع المطور هاني أحمد عبر البريد الإلكتروني:</p>
+            <p><strong>بريد الدعم الفني:</strong> hanii.ahmed209@gmail.com</p>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 App Privacy Policy & Account Security. All rights reserved.
+        </div>
+    </div>
+
+</body>
+</html>
