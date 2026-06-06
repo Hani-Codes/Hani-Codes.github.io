@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hani Codes | مطور تطبيقات أندرويد و Wear OS</title>
+    <meta name="description" content="موقع المطور Hani Codes لعرض التطبيقات المنشورة وتطبيقات قيد التطوير والمراجعة، متوافق مع متطلبات AdMob و Google Play.">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-ar" dir="rtl">
+
+    <!-- Background Glow Blobs -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="nav-container">
+                <a href="#" class="logo" id="nav-logo">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="url(#logo-grad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="logo-grad" x1="2" y1="2" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#6366F1" />
+                                <stop offset="1" stop-color="#14B8A6" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span>
+                        <span class="text-ar">هاني للبرمجيات</span>
+                        <span class="text-en">Hani Codes</span>
+                    </span>
+                </a>
+                
+                <button class="lang-toggle" id="lang-toggle-btn" aria-label="Switch Language">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <span class="text-ar">English</span>
+                    <span class="text-en">العربية</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="profile-container">
+                <div class="profile-avatar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 18l6-6-6-6M8 6L2 12l6 6"></path>
+                    </svg>
+                </div>
+            </div>
+            
+            <h1>
+                <span class="text-ar">مرحباً بك في معرض تطبيقاتي</span>
+                <span class="text-en">Welcome to My App Portfolio</span>
+            </h1>
+            
+            <p>
+                <span class="text-ar">أنا هاني، مطور تطبيقات أندرويد وساعات يد ذكية (Wear OS) مستقل. أركز على تقديم حلول برمجية بسيطة، سريعة، وذات تجربة مستخدم رائعة.</span>
+                <span class="text-en">I am Hani, an independent Android and Wear OS developer. I focus on creating clean, fast, and user-centric applications.</span>
+            </p>
+
+            <div class="compliance-notice" id="compliance-info">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span class="text-ar">موقع مطور رسمي ومعتمد لدى AdMob و Google Play</span>
+                <span class="text-en">Official AdMob & Google Play Developer Domain</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apps List Section -->
+    <section class="apps-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="text-ar">تطبيقات الهواتف والساعات</span>
+                <span class="text-en">My Applications</span>
+            </h2>
+
+            <div class="apps-grid">
+
+                <!-- 1. أقساطي -->
+                <div class="app-card" id="app-aqsati">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                <line x1="8" y1="14" x2="16" y2="14"></line>
+                                <line x1="8" y1="18" x2="13" y2="18"></line>
+                            </svg>
+                        </div>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">أدوات مالية</span>
+                            <span class="text-en">Finance</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">أقساطي</span>
+                            <span class="text-en">Aqsati</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">أسهل تطبيق لتنظيم ومتابعة الأقساط الشهرية والديون الشخصية وتلقي إشعارات تنبيهية بمواعيد السداد.</span>
+                            <span class="text-en">The simplest application to organize monthly installments, track personal debts, and receive payment alerts.</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.aqsati" target="_blank" class="btn btn-primary" id="btn-aqsati-play">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
+                        </a>
+                        <a href="./privacy.html" class="btn btn-secondary" id="btn-aqsati-privacy">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 2. متابع الاشتراكات -->
+                <div class="app-card" id="app-subscription">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                                <path d="M12 2a10 10 0 0 1 10 10c0 5.523-4.477 10-10 10S2 17.523 2 12" stroke-dasharray="4 4"></path>
+                            </svg>
+                        </div>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">إدارة نفقات</span>
+                            <span class="text-en">Utilities</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">متابع الاشتراكات</span>
+                            <span class="text-en">Subscription Tracker</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">تتبع نفقاتك واشتراكاتك الدورية (نتفلكس، إنترنت، نوادي...) واحسب تكاليفك الشهرية لتتحكم بميزانيتك بشكل أفضل.</span>
+                            <span class="text-en">Track recurring subscriptions (Netflix, internet, gym...) and calculate your monthly costs to take control of your budget.</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.antigravity.subscriptiontracker" target="_blank" class="btn btn-primary" id="btn-sub-play">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
+                        </a>
+                        <a href="./privacy.html" class="btn btn-secondary" id="btn-sub-privacy">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 3. Ultra Pro (ساعات اليد) -->
+                <div class="app-card" id="app-ultrapro">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="7"></circle>
+                                <path d="M12 5V2m0 20v-3M5 12H2m20 0h-3"></path>
+                                <path d="M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"></path>
+                                <path d="M10 2h4l1 3h-6l1-3zm0 20h4l1-3h-6l1-3z"></path>
+                            </svg>
+                        </div>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">واجهات ساعات Wear OS</span>
+                            <span class="text-en">Personalization</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">Ultra Pro</span>
+                            <span class="text-en">Ultra Pro Watch Face</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">مجموعة واجهات ساعات راقية مخصصة للأجهزة الذكية التي تعمل بنظام Wear OS بتصميم هجين ورياضي متميز.</span>
+                            <span class="text-en">A premium set of elegant watch faces for Wear OS smartwatches with a high-end hybrid and sporty design.</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.ultrapro" target="_blank" class="btn btn-primary" id="btn-watch-play">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
+                        </a>
+                        <a href="./watch-privacy.html" class="btn btn-secondary" id="btn-watch-privacy">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 4. تتبع مشي الكلاب -->
+                <div class="app-card" id="app-dogtracker">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path>
+                                <circle cx="12" cy="9" r="2.5"></circle>
+                            </svg>
+                        </div>
+                        <span class="badge badge-review">
+                            <span class="text-ar">قيد المراجعة</span>
+                            <span class="text-en">In Review</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">نمط حياة وصحة</span>
+                            <span class="text-en">Lifestyle</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">متبع مشي الكلاب</span>
+                            <span class="text-en">Dog Walk Tracker</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">تطبيق لتتبع جولات المشي لحيواناتك الأليفة عبر الخريطة، وحساب المسافة، والوقت، وحفظ السجلات لمراقبة صحتهم.</span>
+                            <span class="text-en">An application to track your pet's walks on the map, calculate distance, duration, and keep records of their activity.</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="#" class="btn btn-disabled" id="btn-dog-play">
+                            <span class="text-ar">قريباً على Google Play</span>
+                            <span class="text-en">Coming soon on Play Store</span>
+                        </a>
+                        <a href="./tracking-privacy.html" class="btn btn-secondary" id="btn-dog-privacy">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 5. مضخم الصوت -->
+                <div class="app-card" id="app-bassbooster">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2A10 10 0 0 0 2 12v1a4 4 0 0 0 4 4h1a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2H4a8 8 0 0 1 16 0h-2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h1a4 4 0 0 0 4-4v-1a10 10 0 0 0-10-10z"></path>
+                            </svg>
+                        </div>
+                        <span class="badge badge-review">
+                            <span class="text-ar">قيد المراجعة</span>
+                            <span class="text-en">In Review</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">موسيقى وصوتيات</span>
+                            <span class="text-en">Audio</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">مضخم الصوت</span>
+                            <span class="text-en">Bass Booster</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">تطبيق لتحسين جودة الصوت ورفع مستوى البيس (Bass) وتعديل ترددات الصوت للحصول على أفضل نقاوة وتجربة استماع.</span>
+                            <span class="text-en">An application to enhance sound quality, boost the bass, and adjust frequencies to achieve perfect clarity and audio experience.</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="#" class="btn btn-disabled" id="btn-bass-play">
+                            <span class="text-ar">قريباً على Google Play</span>
+                            <span class="text-en">Coming soon on Play Store</span>
+                        </a>
+                        <a href="./bassbooster-privacy.html" class="btn btn-secondary" id="btn-bass-privacy">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 6. حلقات القرآن -->
+                <div class="app-card" id="app-qurancircles">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                        </div>
+                        <span class="badge badge-dev">
+                            <span class="text-ar">تحت التطوير</span>
+                            <span class="text-en">In Development</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">تعليمي / إسلامي</span>
+                            <span class="text-en">Education</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">حلقات القرآن</span>
+                            <span class="text-en">Quran Circles</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">نظام ذكي متكامل لتسهيل إدارة وإشراف حلقات تلاوة وتحفيظ القرآن الكريم وتتبع تقدم الطلاب وحفظهم.</span>
+                            <span class="text-en">A smart integrated system to facilitate the management and supervision of Quran memorization and recitation circles.</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="#" class="btn btn-disabled" id="btn-quran-play">
+                            <span class="text-ar">قيد التطوير والتحسين</span>
+                            <span class="text-en">Under Active Development</span>
+                        </a>
+                        <a href="./privacy.html" class="btn btn-secondary" id="btn-quran-privacy">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-nav">
+                <a href="./privacy.html" class="footer-link">
+                    <span class="text-ar">السياسة العامة للخصوصية</span>
+                    <span class="text-en">General Privacy Policy</span>
+                </a>
+                <a href="./watch-privacy.html" class="footer-link">
+                    <span class="text-ar">سياسة خصوصية الساعات</span>
+                    <span class="text-en">Watch Faces Privacy Policy</span>
+                </a>
+                <a href="./tracking-privacy.html" class="footer-link">
+                    <span class="text-ar">سياسة خصوصية التتبع</span>
+                    <span class="text-en">Tracking Privacy Policy</span>
+                </a>
+                <a href="./bassbooster-privacy.html" class="footer-link">
+                    <span class="text-ar">سياسة خصوصية مضخم الصوت</span>
+                    <span class="text-en">Bass Booster Privacy Policy</span>
+                </a>
+                <a href="./app-ads.txt" class="footer-link" target="_blank">app-ads.txt</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    <span class="text-ar">جميع الحقوق محفوظة © 2026 هاني للبرمجيات</span>
+                    <span class="text-en">All rights reserved © 2026 Hani Codes</span>
+                </p>
+                <div class="footer-badge-group">
+                    <div class="footer-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                        <span>AdMob Authorized</span>
+                    </div>
+                    <div class="footer-badge">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                        <span>Google Play Compliant</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App JS -->
+    <script src="app.js"></script>
+</body>
+</html>
