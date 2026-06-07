@@ -179,6 +179,34 @@
       background-color: var(--accent-color);
       border-radius: 4px;
     }
+    
+    .arabic-section {
+      direction: rtl;
+      text-align: right;
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px dashed var(--border-color);
+    }
+    
+    .arabic-section h2 {
+      justify-content: flex-start;
+      flex-direction: row;
+    }
+
+    .arabic-section h2::before {
+      display: none;
+    }
+    
+    .arabic-section h2::after {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 24px;
+      background-color: var(--accent-color);
+      border-radius: 4px;
+      margin-right: -16px;
+      margin-left: 12px;
+    }
 
     h3 {
       font-size: 16px;
@@ -198,6 +226,11 @@
       margin-bottom: 16px;
       color: var(--text-muted);
     }
+    
+    .arabic-section ul {
+      margin-left: 0;
+      margin-right: 20px;
+    }
 
     li {
       margin-bottom: 8px;
@@ -216,6 +249,17 @@
 
     a:hover {
       border-bottom-color: var(--accent-color);
+    }
+    
+    .contact-email {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 10px 16px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      font-family: monospace;
+      color: #e2e8f0;
     }
 
     .footer {
@@ -249,7 +293,7 @@
         </div>
 
         <div class="path-strip">
-          <div>/minimal-launcher-privacy.html</div>
+          <div>/privacy.html</div>
           <div class="status">
             <div class="dot"></div>
             live • production
@@ -257,6 +301,7 @@
         </div>
       </div>
 
+      <!-- ENGLISH VERSION -->
       <div class="section-label">ENGLISH VERSION</div>
       <div class="section-btn">PRIVACY POLICY</div>
 
@@ -286,7 +331,43 @@
       <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
 
       <h2>6. Contact Us</h2>
-      <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at the developer email provided on our Google Play Store listing.</p>
+      <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:</p>
+      <div class="contact-email">hanii.ahmed209@gmail.com</div>
+
+      <!-- ARABIC VERSION -->
+      <div class="arabic-section">
+        <div class="section-label" style="text-align: right; margin-top: 0;">النسخة العربية</div>
+        <div class="section-btn">سياسة الخصوصية</div>
+
+        <h2>١. مقدمة</h2>
+        <p>شكراً لاستخدامك تطبيق Minimal Launcher. نحن نحترم خصوصيتك ونهدف إلى الشفافية التامة حول آلية عمل التطبيق. فلسفتنا الأساسية هي البساطة والخصوصية؛ نحن لا نجمع أو نخزن أو نرسل بياناتك الشخصية إلى أي خوادم خارجية. جميع العمليات الأساسية للتطبيق تتم محلياً داخل جهازك.</p>
+
+        <h2>٢. البيانات التي نجمعها (والتي لا نجمعها)</h2>
+        
+        <h3>٢.١ المعلومات الشخصية</h3>
+        <p>هذا التطبيق <strong>لا</strong> يجمع أي معلومات شخصية مثل اسمك، عنوان بريدك الإلكتروني، رقم هاتفك، جهات الاتصال، أو موقعك الجغرافي. كما أننا لا نطلب منك إنشاء حساب أو تسجيل الدخول.</p>
+
+        <h3>٢.٢ إذن الوصول لبيانات الاستخدام (Usage Access)</h3>
+        <p>لتوفير ميزات مثل "حدود التطبيقات" (App Limits) وأوضاع التركيز، يطلب التطبيق إذن <strong>الوصول إلى بيانات الاستخدام</strong>. يتيح هذا الإذن للتطبيق معرفة التطبيقات قيد التشغيل حالياً وحساب وقت الشاشة اليومي.</p>
+        <ul>
+          <li><strong>معالجة محلية:</strong> تتم معالجة هذه البيانات محلياً بشكل صارم داخل جهازك فقط.</li>
+          <li><strong>عدم الإرسال الخارجي:</strong> نحن لا نرسل أبداً بيانات وقت الشاشة أو سجل الاستخدام أو قائمة تطبيقاتك إلى خوادمنا أو أي خوادم طرف ثالث.</li>
+        </ul>
+
+        <h2>٣. خدمات الطرف الثالث (Google AdMob)</h2>
+        <p>نحن نستخدم خدمة Google AdMob لعرض الإعلانات داخل التطبيق (للمستخدمين غير المشتركين بالنسخة المدفوعة). قد تقوم AdMob بجمع واستخدام بيانات مثل المعرّف الإعلاني لجهازك، وعنوان الـ IP، وبيانات الاستخدام العامة لتقديم إعلانات مخصصة أو غير مخصصة.</p>
+        <p>لمزيد من المعلومات حول كيفية استخدام جوجل لهذه البيانات، يرجى مراجعة <a href="https://policies.google.com/privacy" target="_blank">سياسة خصوصية جوجل</a>.</p>
+
+        <h2>٤. أمان البيانات</h2>
+        <p>نظراً لأننا لا نرسل بياناتك الشخصية إلى خوادمنا، تظل بياناتك آمنة ومحفوظة في جهازك. يتم تخزين إعدادات حدود التطبيقات، والسمات، والتفضيلات الخاصة بك محلياً وبشكل آمن داخل مساحة التخزين الخاصة بالتطبيق والتي يوفرها نظام أندرويد.</p>
+
+        <h2>٥. التغييرات على سياسة الخصوصية</h2>
+        <p>قد نقوم بتحديث سياسة الخصوصية الخاصة بنا من وقت لآخر. سنقوم بإعلامك بأي تغييرات عن طريق نشر سياسة الخصوصية الجديدة في هذه الصفحة.</p>
+
+        <h2>٦. اتصل بنا</h2>
+        <p>إذا كان لديك أي أسئلة أو اقتراحات حول سياسة الخصوصية الخاصة بنا، لا تتردد في التواصل معنا عبر البريد الإلكتروني التالي:</p>
+        <div class="contact-email">hanii.ahmed209@gmail.com</div>
+      </div>
 
       <div class="footer">
         &copy; 2026 Minimal Launcher. All rights reserved.
