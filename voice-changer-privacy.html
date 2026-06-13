@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Changer AI - Privacy Policy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #060212;
+            --primary: #8B5CF6;
+            --secondary: #EC4899;
+            --accent: #06B6D4;
+            --text-main: #FFFFFF;
+            --text-muted: #9CA3AF;
+            --card-bg: rgba(255, 255, 255, 0.05);
+            --card-border: rgba(255, 255, 255, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Outfit', 'Tajawal', sans-serif;
+            line-height: 1.6;
+            padding: 40px 20px;
+            overflow-x: hidden;
+        }
+
+        /* Glowing Background Lights */
+        .ambient-glow-1 {
+            position: fixed;
+            top: -10%;
+            left: -10%;
+            width: 50%;
+            height: 50%;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, transparent 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .ambient-glow-2 {
+            position: fixed;
+            bottom: -10%;
+            right: -10%;
+            width: 50%;
+            height: 50%;
+            background: radial-gradient(circle, rgba(236, 72, 153, 0.12) 0%, transparent 70%);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .app-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #FFFFFF, var(--text-muted));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--accent);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+        }
+
+        .language-switcher {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .lang-btn {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            color: var(--text-main);
+            padding: 10px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .lang-btn:hover {
+            border-color: var(--primary);
+            box-shadow: 0 0 10px rgba(139, 92, 246, 0.3);
+        }
+
+        /* Card Section Layout */
+        .policy-section {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 24px;
+            padding: 35px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        /* Language-specific tweaks */
+        .arabic-section {
+            direction: rtl;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #FFFFFF;
+            margin-bottom: 25px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+            text-align: justify;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            color: var(--text-muted);
+        }
+
+        .english-section li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--secondary);
+        }
+
+        .arabic-section li {
+            padding-left: 0;
+            padding-right: 25px;
+        }
+
+        .arabic-section li::before {
+            content: "✦";
+            position: absolute;
+            right: 0;
+            color: var(--secondary);
+        }
+
+        .highlight-box {
+            background: rgba(139, 92, 246, 0.1);
+            border-left: 4px solid var(--primary);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        .arabic-section .highlight-box {
+            border-left: none;
+            border-right: 4px solid var(--primary);
+        }
+
+        .highlight-box p {
+            color: var(--text-main);
+            margin-bottom: 0;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid var(--card-border);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            .policy-section {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+
+    <div class="container">
+        
+        <header>
+            <div class="app-badge">🎤 Voice Changer AI</div>
+            <h1>Privacy Policy / سياسة الخصوصية</h1>
+            <p class="subtitle">Data Privacy & Security Center</p>
+            
+            <div class="language-switcher">
+                <a href="#english" class="lang-btn">English Document</a>
+                <a href="#arabic" class="lang-btn">الوثيقة العربية</a>
+            </div>
+        </header>
+
+        <!-- ENGLISH PRIVACY POLICY SECTION -->
+        <section id="english" class="policy-section english-section">
+            <h2>Privacy Policy</h2>
+            <p><strong>Last updated:</strong> June 13, 2026</p>
+            <p>This Privacy Policy governs your use of the mobile software application <strong>Voice Changer AI</strong> (specifically package identifier <code>com.hani.apps.voicechangerai</code>). The application is designed as a secure parody voice morphing and sound editing utility.</p>
+
+            <h3>1. Information Collection & Processing</h3>
+            <p>Our primary service is to modify audio parameters. Your privacy is protected through local execution:</p>
+            <ul>
+                <li><strong>Microphone Permission (RECORD_AUDIO):</strong> Used solely to capture audio when you tap the record button.</li>
+                <li><strong>Local Device Sandboxing:</strong> All voice recordings and modified files are processed directly on your device. We do not upload, analyze, or store your voice recordings on external servers.</li>
+                <li><strong>User-Initiated Sharing:</strong> Audio files are only exported or shared when you click the share button (e.g. sending to WhatsApp).</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Security Guarantee:</strong> Your voice recordings are 100% private and never leave your mobile device without your active choice.</p>
+            </div>
+
+            <h3>2. Cloud API Integration</h3>
+            <p>If you choose to use optional cloud generation (Gemini AI text writing or ElevenLabs voice synthesis):</p>
+            <ul>
+                <li>Only the typed text script and selected voice parameters are transmitted securely via HTTPS.</li>
+                <li>No raw audio voice recordings are ever sent to cloud API servers.</li>
+            </ul>
+
+            <h3>3. Third Party Ads (AdMob)</h3>
+            <p>The Application displays advertisements served by Google AdMob. Google AdMob may utilize anonymous device advertising IDs to deliver relevant ads. You can reset these identifiers in your Android device's Settings menu.</p>
+
+            <h3>4. Contact & Support</h3>
+            <p>For inquiries regarding this privacy document, feel free to contact us via email:</p>
+            <p style="color: var(--accent); font-weight: bold; font-size: 1.1rem; text-align: center;">hanii.ahmed209@gmail.com</p>
+        </section>
+
+        <!-- ARABIC PRIVACY POLICY SECTION -->
+        <section id="arabic" class="policy-section arabic-section">
+            <h2>سياسة الخصوصية</h2>
+            <p><strong>آخر تحديث:</strong> 13 يونيو 2026</p>
+            <p>تحكم سياسة الخصوصية هذه استخدامك لتطبيق الهواتف الذكية <strong>Voice Changer AI</strong> (والمسجل بالمعرف الفريد <code>com.hani.apps.voicechangerai</code>). تم تصميم التطبيق كأداة ترفيهية آمنة لتعديل وتغيير نبرات الصوت وإنتاج المؤثرات الصوتية الساخرة.</p>
+
+            <h3>1. جمع البيانات ومعالجتها</h3>
+            <p>تعتمد خدمتنا بشكل أساسي على تعديل ترددات الصوت. أمن بياناتك محمي كلياً من خلال المعالجة المحلية:</p>
+            <ul>
+                <li><strong>صلاحية الميكروفون (RECORD_AUDIO):</strong> تُستخدم فقط لتسجيل صوتك عند الضغط على زر التسجيل.</li>
+                <li><strong>المعالجة المحلية الكاملة:</strong> يتم معالجة وحفظ جميع التسجيلات الصوتية محلياً على جهازك الذكي داخل المجلد الآمن الخاص بالتطبيق. لا نقوم برفع أو تخزين تسجيلاتك الصوتية على خوادمنا السحابية نهائياً.</li>
+                <li><strong>المشاركة اليدوية:</strong> لا يتم تصدير أو مشاركة أي ملف صوتي إلا إذا قمت أنت بذلك بشكل صريح (مثل إرسال المقطع عبر واتساب).</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>ضمان الأمان الفائق:</strong> تسجيلاتك الصوتية خاصة بنسبة 100% وتتم معالجتها بالكامل داخل معالج هاتفك ولا تخرج منه مطلقاً إلا باختيارك.</p>
+            </div>
+
+            <h3>2. خدمات الذكاء الاصطناعي السحابية</h3>
+            <p>إذا اخترت استخدام الميزات السحابية المتقدمة (كتابة النصوص بـ Gemini أو توليد أصوات ElevenLabs):</p>
+            <ul>
+                <li>يتم إرسال النص المكتوب ومعرف نبرة الصوت المحددة فقط عبر بروتوكول HTTPS المشفر والآمن.</li>
+                <li>لا يتم إرسال أي تسجيل صوتي حقيقي أو بيانات شخصية للشركات المزودة لهذه الخدمات.</li>
+            </ul>
+
+            <h3>3. الإعلانات (جوجل أد موب)</h3>
+            <p>يعرض التطبيق إعلانات بواسطة Google AdMob. قد تستخدم خدمات أد موب معرفات إعلانية مجهولة الهوية ومخصصة للجهاز لعرض إعلانات ملائمة. يمكنك إعادة تعيين هذه المعرفات من إعدادات هاتفك الأندرويد في أي وقت.</p>
+
+            <h3>4. الدعم والتواصل معنا</h3>
+            <p>إذا كانت لديك أي استفسارات أو أسئلة بخصوص سياسة الخصوصية، يرجى التواصل معنا عبر البريد الإلكتروني:</p>
+            <p style="color: var(--accent); font-weight: bold; font-size: 1.1rem; text-align: center;">hanii.ahmed209@gmail.com</p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Voice Changer AI. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
