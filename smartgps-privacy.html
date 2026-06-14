@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy | Datenschutzerklärung · SmartGPS</title>
+  <meta name="description" content="SmartGPS privacy policy – vehicle GPS tracking app. Learn how we handle your data, permissions, and security." />
+  <style>
+    :root {
+      --bg-gradient-start: #020d1a;
+      --bg-gradient-end: #010810;
+      --card-bg: rgba(5, 18, 35, 0.70);
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.4);
+      --accent-soft: rgba(59, 130, 246, 0.08);
+      --gold: #ffd700;
+      --gold-glow: rgba(255, 215, 0, 0.3);
+      --gold-soft: rgba(255, 215, 0, 0.08);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border-subtle: rgba(255, 255, 255, 0.06);
+      --code-bg: #020c18;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", "Inter", sans-serif;
+    }
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: var(--bg-gradient-end); }
+    ::-webkit-scrollbar-thumb {
+      background: #0a1e35;
+      border-radius: 999px;
+      border: 2px solid var(--bg-gradient-end);
+    }
+    ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+    body {
+      min-height: 100vh;
+      background: radial-gradient(ellipse at top, #041428, #010810);
+      padding: 24px 12px 48px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      color: var(--text-main);
+    }
+    .shell {
+      width: 100%;
+      max-width: 920px;
+    }
+    .top-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(4, 14, 28, 0.9);
+      border: 1px solid rgba(59, 130, 246, 0.12);
+      color: #94a3b8;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .top-badge span.dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 10px rgba(34, 197, 94, 0.6);
+      animation: pulse-dot 2s infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: 22px;
+      padding: 32px 28px 36px;
+      border: 1px solid var(--border-subtle);
+      box-shadow:
+        0 30px 60px -12px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(59, 130, 246, 0.04);
+    }
+    /* ── Header ───────────────────────────────── */
+    .header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .app-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #0f3460, #1e5f9f);
+      border: 1.5px solid rgba(59, 130, 246, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      font-size: 30px;
+      box-shadow: 0 8px 24px rgba(59, 130, 246, 0.25);
+    }
+    .header-title {
+      font-size: 26px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+    }
+    .header-sub {
+      margin-top: 8px;
+      font-size: 12.5px;
+      color: var(--text-muted);
+    }
+    .tagline {
+      margin-top: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(59, 130, 246, 0.18);
+      color: #93c5fd;
+      font-size: 11px;
+      font-weight: 500;
+    }
+    /* ── Divider ───────────────────────────────── */
+    .divider {
+      margin: 26px 0;
+      border: none;
+      border-top: 1px dashed rgba(255, 255, 255, 0.08);
+    }
+    /* ── Code strip ───────────────────────────── */
+    .code-strip {
+      margin-top: 0;
+      padding: 10px 16px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: var(--code-bg);
+      border: 1px solid rgba(59, 130, 246, 0.08);
+      color: #64748b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .code-strip span.status {
+      color: #22c55e;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .code-strip span.status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 8px rgba(34, 197, 94, 0.5);
+    }
+    /* ── Section ───────────────────────────────── */
+    .lang-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #475569;
+      margin-bottom: 8px;
+    }
+    .pill {
+      display: inline-block;
+      margin-bottom: 8px;
+      padding: 3px 11px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #93c5fd;
+      background: var(--accent-soft);
+      border: 1px solid rgba(59, 130, 246, 0.18);
+    }
+    .section {
+      margin-bottom: 32px;
+    }
+    .section h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #ffffff;
+      margin-top: 26px;
+      border-left: 3px solid var(--accent);
+      padding-left: 10px;
+    }
+    .section h3 {
+      font-size: 14.5px;
+      margin: 18px 0 6px;
+      color: #e2e8f0;
+      font-weight: 600;
+    }
+    .section p {
+      font-size: 14px;
+      line-height: 1.78;
+      color: var(--text-muted);
+    }
+    .section ul {
+      margin-top: 12px;
+      margin-bottom: 14px;
+      padding-left: 20px;
+    }
+    .section ul li {
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .section ul li strong {
+      color: #e2e8f0;
+    }
+    .section code {
+      background: rgba(59, 130, 246, 0.10);
+      color: #93c5fd;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 11.5px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      border: 1px solid rgba(59, 130, 246, 0.12);
+    }
+    /* ── Contact box ───────────────────────────── */
+    .contact-box {
+      margin-top: 14px;
+      padding: 14px 18px;
+      border-radius: 14px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(59, 130, 246, 0.18);
+      font-size: 13px;
+      color: #cbd5e1;
+    }
+    .contact-box strong {
+      color: #ffffff;
+      display: inline-block;
+      margin-bottom: 4px;
+    }
+    .contact-box a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+    .contact-box a:hover { text-decoration: underline; }
+    /* ── Gold note ─────────────────────────────── */
+    .gold-note {
+      margin-top: 14px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      background: var(--gold-soft);
+      border: 1px solid rgba(255, 215, 0, 0.18);
+      font-size: 13px;
+      color: #fde68a;
+      line-height: 1.7;
+    }
+    .gold-note strong { color: #ffd700; }
+    /* ── Arabic ────────────────────────────────── */
+    .section-ar {
+      direction: rtl;
+      text-align: right;
+    }
+    .section-ar h2 {
+      border-left: none;
+      border-right: 3px solid var(--accent);
+      padding-left: 0;
+      padding-right: 10px;
+    }
+    .section-ar ul {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+    /* ── Footer ────────────────────────────────── */
+    .footer-note {
+      margin-top: 18px;
+      font-size: 11px;
+      color: #334155;
+      text-align: center;
+      line-height: 1.7;
+    }
+    @media (max-width: 640px) {
+      .card { padding: 22px 16px 28px; border-radius: 18px; }
+    }
+  </style>
+</head>
+<body>
+<main class="shell">
+  <div class="top-badge">
+    <span class="dot"></span>
+    <span>SmartGPS · Privacy Policy</span>
+  </div>
+  <article class="card">
+    <!-- ── Header ─────────────────────────────── -->
+    <header class="header">
+      <div class="app-icon">📡</div>
+      <div class="header-title">Privacy Policy – Datenschutzerklärung</div>
+      <p class="header-sub">Last updated: June 2026 &nbsp;·&nbsp; Zuletzt aktualisiert: Juni 2026</p>
+      <div class="tagline">SmartGPS · Live Vehicle Tracking · No Phone Tracking · GDPR Ready</div>
+    </header>
+    <div class="code-strip" aria-hidden="true">
+      <span class="path">com.hani.apps.smartgps · smartgps-privacy-policy.html</span>
+      <span class="status">
+        <span class="status-dot"></span>
+        live · production
+      </span>
+    </div>
+    <hr class="divider" />
+    <!-- ═══════════════════════════════════════════
+         ENGLISH VERSION
+    ═══════════════════════════════════════════ -->
+    <section class="section">
+      <div class="lang-label">English Version</div>
+      <span class="pill">Privacy Policy</span>
+      <h2>1. Introduction</h2>
+      <p>
+        Thank you for using <strong>SmartGPS</strong>. We are committed to protecting your
+        privacy and being fully transparent about how the application operates. This policy
+        explains what data is (and is not) collected, which device permissions are required,
+        how third-party services are used, and how you can reach us with any questions.
+      </p>
+      <h2>2. Data We Collect &amp; Process</h2>
+      <h3>2.1 Personal Information</h3>
+      <p>
+        SmartGPS does <strong>not</strong> collect any personally identifiable information
+        such as your name, email address, phone number, or personal location.
+        No account registration or external login is required to use the app.
+      </p>
+      <h3>2.2 Vehicle GPS Data</h3>
+      <p>
+        The app displays the real-time coordinates of your <strong>vehicle's GPS tracker
+        device</strong> (Traccar-compatible hardware). These coordinates are retrieved
+        directly from the Traccar tracking server — either the default shared server or your
+        own private server (Gold membership). The app does <strong>not</strong> track,
+        record, or transmit your smartphone's personal location at any time.
+      </p>
+      <h3>2.3 Local Preferences</h3>
+      <p>
+        A minimal set of preferences (linked tracker IMEI, vehicle name, server URL,
+        membership status, and last known map position) are stored locally on your device
+        using Android SharedPreferences. This data never leaves your device unless you
+        configure a private server yourself.
+      </p>
+      <h3>2.4 Usage Analytics</h3>
+      <p>
+        We do not use third-party analytics tools (such as Google Analytics or Firebase
+        Analytics) within the app. No behavioral usage data is sent to our servers.
+      </p>
+      <h2>3. Device Permissions</h2>
+      <p>
+        SmartGPS requests the following permissions solely to deliver its core functionality.
+        We do not collect or share personal information through these permissions:
+      </p>
+      <ul>
+        <li>
+          <strong>Internet Access (<code>android.permission.INTERNET</code>):</strong>
+          Required to connect to the Traccar GPS server to fetch your vehicle's live
+          coordinates, load OpenStreetMap map tiles, and display Google AdMob advertisements.
+        </li>
+        <li>
+          <strong>Network State (<code>android.permission.ACCESS_NETWORK_STATE</code>):</strong>
+          Allows the app to check connectivity status before attempting server requests,
+          ensuring a smooth offline/online experience.
+        </li>
+        <li>
+          <strong>Camera (<code>android.permission.CAMERA</code>):</strong>
+          Used exclusively to scan the QR code printed on your GPS tracker hardware device
+          for quick and accurate device linking. No photos or videos are captured or stored.
+        </li>
+        <li>
+          <strong>Storage / Write External (<code>android.permission.WRITE_EXTERNAL_STORAGE</code>):</strong>
+          Required by the OSMDroid map library to cache map tiles locally on your device,
+          enabling faster map rendering and partial offline map availability.
+        </li>
+      </ul>
+      <h2>4. Third-Party Services</h2>
+      <h3>4.1 Google AdMob (Advertising)</h3>
+      <p>
+        The free version of SmartGPS integrates <strong>Google AdMob</strong> to display
+        advertisements. AdMob may use anonymous mobile advertising identifiers (Ad ID) to
+        serve personalized or contextual ads. You can opt out of personalized ads through
+        your device's privacy settings. Gold membership subscribers enjoy a completely
+        ad-free experience.
+      </p>
+      <h3>4.2 Traccar (GPS Tracking Server)</h3>
+      <p>
+        Vehicle coordinates are retrieved from a Traccar-compatible server. By default,
+        the app connects to a shared Traccar endpoint. Gold members can configure the app
+        to connect exclusively to their own private Traccar server, ensuring that no
+        vehicle movement data passes through any third-party infrastructure.
+      </p>
+      <div class="gold-note">
+        <strong>🔒 Gold Membership – Datenschutz:</strong> Gold subscribers can redirect
+        all tracking data to their own self-hosted Traccar server. This means your vehicle's
+        GPS coordinates are processed entirely within your own infrastructure — full GDPR
+        compliance and total data sovereignty.
+      </div>
+      <h3>4.3 OpenStreetMap (Map Tiles)</h3>
+      <p>
+        Map tiles are provided by OpenStreetMap contributors via OSMDroid. Tile requests
+        are sent to OSM tile servers; no personal data is included in these requests beyond
+        the standard tile coordinates needed to render the map.
+      </p>
+      <h2>5. Data Security</h2>
+      <p>
+        Because SmartGPS does not transmit personal data to our own servers, your
+        information remains safely on your device or within the Traccar server you have
+        configured. We recommend protecting your device with a screen lock and keeping your
+        Android OS up to date for maximum security.
+      </p>
+      <h2>6. Children's Privacy</h2>
+      <p>
+        SmartGPS is designed for general audiences and is not directed at children under
+        13 years of age. We do not knowingly collect personal information from children.
+        If you believe a child has provided personal data through the app, please contact us
+        and we will take immediate action.
+      </p>
+      <h2>7. GDPR Compliance (European Users)</h2>
+      <p>
+        SmartGPS is designed with European users in mind and aligns with the General Data
+        Protection Regulation (GDPR). No personal data is collected without a lawful basis.
+        Gold members retain full control over their vehicle data by self-hosting the Traccar
+        server (Datenschutz). If you have a GDPR-related request or concern, please contact
+        us using the details below.
+      </p>
+      <h2>8. Changes to This Policy</h2>
+      <p>
+        We may update this privacy policy periodically to reflect changes in the app
+        or applicable legal requirements. When changes are made, the "Last updated" date
+        at the top of this page will be revised. We recommend reviewing this page
+        periodically.
+      </p>
+      <h2>9. Contact</h2>
+      <p>
+        If you have any questions, requests, or feedback regarding this privacy policy
+        or the SmartGPS application, please contact the developer at:
+      </p>
+      <div class="contact-box">
+        <strong>Developer / Entwickler</strong><br />
+        <a href="mailto:hanii.ahmed209@gmail.com">hanii.ahmed209@gmail.com</a>
+      </div>
+    </section>
+    
+    <hr class="divider" />
+    <!-- Deutsche Version -->
+    <section class="section">
+      <div class="lang-label">Deutsche Version</div>
+      <span class="pill">Datenschutzerklaerung</span>
+      <h2>1. Einleitung</h2>
+      <p>
+        Vielen Dank, dass Sie <strong>SmartGPS</strong> verwenden. Wir verpflichten uns zum Schutz
+        Ihrer Privatsphaere und zur vollstaendigen Transparenz ueber die Funktionsweise der App.
+        Diese Richtlinie erlaeutert, welche Daten erfasst oder nicht erfasst werden,
+        welche Geraeteberechtigungen erforderlich sind, wie Drittanbieterdienste genutzt werden
+        und wie Sie uns bei Fragen erreichen koennen.
+      </p>
+      <h2>2. Erhebung und Verarbeitung von Daten</h2>
+      <h3>2.1 Personenbezogene Daten</h3>
+      <p>
+        SmartGPS erfasst <strong>keine</strong> personenbezogenen Daten wie Name,
+        E-Mail-Adresse, Telefonnummer oder persoenlichen Standort.
+        Eine Kontoregistrierung ist zur Nutzung der App nicht erforderlich.
+      </p>
+      <h3>2.2 Fahrzeug-GPS-Daten</h3>
+      <p>
+        Die App zeigt die Echtzeit-Koordinaten Ihres <strong>Fahrzeug-GPS-Tracker-Geraets</strong>
+        (Traccar-kompatible Hardware) an. Diese Koordinaten werden direkt vom Traccar-Tracking-Server
+        abgerufen. Die App verfolgt, speichert oder uebertraegt den persoenlichen
+        Standort Ihres Smartphones zu <strong>keinem Zeitpunkt</strong>.
+      </p>
+      <h3>2.3 Lokale Einstellungen</h3>
+      <p>
+        Ein minimaler Satz von Einstellungen (verknuepfte Tracker-IMEI, Fahrzeugname, Server-URL,
+        Mitgliedschaftsstatus) wird lokal auf Ihrem Geraet gespeichert.
+        Diese Daten verlassen Ihr Geraet nicht, sofern Sie keinen privaten Server konfigurieren.
+      </p>
+      <h3>2.4 Nutzungsanalyse</h3>
+      <p>
+        Wir verwenden keine Analysetools von Drittanbietern in der App.
+        Es werden keine Verhaltensdaten an unsere Server gesendet.
+      </p>
+      <h2>3. Geraeteberechtigungen</h2>
+      <p>SmartGPS fordert folgende Berechtigungen ausschliesslich zur Bereitstellung seiner Kernfunktionen:</p>
+      <ul>
+        <li>
+          <strong>Internetzugang (<code>android.permission.INTERNET</code>):</strong>
+          Verbindung zum Traccar-GPS-Server, Laden von OpenStreetMap-Kacheln und Anzeige von Google AdMob-Werbung.
+        </li>
+        <li>
+          <strong>Netzwerkstatus (<code>android.permission.ACCESS_NETWORK_STATE</code>):</strong>
+          Prueft die Verbindung vor Serveranfragen fuer ein reibungsloses Erlebnis.
+        </li>
+        <li>
+          <strong>Kamera (<code>android.permission.CAMERA</code>):</strong>
+          Ausschliesslich zum Scannen des QR-Codes auf dem GPS-Tracker-Geraet.
+          Es werden keine Fotos oder Videos gespeichert.
+        </li>
+        <li>
+          <strong>Speicher (<code>android.permission.WRITE_EXTERNAL_STORAGE</code>):</strong>
+          Benoetigt von OSMDroid zum lokalen Zwischenspeichern von Kartenkacheln.
+        </li>
+      </ul>
+      <h2>4. Drittanbieterdienste</h2>
+      <h3>4.1 Google AdMob (Werbung)</h3>
+      <p>
+        Die kostenlose Version integriert <strong>Google AdMob</strong>. AdMob kann anonyme
+        Werbe-IDs verwenden, um personalisierte Anzeigen zu schalten.
+        Gold-Mitglieder geniessen ein vollstaendig werbefreies Erlebnis.
+      </p>
+      <h3>4.2 Traccar (GPS-Tracking-Server)</h3>
+      <p>
+        Fahrzeugkoordinaten werden von einem Traccar-kompatiblen Server abgerufen.
+        Gold-Mitglieder koennen die App mit ihrem eigenen privaten Traccar-Server verbinden.
+      </p>
+      <div class="gold-note">
+        <strong>&#x1F512; Gold-Mitgliedschaft &#x2013; Datenschutz:</strong> Gold-Abonnenten leiten alle
+        Tracking-Daten auf ihren selbst gehosteten Traccar-Server um &#x2014; vollstaendige
+        DSGVO-Konformitaet und totale Datensouveraenitaet.
+      </div>
+      <h3>4.3 OpenStreetMap (Kartenkacheln)</h3>
+      <p>
+        Kartenkacheln werden von OpenStreetMap-Mitwirkenden ueber OSMDroid bereitgestellt.
+        Es werden keine personenbezogenen Daten in diese Anfragen einbezogen.
+      </p>
+      <h2>5. Datensicherheit</h2>
+      <p>
+        Da SmartGPS keine personenbezogenen Daten an unsere Server uebertraegt,
+        verbleiben Ihre Informationen sicher auf Ihrem Geraet oder im konfigurierten Traccar-Server.
+      </p>
+      <h2>6. Datenschutz fuer Kinder</h2>
+      <p>
+        SmartGPS richtet sich an ein allgemeines Publikum und ist nicht fuer Kinder unter 13 Jahren bestimmt.
+        Wir erfassen wissentlich keine personenbezogenen Daten von Kindern.
+      </p>
+      <h2>7. DSGVO-Konformitaet</h2>
+      <p>
+        SmartGPS entspricht der Datenschutz-Grundverordnung (DSGVO). Gold-Mitglieder behalten
+        durch Self-Hosting des Traccar-Servers die vollstaendige Kontrolle ueber ihre Fahrzeugdaten.
+      </p>
+      <h2>8. Aenderungen dieser Richtlinie</h2>
+      <p>
+        Wir koennen diese Datenschutzerklaerung regelmaessig aktualisieren.
+        Bei Aenderungen wird das Datum oben auf dieser Seite angepasst.
+      </p>
+      <h2>9. Kontakt</h2>
+      <p>Bei Fragen zur Datenschutzerklaerung oder zur App wenden Sie sich bitte an den Entwickler:</p>
+      <div class="contact-box">
+        <strong>Entwickler / Developer</strong><br />
+        <a href="mailto:hanii.ahmed209@gmail.com">hanii.ahmed209@gmail.com</a>
+      </div>
+    </section>
+  </article>
+  <p class="footer-note">
+    SmartGPS · com.hani.apps.smartgps · © 2026 Hani Ahmed · All rights reserved<br />
+    This policy applies to the Android application published on Google Play.
+  </p>
+</main>
+</body>
+</html>
