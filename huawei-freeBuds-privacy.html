@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy - Sync for Huawei FreeBuds</title>
+  <style>
+    :root {
+      --bg-gradient-start: #0a0f1d;
+      --bg-gradient-end: #030712;
+      --card-bg: rgba(15, 23, 42, 0.65);
+      --accent: #10b981;
+      --accent-glow: rgba(16, 185, 129, 0.4);
+      --accent-soft: rgba(16, 185, 129, 0.08);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border-subtle: rgba(255, 255, 255, 0.06);
+      --code-bg: #090d16;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", sans-serif;
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: var(--bg-gradient-end);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 999px;
+      border: 2px solid var(--bg-gradient-end);
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--accent);
+    }
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #0f1c3f, #020617);
+      padding: 24px 12px 40px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      color: var(--text-main);
+    }
+    .shell {
+      width: 100%;
+      max-width: 900px;
+    }
+    .top-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(9, 15, 30, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      color: #cbd5e1;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .top-badge span.dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 12px var(--accent-glow);
+    }
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-radius: 20px;
+      padding: 28px 24px 32px;
+      border: 1px solid var(--border-subtle);
+      box-shadow:
+        0 25px 50px -12px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(255, 255, 255, 0.03);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .header-title {
+      font-size: 26px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+    }
+    .header-sub {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .tagline {
+      margin-top: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      font-size: 11px;
+      font-weight: 500;
+    }
+    .divider {
+      margin: 22px 0 24px;
+      border: none;
+      border-top: 1px dashed rgba(255, 255, 255, 0.1);
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section h2 {
+      font-size: 19px;
+      margin-bottom: 10px;
+      color: #ffffff;
+      margin-top: 24px;
+      border-left: 3px solid var(--accent);
+      padding-left: 10px;
+    }
+    .section h3 {
+      font-size: 15px;
+      margin: 18px 0 6px;
+      color: #e2e8f0;
+    }
+    .section p {
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--text-muted);
+    }
+    .section ul {
+      margin-top: 10px;
+      margin-bottom: 14px;
+      padding-left: 20px;
+    }
+    .section ul li {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .section ul li strong {
+      color: #ffffff;
+    }
+    .section code {
+      background: rgba(16, 185, 129, 0.12);
+      color: #34d399;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      border: 1px solid rgba(16, 185, 129, 0.1);
+    }
+    .code-strip {
+      margin-top: 14px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: var(--code-bg);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      color: #cbd5e1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .code-strip span.path {
+      opacity: 0.85;
+    }
+    .code-strip span.status {
+      color: #34d399;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .code-strip span.status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: #10b981;
+      box-shadow: 0 0 8px var(--accent-glow);
+    }
+    .contact-box {
+      margin-top: 12px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      background: rgba(16, 185, 129, 0.04);
+      border: 1px solid rgba(16, 185, 129, 0.15);
+      font-size: 13px;
+      color: #cbd5e1;
+    }
+    .contact-box strong {
+      color: #ffffff;
+      display: inline-block;
+      margin-bottom: 2px;
+    }
+    @media (max-width: 640px) {
+      body {
+        padding: 18px 10px 30px;
+      }
+      .card {
+        padding: 20px 16px 24px;
+        border-radius: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <div class="top-badge">
+      <span class="dot"></span>
+      <span>App Privacy</span>
+    </div>
+    <article class="card">
+      <header class="header">
+        <div class="header-title">Privacy Policy</div>
+        <p class="header-sub">Last updated: June 2026</p>
+        <div class="tagline">
+          <span>Minimal data · Clear rules · No tracking</span>
+        </div>
+      </header>
+      <div class="code-strip" aria-hidden="true">
+        <span class="path">/syncforfreebuds-privacy.html</span>
+        <span class="status">
+          <span class="status-dot"></span>
+          live · production
+        </span>
+      </div>
+      <hr class="divider" />
+      <section class="section">
+        <h2>1. Introduction</h2>
+        <p>
+          Thank you for using Sync for Huawei FreeBuds. We respect your privacy and want to be
+          transparent about how the app works. This page explains what data is
+          (and is not) collected, what permissions are used, and how you can
+          contact us if you have any questions.
+        </p>
+        <h2>2. Data We Collect</h2>
+        <h3>2.1 Personal information</h3>
+        <p>
+          This app does <strong>not</strong> collect any personal information
+          such as your name, email address, phone number, or exact geographical location. We also
+          do not ask you to create an account or sign in with any external
+          service.
+        </p>
+        <h3>2.2 Usage data & analytics</h3>
+        <p>
+          We do not use third-party analytics tools (such as Google Analytics)
+          inside the app. Any information about how you use the app stays on
+          your device only and is not sent to our servers.
+        </p>
+        <h2>3. Device Permissions</h2>
+        <p>
+          To provide a seamless connection and management experience for your wireless earbuds, this application requires certain device permissions. We use these permissions solely for the functionality of the app and do not collect or share any personal information through them:
+        </p>
+        <ul>
+          <li><strong>Bluetooth & Nearby Devices (<code>android.permission.BLUETOOTH_CONNECT</code>, <code>BLUETOOTH_SCAN</code>):</strong> Crucial for the core functionality of the app. It allows the app to securely scan for, identify, and establish a connection with your wireless earbuds via Bluetooth.</li>
+          <li><strong>Precise Location (<code>android.permission.ACCESS_FINE_LOCATION</code>):</strong> On older versions of Android (Android 11 and below), Google requires Location permission to scan for Bluetooth Low Energy (BLE) devices. We do not track, process, or store your physical location.</li>
+          <li><strong>Internet Access (<code>android.permission.INTERNET</code>):</strong> Allows the app to connect to the internet to request and display advertising (Google AdMob), helping keep this app free for everyone.</li>
+        </ul>
+        <h2>4. Third-Party Services</h2>
+        <p>
+          The app integrates third-party advertising services (such as Google AdMob)
+          to display ads within the application. These services may collect limited
+          device information (such as device identifiers, IP address, and ad interaction
+          data) for advertising and performance purposes. This data is processed directly
+          by the advertising provider in accordance with their own privacy policy.
+          We do not have direct access to this data.
+        </p>
+        <h2>5. Data Security</h2>
+        <p>
+          Because the app does not transmit personal data to our servers, most
+          of your information remains safely stored on your device. Please keep
+          your device protected with a screen lock and up-to-date operating
+          system to help maintain security.
+        </p>
+        <h2>6. Children’s Privacy</h2>
+        <p>
+          Our app is designed for general audiences. We do not knowingly collect
+          personal information from children. If you believe that a child has
+          provided us with personal data, please contact us and we will remove
+          it if stored anywhere under our control.
+        </p>
+        <h2>7. Changes to This Policy</h2>
+        <p>
+          We may update this privacy policy from time to time to reflect changes
+          in the app or in legal requirements. When we make changes, we will
+          update the “Last updated” date at the top of this page. We recommend
+          that you review this page periodically.
+        </p>
+        <h2>8. Contact</h2>
+        <p>
+          If you have any questions or feedback about this privacy policy or
+          about the app, you can contact the developer at:
+        </p>
+        <div class="contact-box">
+          <strong>Developer Email</strong><br />
+          <!-- ✳️ hanii.ahmed209@gmail.com -->
+          <span>hanii.ahmed209@gmail.com</span>
+        </div>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
