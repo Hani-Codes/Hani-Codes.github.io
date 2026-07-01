@@ -14,10 +14,8 @@
             --card-border: rgba(255, 255, 255, 0.08);
             --primary: #3B82F6;
             --secondary: #10B981;
-            --accent: #E2B030;
             --text-main: #F3F4F6;
             --text-muted: #9CA3AF;
-            --text-ar: #34D399;
         }
 
         * {
@@ -29,7 +27,7 @@
         body {
             background-color: var(--bg-color);
             color: var(--text-main);
-            font-family: 'Inter', 'Cairo', sans-serif;
+            font-family: 'Inter', sans-serif;
             line-height: 1.6;
             padding: 40px 20px;
             display: flex;
@@ -37,14 +35,13 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 800px;
             width: 100%;
         }
 
         header {
             text-align: center;
-            margin-bottom: 40px;
-            position: relative;
+            margin-bottom: 45px;
         }
 
         .logo-box {
@@ -69,36 +66,38 @@
             margin-bottom: 8px;
         }
 
-        .last-updated {
-            font-size: 13px;
+        .section-divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.1), transparent);
+            margin: 60px 0;
+            position: relative;
+        }
+
+        .section-divider::before {
+            content: "✦";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: var(--bg-color);
+            padding: 0 15px;
             color: var(--text-muted);
-            margin-bottom: 24px;
+            font-size: 14px;
         }
 
-        .lang-badge {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid var(--card-border);
-            padding: 6px 16px;
-            border-radius: 30px;
-            font-size: 12px;
-            font-weight: 600;
-            color: var(--secondary);
-            margin-bottom: 30px;
-        }
-
+        /* Card styles */
         .intro-card {
-            background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.15), transparent), var(--card-bg);
+            background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.12), transparent), var(--card-bg);
             border: 1px solid var(--card-border);
             border-radius: 24px;
             padding: 30px;
-            margin-bottom: 30px;
+            margin-bottom: 24px;
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
         }
 
         .card-grid {
-            display: grid;
-            grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column;
             gap: 24px;
         }
 
@@ -132,76 +131,14 @@
             font-size: 22px;
         }
 
-        .content-section {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-
-        @media (min-width: 768px) {
-            .content-section {
-                grid-template-columns: 1fr 1fr;
-                gap: 30px;
-            }
-        }
-
-        .lang-block {
-            padding: 4px;
-        }
-
-        .lang-block.en {
-            border-right: 1px solid rgba(255, 255, 255, 0.05);
-            padding-right: 20px;
-        }
-
-        @media (max-width: 767px) {
-            .lang-block.en {
-                border-right: none;
-                padding-right: 0;
-                border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-                padding-bottom: 20px;
-            }
-        }
-
-        .lang-block.ar {
-            direction: rtl;
-            font-family: 'Cairo', sans-serif;
-        }
-
-        .lang-label {
-            font-size: 11px;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
-            display: inline-block;
-            padding: 2px 8px;
-            border-radius: 4px;
-        }
-
-        .en .lang-label {
-            background-color: rgba(59, 130, 246, 0.15);
-            color: var(--primary);
-        }
-
-        .ar .lang-label {
-            background-color: rgba(16, 185, 129, 0.15);
-            color: var(--secondary);
-        }
-
         p {
             font-size: 14px;
             color: var(--text-main);
             margin-bottom: 12px;
         }
 
-        .ar p {
-            color: #E5E7EB;
-        }
-
         ul {
             list-style-type: none;
-            margin-left: 0;
             margin-bottom: 12px;
         }
 
@@ -210,29 +147,15 @@
             color: var(--text-muted);
             margin-bottom: 8px;
             position: relative;
-            padding-left: 16px;
+            padding-left: 20px;
         }
 
-        .en li::before {
+        li::before {
             content: "•";
             color: var(--primary);
             font-weight: bold;
             position: absolute;
             left: 0;
-        }
-
-        .ar li {
-            padding-left: 0;
-            padding-right: 16px;
-            color: #D1D5DB;
-        }
-
-        .ar li::before {
-            content: "•";
-            color: var(--secondary);
-            font-weight: bold;
-            position: absolute;
-            right: 0;
         }
 
         .contact-card {
@@ -262,169 +185,228 @@
             box-shadow: 0 15px 25px rgba(59, 130, 246, 0.3);
         }
 
+        /* Arabic styling override */
+        .arabic-section {
+            direction: rtl;
+            font-family: 'Cairo', sans-serif;
+            text-align: right;
+        }
+
+        .arabic-section h1 {
+            background: linear-gradient(to left, #10B981, #3B82F6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .arabic-section .card-title {
+            color: var(--secondary);
+        }
+
+        .arabic-section li {
+            padding-left: 0;
+            padding-right: 20px;
+        }
+
+        .arabic-section li::before {
+            content: "•";
+            color: var(--secondary);
+            left: auto;
+            right: 0;
+        }
+
+        .arabic-section .contact-card {
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        .arabic-section .email-btn {
+            background: linear-gradient(135deg, #10B981, #059669);
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.2);
+        }
+
+        .arabic-section .email-btn:hover {
+            box-shadow: 0 15px 25px rgba(16, 185, 129, 0.3);
+        }
+
         .footer-text {
             display: block;
             text-align: center;
             font-size: 12px;
             color: var(--text-muted);
-            margin-top: 40px;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="logo-box">🚗</div>
-            <h1>Find My Car</h1>
-            <div class="lang-badge">Bilingual: English & العربية</div>
-            <div class="last-updated">Last Updated / آخر تحديث: July 2026</div>
-        </header>
 
-        <div class="intro-card">
-            <div class="content-section">
-                <div class="lang-block en">
-                    <span class="lang-label">English Summary</span>
-                    <p>Welcome to <strong>Find My Car</strong>. Your privacy is our highest priority. This app is designed with a strict offline-first policy, meaning we collect, store, or share <strong>zero</strong> personal data.</p>
-                </div>
-                <div class="lang-block ar">
-                    <span class="lang-label">ملخص بالعربية</span>
-                    <p>مرحباً بك في تطبيق <strong>أين سيارتي</strong>. خصوصيتك هي أولويتنا القصوى. تم تصميم هذا التطبيق ليعمل بالكامل دون اتصال بالإنترنت (Offline-First)، مما يعني أننا <strong>لا نجمع</strong> أو نخزن أو نشارك أي بيانات شخصية خاصة بك نهائياً.</p>
-                </div>
-            </div>
-        </div>
+        <!-- ================= ENGLISH SECTION ================= -->
+        <section class="english-section">
+            <header>
+                <div class="logo-box">🚗</div>
+                <h1>Privacy Policy</h1>
+                <p style="color: var(--text-muted); font-size: 14px;">Find My Car App — Last Updated: July 2026</p>
+            </header>
 
-        <div class="card-grid">
-            <!-- 1. Data Collection -->
-            <div class="card">
-                <div class="card-title">
-                    <span class="icon">🔒</span>
-                    <span>Data Collection / جمع البيانات</span>
-                </div>
-                <div class="content-section">
-                    <div class="lang-block en">
-                        <span class="lang-label">English</span>
-                        <p><strong>Zero Data Collection:</strong> We do not collect any personal information. Specifically:</p>
-                        <ul>
-                            <li>No account registration is required to use the app.</li>
-                            <li>No identity tracking or analytics trackers are integrated.</li>
-                            <li>Your GPS coordinates never leave your device.</li>
-                        </ul>
-                    </div>
-                    <div class="lang-block ar">
-                        <span class="lang-label">العربية</span>
-                        <p><strong>عدم جمع أي بيانات:</strong> نحن لا نقوم بجمع أي معلومات شخصية عنك. بالتحديد:</p>
-                        <ul>
-                            <li>لا يتطلب التطبيق إنشاء أي حساب أو تسجيل دخول لاستخدامه.</li>
-                            <li>لا ندمج أي أدوات تتبع للهوية أو تحليلات سلوك المستخدم.</li>
-                            <li>إحداثيات موقعك الجغرافي (GPS) لا تغادر جهازك أبداً.</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="intro-card">
+                <p>Welcome to <strong>Find My Car</strong>. Your privacy is our highest priority. This app is designed with a strict offline-first policy, meaning we collect, store, or share <strong>zero</strong> personal data.</p>
             </div>
 
-            <!-- 2. Data Storage -->
-            <div class="card">
-                <div class="card-title">
-                    <span class="icon">💾</span>
-                    <span>Local Data Storage / تخزين البيانات محلياً</span>
-                </div>
-                <div class="content-section">
-                    <div class="lang-block en">
-                        <span class="lang-label">English</span>
-                        <p><strong>On-Device Storage Only:</strong> All information created within the app is stored in your device's isolated local memory:</p>
-                        <ul>
-                            <li>Parking spots coordinates are saved in a local SQLite database.</li>
-                            <li>Reference photos of your car are saved directly in your device's local gallery directories.</li>
-                            <li>Voice reminders/notes are recorded and saved as audio files locally.</li>
-                        </ul>
+            <div class="card-grid">
+                <!-- 1. Data Collection -->
+                <div class="card">
+                    <div class="card-title">
+                        <span class="icon">🔒</span>
+                        <span>Data Collection</span>
                     </div>
-                    <div class="lang-block ar">
-                        <span class="lang-label">العربية</span>
-                        <p><strong>التخزين على الجهاز فقط:</strong> جميع المعلومات التي يتم إنشاؤها داخل التطبيق يتم تخزينها حصرياً في ذاكرة جهازك المحلية المعزولة:</p>
-                        <ul>
-                            <li>إحداثيات مواقف السيارات المحفوظة تُخزن في قاعدة بيانات SQLite محلية.</li>
-                            <li>الصور المرجعية لمكان سيارتك تُحفظ مباشرة في معرض الصور المحلي لجهازك.</li>
-                            <li>المذكرات الصوتية يتم تسجيلها وحفظها كملفات صوتية محلياً على جهازك.</li>
-                        </ul>
-                    </div>
+                    <p><strong>Zero Personal Data Collection:</strong> We do not collect, capture, or harvest any personal information. Specifically:</p>
+                    <ul>
+                        <li>No account creation or registration is required to use the app.</li>
+                        <li>No identity tracking, analytics cookies, or behavioral trackers are integrated.</li>
+                        <li>Your GPS coordinates and geographic locations never leave your device.</li>
+                    </ul>
                 </div>
+
+                <!-- 2. Data Storage -->
+                <div class="card">
+                    <div class="card-title">
+                        <span class="icon">💾</span>
+                        <span>Local Data Storage</span>
+                    </div>
+                    <p><strong>On-Device Storage Only:</strong> All information created within the app is stored strictly in your device's private memory:</p>
+                    <ul>
+                        <li>Parking spot locations are stored in a local SQLite database.</li>
+                        <li>Reference photos of your parking spot are saved directly in your device's local gallery.</li>
+                        <li>Voice reminders are recorded and saved as local audio files.</li>
+                    </ul>
+                </div>
+
+                <!-- 3. Permissions Required -->
+                <div class="card">
+                    <div class="card-title">
+                        <span class="icon">⚙️</span>
+                        <span>Permissions Required</span>
+                    </div>
+                    <p>To deliver core utility features, the app requests the following system permissions:</p>
+                    <ul>
+                        <li><strong>Location (GPS):</strong> To pinpoint your parking coordinates and calculate the return path.</li>
+                        <li><strong>Camera:</strong> To take reference photos of your car's surroundings.</li>
+                        <li><strong>Microphone:</strong> To record brief audio notes about your parking location.</li>
+                    </ul>
+                </div>
+
+                <!-- 4. Third-Party Services -->
+                <div class="card">
+                    <div class="card-title">
+                        <span class="icon">🌍</span>
+                        <span>Third-Party Services</span>
+                    </div>
+                    <p>The app integrates the following third-party components:</p>
+                    <ul>
+                        <li><strong>OpenStreetMap (OSMDroid):</strong> Used to render offline and online maps. It does not collect or transmit user tracking identifier profiles.</li>
+                        <li><strong>Google AdMob:</strong> Serves ads in the free version. AdMob may collect non-personally identifiable device ID information solely for ad serving. Premium users experience zero ads.</li>
+                    </ul>
+                </div>
+
+                <!-- 5. Contact Info -->
+                <div class="card contact-card">
+                    <div class="card-title" style="justify-content: center; border: none; margin-bottom: 0;">
+                        <span class="icon">📧</span>
+                        <span>Questions & Support</span>
+                    </div>
+                    <p>If you have any questions or feedback regarding this Privacy Policy, please feel free to reach out directly:</p>
+                    <a href="mailto:hanii.ahmed209@gmail.com" class="email-btn">
+                        hanii.ahmed209@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= SECTION DIVIDER ================= -->
+        <div class="section-divider"></div>
+
+
+        <!-- ================= ARABIC SECTION ================= -->
+        <section class="arabic-section">
+            <header>
+                <div class="logo-box">🚗</div>
+                <h1>سياسة الخصوصية</h1>
+                <p style="color: var(--text-muted); font-size: 14px;">تطبيق أين سيارتي — آخر تحديث: يوليو 2026</p>
+            </header>
+
+            <div class="intro-card">
+                <p>مرحباً بك في تطبيق <strong>أين سيارتي</strong>. خصوصيتك هي أولويتنا القصوى. تم تصميم هذا التطبيق ليعمل بالكامل دون اتصال بالإنترنت (Offline-First)، مما يعني أننا <strong>لا نجمع</strong> أو نخزن أو نشارك أي بيانات شخصية خاصة بك نهائياً.</p>
             </div>
 
-            <!-- 3. Permissions Required -->
-            <div class="card">
-                <div class="card-title">
-                    <span class="icon">⚙️</span>
-                    <span>Permissions Required / الأذونات المطلوبة</span>
-                </div>
-                <div class="content-section">
-                    <div class="lang-block en">
-                        <span class="lang-label">English</span>
-                        <p>To deliver core utility features, the app requests the following system permissions:</p>
-                        <ul>
-                            <li><strong>Location (GPS):</strong> To display your current spot on the map and calculate the distance to your car.</li>
-                            <li><strong>Camera:</strong> To capture reference photos of your parking surroundings.</li>
-                            <li><strong>Microphone (Audio):</strong> To record brief voice reminders about your parking spot.</li>
-                        </ul>
+            <div class="card-grid">
+                <!-- 1. جمع البيانات -->
+                <div class="card">
+                    <div class="card-title">
+                        <span class="icon">🔒</span>
+                        <span>جمع البيانات</span>
                     </div>
-                    <div class="lang-block ar">
-                        <span class="lang-label">العربية</span>
-                        <p>لتقديم الميزات الأساسية للتطبيق، نطلب الوصول إلى صلاحيات النظام التالية:</p>
-                        <ul>
-                            <li><strong>الموقع الجغرافي (GPS):</strong> لعرض نقطة تواجدك الحالية على الخريطة وحساب المسافة المتبقية لسيارتك.</li>
-                            <li><strong>الكاميرا:</strong> لالتقاط صور مرجعية لمعالم مكان ركن السيارة.</li>
-                            <li><strong>الميكروفون (تسجيل الصوت):</strong> لتسجيل مذكرات صوتية تذكيرية قصيرة حول موقع الركن.</li>
-                        </ul>
-                    </div>
+                    <p><strong>عدم جمع أي بيانات شخصية:</strong> نحن لا نقوم بجمع أو التقاط أي معلومات شخصية عنك. بالتحديد:</p>
+                    <ul>
+                        <li>لا يتطلب التطبيق إنشاء أي حساب أو تسجيل دخول لاستخدامه.</li>
+                        <li>لا يتم دمج أي أدوات لتتبع الهوية، أو تحليلات السلوك، أو ملفات تعريف الارتباط.</li>
+                        <li>إحداثيات موقعك الجغرافي (GPS) لا تغادر جهازك أبداً.</li>
+                    </ul>
                 </div>
-            </div>
 
-            <!-- 4. Third-Party Services -->
-            <div class="card">
-                <div class="card-title">
-                    <span class="icon">🌍</span>
-                    <span>Third-Party Services / خدمات الطرف الثالث</span>
-                </div>
-                <div class="content-section">
-                    <div class="lang-block en">
-                        <span class="lang-label">English</span>
-                        <p>The app integrates the following third-party components:</p>
-                        <ul>
-                            <li><strong>OpenStreetMap (OSMDroid):</strong> Used to load offline/online map tiles. Map interactions do not send any identifiable data.</li>
-                            <li><strong>Google AdMob:</strong> Serves ads in the free version. AdMob may collect non-personally identifiable device ID information solely for ad serving purposes. Premium users experience zero ads.</li>
-                        </ul>
+                <!-- 2. تخزين البيانات محلياً -->
+                <div class="card">
+                    <div class="card-title">
+                        <span class="icon">💾</span>
+                        <span>تخزين البيانات محلياً</span>
                     </div>
-                    <div class="lang-block ar">
-                        <span class="lang-label">العربية</span>
-                        <p>يستخدم التطبيق بعض مكونات الطرف الثالث المحدودة:</p>
-                        <ul>
-                            <li><strong>خرائط OpenStreetMap (OSMDroid):</strong> تُستخدم لعرض الخرائط وتفاصيل الشوارع. تصفح الخريطة لا يرسل أي بيانات شخصية تحدد هويتك.</li>
-                            <li><strong>Google AdMob:</strong> لعرض الإعلانات في النسخة المجانية. قد تجمع AdMob معلومات معرّف الجهاز غير الشخصية لأغراض تقديم الإعلانات فقط. مستخدمو باقة بريميوم لا تظهر لهم أي إعلانات.</li>
-                        </ul>
-                    </div>
+                    <p><strong>التخزين على الجهاز فقط:</strong> جميع المعلومات التي يتم إنشاؤها داخل التطبيق يتم تخزينها حصرياً في ذاكرة جهازك المحلية المعزولة:</p>
+                    <ul>
+                        <li>إحداثيات مواقف السيارات تُخزن في قاعدة بيانات SQLite محلية آمنة.</li>
+                        <li>الصور المرجعية لمكان سيارتك تُحفظ مباشرة في معرض الصور المحلي لجهازك.</li>
+                        <li>المذكرات الصوتية يتم تسجيلها وحفظها كملفات صوتية محلياً على جهازك.</li>
+                    </ul>
                 </div>
-            </div>
 
-            <!-- 5. Contact Info -->
-            <div class="card contact-card">
-                <div class="card-title" style="justify-content: center; border: none; margin-bottom: 0;">
-                    <span class="icon">📧</span>
-                    <span>Questions & Contact / الدعم والتواصل</span>
-                </div>
-                <div class="content-section" style="margin-top: 10px;">
-                    <div class="lang-block en">
-                        <span class="lang-label">English</span>
-                        <p>If you have any questions or feedback regarding this Privacy Policy, please feel free to reach out directly to the developer:</p>
+                <!-- 3. الأذونات المطلوبة -->
+                <div class="card">
+                    <div class="card-title">
+                        <span class="icon">⚙️</span>
+                        <span>الأذونات المطلوبة</span>
                     </div>
-                    <div class="lang-block ar">
-                        <span class="lang-label">العربية</span>
-                        <p>إذا كانت لديك أي أسئلة أو استفسارات حول سياسة الخصوصية هذه، فلا تتردد في التواصل مباشرة مع المطور:</p>
-                    </div>
+                    <p>لتقديم الميزات الأساسية للتطبيق، نطلب الوصول إلى صلاحيات النظام التالية:</p>
+                    <ul>
+                        <li><strong>الموقع الجغرافي (GPS):</strong> لعرض نقطة تواجدك الحالية على الخريطة وحساب المسافة المتبقية لسيارتك.</li>
+                        <li><strong>الكاميرا:</strong> لالتقاط صور مرجعية لمعالم مكان ركن السيارة.</li>
+                        <li><strong>الميكروفون:</strong> لتسجيل مذكرات صوتية تذكيرية قصيرة حول موقع الركن.</li>
+                    </ul>
                 </div>
-                <a href="mailto:hanii.ahmed209@gmail.com" class="email-btn">
-                    hanii.ahmed209@gmail.com
-                </a>
+
+                <!-- 4. خدمات الطرف الثالث -->
+                <div class="card">
+                    <div class="card-title">
+                        <span class="icon">🌍</span>
+                        <span>خدمات الطرف الثالث</span>
+                    </div>
+                    <p>يستخدم التطبيق بعض مكونات الطرف الثالث المحدودة:</p>
+                    <ul>
+                        <li><strong>خرائط OpenStreetMap (OSMDroid):</strong> تُستخدم لعرض الخرائط وتفاصيل الشوارع. تصفح الخريطة لا يرسل أي بيانات شخصية تحدد هويتك.</li>
+                        <li><strong>Google AdMob:</strong> لعرض الإعلانات في النسخة المجانية. قد تجمع AdMob معلومات معرّف الجهاز غير الشخصية لأغراض تقديم الإعلانات فقط. مستخدمو باقة بريميوم لا تظهر لهم أي إعلانات.</li>
+                    </ul>
+                </div>
+
+                <!-- 5. الدعم والتواصل -->
+                <div class="card contact-card">
+                    <div class="card-title" style="justify-content: center; border: none; margin-bottom: 0;">
+                        <span class="icon">📧</span>
+                        <span>الدعم والتواصل</span>
+                    </div>
+                    <p>إذا كانت لديك أي أسئلة أو استفسارات حول سياسة الخصوصية هذه، فلا تتردد في التواصل مباشرة مع المطور:</p>
+                    <a href="mailto:hanii.ahmed209@gmail.com" class="email-btn">
+                        hanii.ahmed209@gmail.com
+                    </a>
+                </div>
             </div>
-        </div>
+        </section>
 
         <span class="footer-text">
             Find My Car © 2026. All rights reserved.
