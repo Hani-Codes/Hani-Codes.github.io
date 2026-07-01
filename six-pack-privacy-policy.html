@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Six Pack & Belly Fat: 30 Days</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #FF5A60;
+            --primary-dark: #E0484E;
+            --bg: #F8FAFC;
+            --card-bg: #FFFFFF;
+            --text-main: #0F172A;
+            --text-muted: #475569;
+            --border: #E2E8F0;
+            --green: #10B981;
+            --blue: #3B82F6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Header Style */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .logo-container {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            border-radius: 24px;
+            box-shadow: 0 10px 25px rgba(255, 90, 96, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .logo-icon {
+            fill: #FFFFFF;
+            width: 44px;
+            height: 44px;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--text-main);
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+
+        /* Card Section Layout */
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 32px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(15, 23, 42, 0.03);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(15, 23, 42, 0.06);
+        }
+
+        .card h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--text-main);
+        }
+
+        .card h2::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 24px;
+            background-color: var(--primary);
+            border-radius: 3px;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-size: 1rem;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* List Styling */
+        ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 28px;
+            margin-bottom: 14px;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 18px;
+            height: 18px;
+            background-color: rgba(16, 185, 129, 0.1);
+            color: var(--green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        li.no::before {
+            content: "✕";
+            background-color: rgba(255, 90, 96, 0.1);
+            color: var(--primary);
+        }
+
+        li.info::before {
+            content: "i";
+            background-color: rgba(59, 130, 246, 0.1);
+            color: var(--blue);
+            font-family: monospace;
+            font-size: 12px;
+        }
+
+        /* Permission grid */
+        .permission-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            margin-top: 20px;
+        }
+
+        @media (min-width: 600px) {
+            .permission-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .permission-item {
+            background-color: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 18px;
+        }
+
+        .permission-name {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--text-main);
+            margin-bottom: 4px;
+        }
+
+        .permission-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer / Contact Card */
+        .footer-card {
+            background: linear-gradient(135deg, #0F172A, #1E293B);
+            color: #FFFFFF;
+            border-radius: 24px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.2);
+        }
+
+        .footer-card h2 {
+            color: #FFFFFF;
+            justify-content: center;
+            margin-bottom: 12px;
+        }
+
+        .footer-card h2::before {
+            display: none;
+        }
+
+        .footer-card p {
+            color: #94A3B8;
+            margin-bottom: 24px;
+        }
+
+        .btn-email {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: var(--primary);
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 14px;
+            font-weight: 600;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .btn-email:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-1px);
+        }
+
+        .last-updated {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo-container">
+                <svg class="logo-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.57 14.86L22 13.43l-5.67-5.67-1.41 1.41 5.65 5.69zm-13.82.72l-1.42 1.42 4.24 4.24 1.42-1.42-4.24-4.24zm8.49-8.49l1.41-1.41-5.66-5.66-1.41 1.41 5.66 5.66zm-5.66 11.31l-1.41 1.41 4.24 4.24 1.41-1.41-4.24-4.24zm-2.83-8.49L8.16 8.5 2.5 2.84 1.09 4.25l5.66 5.66zm0 5.66l-1.41-1.41-5.66 5.66 1.41 1.41 5.66-5.66zm11.32-5.66l1.41 1.41 5.66-5.66-1.41-1.41-5.66 5.66z" fill="white"/>
+                </svg>
+            </div>
+            <h1>Six Pack & Belly Fat: 30 Days</h1>
+            <p>Privacy Policy</p>
+        </header>
+
+        <!-- Section 1: Intro -->
+        <div class="card">
+            <h2>Introduction</h2>
+            <p>Your privacy is of the utmost importance to us. This Privacy Policy details how the <strong>Six Pack & Belly Fat: 30 Days</strong> mobile application handles your personal data, permissions, and advertising. By using the app, you agree to the terms outlined in this policy.</p>
+        </div>
+
+        <!-- Section 2: What We Don't Collect -->
+        <div class="card">
+            <h2>Data Collection: What We Do NOT Collect</h2>
+            <p>We believe in total privacy. We do not run any cloud servers, databases, or tracking pipelines. Your workouts are your business.</p>
+            <ul>
+                <li class="no"><strong>No Personal Information:</strong> We do not ask for or collect your name, email, phone number, gender, or age.</li>
+                <li class="no"><strong>No Account Registration:</strong> No account creation is required to use our services.</li>
+                <li class="no"><strong>No Cloud Storage:</strong> All weight logs, workout progress, streaks, and hydration tracking are stored strictly locally on your physical device.</li>
+            </ul>
+        </div>
+
+        <!-- Section 3: What We Local Store -->
+        <div class="card">
+            <h2>Local Device Storage</h2>
+            <p>To provide a functional and gamified training plan, we store the following data locally on your device (using SharedPreferences):</p>
+            <ul>
+                <li><strong>Completed Days:</strong> Tracking which of the 30 workout days you have completed.</li>
+                <li><strong>Streak & Freezes:</strong> Keeping track of your daily consecutive workout streak and remaining streak freezes.</li>
+                <li><strong>Weight Logs:</strong> Storing dates and weights you enter locally to draw the progress chart.</li>
+                <li><strong>Water Tracker:</strong> Saving your daily water intake count for hydration goals.</li>
+            </ul>
+            <p><em>*Uninstalling the application will permanently erase all local storage and reset your progress, as no backups are uploaded to any external servers.</em></p>
+        </div>
+
+        <!-- Section 4: Advertising -->
+        <div class="card">
+            <h2>Google AdMob & Third-Party Services</h2>
+            <p>Our app displays advertisements powered by <strong>Google AdMob</strong> to keep our training plan 100% free for everyone. AdMob may utilize third-party SDKs to collect anonymous identifiers to deliver personalized or non-personalized advertisements.</p>
+            <ul>
+                <li class="info"><strong>Advertising ID:</strong> AdMob may collect your device's Mobile Advertising ID (e.g., Google ADID) to display ads. You can opt-out or reset your ID inside your phone's Android System Settings.</li>
+                <li class="info"><strong>Device Diagnostics:</strong> Basic, non-personal system information (device model, OS version, app crashes) is gathered by AdMob to measure performance and delivery.</li>
+            </ul>
+        </div>
+
+        <!-- Section 5: Permissions -->
+        <div class="card">
+            <h2>Required App Permissions</h2>
+            <p>To deliver modern features like background voice coaching, daily reminder notifications, and streak safety checks, the app requests the following system permissions:</p>
+            
+            <div class="permission-grid">
+                <div class="permission-item">
+                    <div class="permission-name">POST_NOTIFICATIONS</div>
+                    <div class="permission-desc">Used to display the daily reminder alerts to complete your workout.</div>
+                </div>
+                <div class="permission-item">
+                    <div class="permission-name">RECEIVE_BOOT_COMPLETED</div>
+                    <div class="permission-desc">Reschedules your scheduled daily reminders automatically when your phone reboots.</div>
+                </div>
+                <div class="permission-item">
+                    <div class="permission-name">FOREGROUND_SERVICE</div>
+                    <div class="permission-desc">Ensures the workout player and Text-to-Speech voice coach operate smoothly without being killed in the background.</div>
+                </div>
+                <div class="permission-item">
+                    <div class="permission-name">WAKE_LOCK</div>
+                    <div class="permission-desc">Keeps the timer active during your training intervals so the countdown doesn't freeze.</div>
+                </div>
+                <div class="permission-item">
+                    <div class="permission-name">INTERNET / ACCESS_NETWORK_STATE</div>
+                    <div class="permission-desc">Required to load advertisements from Google AdMob servers.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 6: Contact Us / Footer -->
+        <div class="footer-card">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback regarding this Privacy Policy or the app, please feel free to reach out to us at our official support email:</p>
+            <a href="mailto:hanii.ahmed209@gmail.com" class="btn-email">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                hanii.ahmed209@gmail.com
+            </a>
+        </div>
+
+        <div class="last-updated">
+            Last Updated: July 2026
+        </div>
+    </div>
+</body>
+</html>
