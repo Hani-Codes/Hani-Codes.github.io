@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية | My Car - Privacy Policy</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-gold: #FFD700;
+            --primary-blue: #2196F3;
+            --bg-dark: #0F172A;
+            --card-bg: #1E293B;
+            --text-main: #F8FAFC;
+            --text-muted: #94A3B8;
+            --border-color: #334155;
+            --accent-green: #10B981;
+            --accent-red: #EF4444;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            transition: all 0.3s ease;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Cairo', 'Inter', sans-serif;
+            line-height: 1.8;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .logo-area {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            border: 2px solid var(--primary-gold);
+            border-radius: 16px;
+            padding: 15px 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.15);
+        }
+
+        .logo-icon {
+            font-size: 2.5rem;
+            margin-left: 15px;
+        }
+        
+        [lang="en"] .logo-icon {
+            margin-left: 0;
+            margin-right: 15px;
+        }
+
+        .logo-text {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-gold);
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #ffffff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Language Switcher */
+        .lang-switch {
+            display: inline-flex;
+            background-color: var(--card-bg);
+            padding: 5px;
+            border-radius: 30px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+        }
+
+        .lang-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            padding: 8px 24px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            border-radius: 25px;
+            font-family: inherit;
+        }
+
+        .lang-btn.active {
+            background-color: var(--primary-gold);
+            color: #000000;
+            box-shadow: 0 4px 10px rgba(255, 215, 0, 0.2);
+        }
+
+        /* Policy Section Card */
+        .policy-card {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 25px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .policy-card h2 {
+            font-size: 1.4rem;
+            color: var(--primary-gold);
+            margin-bottom: 15px;
+            font-weight: 700;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 10px;
+        }
+
+        .policy-card p {
+            color: var(--text-main);
+            margin-bottom: 12px;
+        }
+
+        .policy-card ul {
+            margin-right: 20px;
+            margin-bottom: 15px;
+            color: var(--text-muted);
+        }
+        
+        [lang="en"] .policy-card ul {
+            margin-right: 0;
+            margin-left: 20px;
+        }
+
+        .policy-card li {
+            margin-bottom: 8px;
+        }
+
+        /* Footer contact card */
+        .contact-box {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            border: 1px dashed var(--primary-gold);
+            border-radius: 16px;
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .contact-box a {
+            color: var(--primary-gold);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            border-bottom: 2px dashed var(--primary-gold);
+            padding-bottom: 2px;
+        }
+
+        .contact-box a:hover {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Language Toggle Classes */
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header Section -->
+        <header>
+            <div class="logo-area">
+                <span class="logo-icon">🚗</span>
+                <span class="logo-text">My Car</span>
+            </div>
+            
+            <div class="lang-switch">
+                <button class="lang-btn active" onclick="switchLanguage('ar')">العربية</button>
+                <button class="lang-btn" onclick="switchLanguage('en')">English</button>
+            </div>
+        </header>
+
+        <!-- ARABIC CONTENT -->
+        <div id="content-ar" class="lang-content show" lang="ar" dir="rtl">
+            <h1 style="text-align: center; margin-bottom: 30px;">سياسة الخصوصية لتطبيق "My Car" (سيارتي)</h1>
+            
+            <div class="policy-card">
+                <h2>1. البيانات التي نعالجها</h2>
+                <p>نعالج فقط البيانات التشغيلية الأساسية التي تدخلها لتشغيل ميزات التطبيق:</p>
+                <ul>
+                    <li><strong>بيانات الحساب:</strong> البريد الإلكتروني أو حساب Google لتأمين حسابك وتسهيل مزامنة السجلات سحابياً.</li>
+                    <li><strong>معلومات المركبة:</strong> سجلات الصيانة، قراءة العداد، وتفاصيل السيارة التي تضيفها يدوياً لتنبيهك بمواعيد الصيانة.</li>
+                    <li><strong>الصور (اختياري):</strong> صورة السيارة أو صورة بطاقة الموقف أو الفواتير، وتُحفظ محلياً في جهازك.</li>
+                    <li><strong>بيانات الموقع:</strong> لحفظ موقع ركن السيارة أو البحث عن مراكز الخدمة، ويتم معالجتها بموافقتك الصريحة فقط.</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2>2. مشاركة وحماية البيانات</h2>
+                <ul>
+                    <li><strong>عدم مشاركة البيانات:</strong> لا نبيع أو نؤجر أو نشارك أي من بياناتك مع أطراف تسويقية خارجية أبداً.</li>
+                    <li><strong>التخزين السحابي:</strong> يتم تشفير ومزامنة البيانات سحابياً بشكل آمن لحمايتها من الضياع عبر خوادم Google Firebase.</li>
+                    <li><strong>خرائط جوجل:</strong> تعتمد ميزات الرادار وتحديد المواقع على خدمات Google Maps Platform وتخضع لشروط خصوصيتها.</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2>3. التحكم بالبيانات وحذفها</h2>
+                <p>لديك السيطرة الكاملة لتعديل أو حذف حسابك وكافة سجلاتك نهائياً في أي وقت عبر خيار <strong>"حذف كافة البيانات"</strong> من إعدادات التطبيق.</p>
+            </div>
+
+            <!-- Contact Box -->
+            <div class="contact-box">
+                <p style="margin-bottom: 15px;">لأي استفسار أو اقتراح بشأن سياسة الخصوصية، يرجى التواصل معنا عبر:</p>
+                <a href="mailto:hanii.ahmed209@gmail.com">hanii.ahmed209@gmail.com</a>
+            </div>
+        </div>
+
+        <!-- ENGLISH CONTENT -->
+        <div id="content-en" class="lang-content" lang="en" dir="ltr">
+            <h1 style="text-align: center; margin-bottom: 30px;">Privacy Policy for "My Car" App</h1>
+            
+            <div class="policy-card">
+                <h2>1. Data We Process</h2>
+                <p>We process only the essential data necessary to operate the application features:</p>
+                <ul>
+                    <li><strong>Account Information:</strong> Email address or Google account credentials to secure your profile and enable cloud sync.</li>
+                    <li><strong>Vehicle Information:</strong> Maintenance records, odometer readings, and car details added manually to calculate service reminders.</li>
+                    <li><strong>Photos (Optional):</strong> Car photos, parking spot reminders, or invoices saved locally on your device.</li>
+                    <li><strong>Location Data:</strong> Optional GPS coordinates to save your parking spot or find nearby workshops, processed only with your consent.</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2>2. Data Protection & Sharing</h2>
+                <ul>
+                    <li><strong>No Data Selling:</strong> We never sell, rent, or share your personal data with third parties for marketing purposes.</li>
+                    <li><strong>Cloud Services:</strong> Data is encrypted and securely synchronized in the cloud via Google Firebase to prevent data loss.</li>
+                    <li><strong>Google Maps:</strong> Map services are powered by Google Maps Platform and are subject to its privacy guidelines.</li>
+                </ul>
+            </div>
+
+            <div class="policy-card">
+                <h2>3. Data Deletion & Rights</h2>
+                <p>You have full control over your records. You can modify any record or permanently delete your account and all data at any time via the <strong>"Delete All Data"</strong> option in Settings.</p>
+            </div>
+
+            <!-- Contact Box -->
+            <div class="contact-box">
+                <p style="margin-bottom: 15px;">For any inquiries regarding the privacy policy, please contact us at:</p>
+                <a href="mailto:hanii.ahmed209@gmail.com">hanii.ahmed209@gmail.com</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Script for language toggling -->
+    <script>
+        function switchLanguage(lang) {
+            // Update button states
+            const buttons = document.querySelectorAll('.lang-btn');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            
+            // Get clicked button and set it active
+            const activeBtn = event.target;
+            activeBtn.classList.add('active');
+
+            // Toggle contents and direction
+            const arContent = document.getElementById('content-ar');
+            const enContent = document.getElementById('content-en');
+            
+            if (lang === 'ar') {
+                document.documentElement.setAttribute('lang', 'ar');
+                document.documentElement.setAttribute('dir', 'rtl');
+                arContent.classList.add('show');
+                enContent.classList.remove('show');
+            } else {
+                document.documentElement.setAttribute('lang', 'en');
+                document.documentElement.setAttribute('dir', 'ltr');
+                enContent.classList.add('show');
+                arContent.classList.remove('show');
+            }
+        }
+    </script>
+</body>
+</html>
