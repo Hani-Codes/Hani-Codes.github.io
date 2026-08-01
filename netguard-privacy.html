@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net Guard - Privacy Policy | وثيقة سياسة الخصوصية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;600;800&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #F4F4F8;
+            --card-bg: #FFFFFF;
+            --text-color: #2D3748;
+            --text-muted: #718096;
+            --primary: #2E7D32;
+            --secondary: #E65100;
+            --border-color: rgba(0, 0, 0, 0.08);
+            --font-en: 'Inter', 'Outfit', sans-serif;
+            --font-ar: 'Cairo', sans-serif;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #0C0C0E;
+            --card-bg: #1A1A1E;
+            --text-color: #E2E8F0;
+            --text-muted: #A0AEC0;
+            --primary: #4CAF50;
+            --secondary: #FF6D00;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-en);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .brand {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 1.5rem;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .brand span {
+            color: var(--primary);
+        }
+
+        .controls {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+            padding: 8px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .btn:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin-bottom: 24px;
+        }
+
+        h1, h2, h3 {
+            color: var(--text-color);
+            margin-top: 0;
+        }
+
+        .badge {
+            background-color: rgba(76, 175, 80, 0.15);
+            color: var(--primary);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+
+        .badge.subs {
+            background-color: rgba(230, 81, 0, 0.15);
+            color: var(--secondary);
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        ul {
+            padding-left: 20px;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .lang-section {
+            display: none;
+        }
+
+        .lang-section.active {
+            display: block;
+        }
+
+        /* Arabic specific alignment */
+        .ar-style {
+            font-family: var(--font-ar);
+            direction: rtl;
+            text-align: right;
+        }
+
+        .ar-style ul {
+            padding-left: 0;
+            padding-right: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="brand">🛡️ Net Guard <span>Pro</span></div>
+        <div class="controls">
+            <button class="btn" id="langToggle" onclick="toggleLanguage()">العربية / English</button>
+            <button class="btn" onclick="toggleTheme()">🌓 Theme</button>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- ================= ENGLISH SECTION ================= -->
+        <div id="en-content" class="lang-section active">
+            <div class="card">
+                <span class="badge">Google Play Compliant</span>
+                <h1>Privacy Policy</h1>
+                <p><strong>Last Updated:</strong> August 1, 2026</p>
+                <p>Welcome to <strong>Net Guard Pro (Internet Blocker)</strong>. We respect your privacy and are committed to protecting it. This Privacy Policy explains our practices regarding user data, Android system permissions, and our monetization model.</p>
+            </div>
+
+            <div class="card">
+                <h2>1. VPN Service (Core Firewall Feature)</h2>
+                <p>Net Guard utilizes Android's official <strong>VpnService</strong> framework to establish a local, on-device virtual private network loopback. This service is mandatory for the application's core firewall capabilities.</p>
+                <ul>
+                    <li><strong>No Data Collection:</strong> All network traffic analysis, packet filtering, and blocking are executed entirely <strong>locally on your device</strong>.</li>
+                    <li><strong>No Server Transmission:</strong> We do not operate external VPN servers. None of your device's traffic, DNS queries, or internet history is monitored, stored, or sent to our servers or third parties.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>2. Installed Packages Query Permission</h2>
+                <p>Our app requires the <strong>QUERY_ALL_PACKAGES</strong> permission to fetch the list of installed applications on your device.</p>
+                <ul>
+                    <li><strong>Purpose:</strong> This list is displayed to you in the user interface to allow you to selectively toggle Wi-Fi and Cellular blocks for each app, set timers, or configure gaming profiles.</li>
+                    <li><strong>Data Security:</strong> This list is read locally and never uploaded to any server or shared with any advertiser.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>3. Data Collection and Third-Party Services</h2>
+                <p>We do not collect any personally identifiable information (PII). We integrate trusted third-party SDKs for monetization and updates:</p>
+                <ul>
+                    <li><strong>Google AdMob:</strong> Free users may see personalized or non-personalized advertisements. Google AdMob may collect device identifiers (advertising ID) to deliver relevant ads. You can opt out of personalized ads in your Android system settings.</li>
+                    <li><strong>Google Play Billing:</strong> Purchases, upgrades, and subscriptions are securely processed by the Google Play Store billing engine. We do not store or see your payment cards or financial details.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>4. Subscriptions and Purchasing Tiers</h2>
+                <p>Net Guard Pro offers optional premium upgrades (Monthly Subscription, Yearly Subscription, and Lifetime License) which grant access to:</p>
+                <ul>
+                    <li>Complete removal of advertisements.</li>
+                    <li>Pre-configured smart firewall profiles (Game Mode & Max Saver).</li>
+                    <li>Smart application scheduling timers (Block/Allow Temporarily).</li>
+                    <li>Unlimited custom whitelisting profiles.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>5. Contact Us</h2>
+                <p>If you have any questions or feedback regarding this policy or our firewall app, feel free to contact us at:</p>
+                <p>📩 Email: <a href="mailto:hanii.ahmed209@gmail.com" style="color: var(--primary); text-decoration: none; font-weight: 600;">hanii.ahmed209@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!-- ================= ARABIC SECTION ================= -->
+        <div id="ar-content" class="lang-section ar-style">
+            <div class="card">
+                <span class="badge">متوافق مع سياسات جوجل بلاي</span>
+                <h1>وثيقة سياسة الخصوصية</h1>
+                <p><strong>آخر تحديث:</strong> 1 أغسطس 2026</p>
+                <p>مرحباً بك في تطبيق **نت جارد برو (حجب الانترنت)**. نحن نحترم خصوصيتك ونلتزم بحمايتها بشكل مطلق. توضح هذه الوثيقة بوضوح كيفية التعامل مع البيانات والبيئة التقنية، وصلاحيات النظام المطلوبة للتشغيل، ونموذج الاشتراكات المعتمد.</p>
+            </div>
+
+            <div class="card">
+                <h2>1. خدمة شبكة VPN المحلية (خدمة جدار الحماية الأساسية)</h2>
+                <p>يستخدم تطبيق نت جارد البنية الأساسية الرسمية لـ **VpnService** في نظام أندرويد لإنشاء اتصال شبكة افتراضية محلية داخل جهازك فقط. هذه الخدمة إلزامية لتشغيل الميزة الأساسية للتطبيق (حجب الاتصال).</p>
+                <ul>
+                    <li><strong>عدم جمع البيانات:</strong> تتم جميع عمليات فحص حزم البيانات وتصفيتها وحظرها بشكل **محلي تماماً داخل جهازك**.</li>
+                    <li><strong>لا توجد خوادم خارجية:</strong> نحن لا ندير أي خوادم VPN خارجية، ولا نقوم بنقل أو تخزين أو مشاركة أي بيانات تتعلق بتصفحك، اتصالاتك، أو سجل تصفحك مع أي خوادم خارجية أو جهات خارجية.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>2. صلاحية جلب قائمة التطبيقات المثبتة</h2>
+                <p>يتطلب التطبيق استخدام إذن **QUERY_ALL_PACKAGES** للوصول لقائمة التطبيقات المثبتة على جهازك.</p>
+                <ul>
+                    <li><strong>الهدف:</strong> تُعرض هذه القائمة داخل واجهة التطبيق لتمكينك من حظر أو السماح باتصال الواي فاي أو شبكة الجوال لكل تطبيق على حدة، وضبط المؤقتات، أو تفعيل وضع الألعاب.</li>
+                    <li><strong>أمان البيانات:</strong> تُقرأ القائمة محلياً لتشغيل التطبيق فقط، ولا يتم رفع أسماء أو بيانات التطبيقات المثبتة إلى أي خوادم إطلاقاً.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>3. جمع البيانات والخدمات الخارجية</h2>
+                <p>نحن لا نجمع أي معلومات تعريفية شخصية للمستخدمين. يتكامل التطبيق مع خدمات طرف ثالث موثوقة لإدارة الإعلانات والمبيعات:</p>
+                <ul>
+                    <li><strong>Google AdMob:</strong> قد تظهر إعلانات للمستخدمين في النسخة المجانية. قد تجمع شبكة Google AdMob معرف الإعلانات الخاص بالجهاز لتقديم إعلانات ذات صلة. يمكنك إيقاف الإعلانات المخصصة عبر إعدادات نظام أندرويد بجهازك.</li>
+                    <li><strong>Google Play Billing:</strong> تتم معالجة الاشتراكات والمشتريات وتأمينها بالكامل عبر نظام الدفع الرسمي لمتجر Google Play. لا يمكننا الاطلاع على معلومات بطاقات الدفع أو البيانات المالية الخاصة بك.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>4. باقات الاشتراك والنسخة الاحترافية</h2>
+                <p>يوفر تطبيق نت جارد برو خيارات ترقية اختيارية (اشتراك شهري، سنوي، وترخيص مدى الحياة) تتيح للمشتركين الاستمتاع بالميزات التالية:</p>
+                <ul>
+                    <li>إزالة الإعلانات بالكامل ومنع ظهورها.</li>
+                    <li>تفعيل الأوضاع الذكية الجاهزة (وضع الألعاب لخفض البينج وتوفير البيانات الفائق).</li>
+                    <li>جدولة مؤقت حظر وسماح التطبيقات والتحكم الأبوي.</li>
+                    <li>إنشاء وتخصيص عدد لا محدود من ملفات الحظر الخاصة بك.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>5. تواصل معنا</h2>
+                <p>إذا كان لديك أي استفسار أو اقتراح حول سياسة الخصوصية هذه، يسعدنا تواصلك معنا مباشرة عبر البريد الإلكتروني:</p>
+                <p>📩 البريد الإلكتروني: <a href="mailto:hanii.ahmed209@gmail.com" style="color: var(--primary); text-decoration: none; font-weight: 600;">hanii.ahmed209@gmail.com</a></p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Net Guard Pro. All Rights Reserved. | جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script>
+        // Language Toggle Logic
+        let currentLang = 'en';
+        function toggleLanguage() {
+            const enContent = document.getElementById('en-content');
+            const arContent = document.getElementById('ar-content');
+            
+            if (currentLang === 'en') {
+                enContent.classList.remove('active');
+                arContent.classList.add('active');
+                currentLang = 'ar';
+            } else {
+                arContent.classList.remove('active');
+                enContent.classList.add('active');
+                currentLang = 'en';
+            }
+        }
+
+        // Dark/Light Theme Toggle Logic
+        let currentTheme = 'light';
+        function toggleTheme() {
+            const html = document.documentElement;
+            if (currentTheme === 'light') {
+                html.setAttribute('data-theme', 'dark');
+                currentTheme = 'dark';
+            } else {
+                html.removeAttribute('data-theme');
+                currentTheme = 'light';
+            }
+        }
+    </script>
+</body>
+</html>
