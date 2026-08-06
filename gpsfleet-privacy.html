@@ -1,44 +1,44 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>سياسة الخصوصية | Privacy Policy · GPS Fleet</title>
-  <meta name="description" content="GPS Fleet Privacy Policy - Full compliance with Google Play Console policies for vehicle tracking & fleet management." />
+  <title>Privacy Policy | Datenschutzerklärung · GPS Fleet</title>
+  <meta name="description" content="GPS Fleet Privacy Policy - Vehicle GPS tracking app. Learn how we handle your data, permissions, and security." />
   <style>
     :root {
       --bg-gradient-start: #020d1a;
       --bg-gradient-end: #010810;
-      --card-bg: rgba(15, 23, 42, 0.75);
-      --accent: #38bdf8;
-      --accent-glow: rgba(56, 189, 248, 0.4);
-      --accent-soft: rgba(56, 189, 248, 0.1);
-      --green: #10b981;
-      --green-glow: rgba(16, 185, 129, 0.4);
+      --card-bg: rgba(5, 18, 35, 0.75);
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.4);
+      --accent-soft: rgba(59, 130, 246, 0.1);
+      --green: #22c55e;
+      --green-glow: rgba(34, 197, 94, 0.4);
       --text-main: #f8fafc;
       --text-muted: #94a3b8;
       --border-subtle: rgba(255, 255, 255, 0.08);
-      --code-bg: #091322;
+      --code-bg: #020c18;
     }
 
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
     }
 
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: var(--bg-gradient-end); }
     ::-webkit-scrollbar-thumb {
-      background: #1e293b;
+      background: #0a1e35;
       border-radius: 999px;
     }
     ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
 
     body {
       min-height: 100vh;
-      background: radial-gradient(ellipse at top, #061933, #010810);
+      background: radial-gradient(ellipse at top, #041428, #010810);
       padding: 32px 16px 64px;
       display: flex;
       justify-content: center;
@@ -48,7 +48,7 @@
 
     .shell {
       width: 100%;
-      max-width: 940px;
+      max-width: 920px;
     }
 
     /* ── Top Header Controls ──────────────────── */
@@ -67,16 +67,17 @@
       gap: 8px;
       padding: 6px 16px;
       border-radius: 999px;
-      background: rgba(15, 23, 42, 0.9);
-      border: 1px solid rgba(56, 189, 248, 0.2);
+      background: rgba(4, 14, 28, 0.9);
+      border: 1px solid rgba(59, 130, 246, 0.15);
       color: #94a3b8;
-      font-size: 12px;
-      letter-spacing: 0.05em;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
 
     .top-badge .dot {
-      width: 8px;
-      height: 8px;
+      width: 7px;
+      height: 7px;
       border-radius: 999px;
       background: var(--green);
       box-shadow: 0 0 10px var(--green-glow);
@@ -91,7 +92,7 @@
     /* Language Switcher Buttons */
     .lang-switcher {
       display: flex;
-      background: rgba(15, 23, 42, 0.9);
+      background: rgba(4, 14, 28, 0.9);
       border: 1px solid var(--border-subtle);
       border-radius: 999px;
       padding: 4px;
@@ -104,7 +105,7 @@
       color: var(--text-muted);
       padding: 6px 16px;
       border-radius: 999px;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 600;
       cursor: pointer;
       transition: all 0.2s ease;
@@ -112,44 +113,43 @@
 
     .lang-btn.active {
       background: var(--accent);
-      color: #0f172a;
+      color: #ffffff;
       box-shadow: 0 0 14px var(--accent-glow);
     }
 
     /* ── Main Glassmorphism Card ──────────────── */
     .card {
       background: var(--card-bg);
-      backdrop-filter: blur(24px);
-      -webkit-backdrop-filter: blur(24px);
-      border-radius: 24px;
-      padding: 40px 32px 48px;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: 22px;
+      padding: 36px 28px 44px;
       border: 1px solid var(--border-subtle);
-      box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.7);
+      box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.6);
     }
 
     /* Header Section */
     .header {
       text-align: center;
-      margin-bottom: 36px;
-      position: relative;
+      margin-bottom: 32px;
     }
 
     .app-icon {
-      width: 72px;
-      height: 72px;
+      width: 68px;
+      height: 68px;
       border-radius: 20px;
-      background: linear-gradient(135deg, #0284c7, #0f172a);
-      border: 2px solid rgba(56, 189, 248, 0.4);
+      background: linear-gradient(135deg, #0f3460, #1e5f9f);
+      border: 1.5px solid rgba(59, 130, 246, 0.35);
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto 18px;
-      font-size: 34px;
-      box-shadow: 0 10px 30px var(--accent-glow);
+      margin: 0 auto 16px;
+      font-size: 32px;
+      box-shadow: 0 8px 24px rgba(59, 130, 246, 0.28);
     }
 
     .header-title {
-      font-size: 28px;
+      font-size: 26px;
       font-weight: 800;
       color: #ffffff;
       letter-spacing: -0.02em;
@@ -157,70 +157,78 @@
 
     .header-sub {
       margin-top: 8px;
-      font-size: 14px;
+      font-size: 13px;
       color: var(--text-muted);
     }
 
     .tagline {
-      margin-top: 14px;
+      margin-top: 12px;
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 6px 18px;
+      padding: 5px 16px;
       border-radius: 999px;
       background: var(--accent-soft);
-      border: 1px solid rgba(56, 189, 248, 0.2);
-      color: var(--accent);
-      font-size: 12px;
+      border: 1px solid rgba(59, 130, 246, 0.18);
+      color: #93c5fd;
+      font-size: 11px;
       font-weight: 600;
     }
 
     .divider {
-      margin: 32px 0;
+      margin: 28px 0;
       border: none;
-      border-top: 1px dashed rgba(255, 255, 255, 0.1);
+      border-top: 1px dashed rgba(255, 255, 255, 0.08);
+    }
+
+    /* Code Strip Status Bar */
+    .code-strip {
+      padding: 10px 16px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      background: var(--code-bg);
+      border: 1px solid rgba(59, 130, 246, 0.08);
+      color: #64748b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .code-strip .status {
+      color: var(--green);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
     }
 
     /* Content Sections */
     .section-title {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 700;
       color: #ffffff;
-      margin-top: 32px;
-      margin-bottom: 14px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      border-bottom: 2px solid var(--accent-soft);
-      padding-bottom: 8px;
-    }
-
-    .section-title::before {
-      content: "";
-      width: 4px;
-      height: 20px;
-      background: var(--accent);
-      border-radius: 999px;
-      display: inline-block;
-      box-shadow: 0 0 10px var(--accent-glow);
+      margin-top: 28px;
+      margin-bottom: 12px;
+      border-left: 3px solid var(--accent);
+      padding-left: 10px;
     }
 
     p {
-      font-size: 15px;
+      font-size: 14px;
       color: var(--text-muted);
-      margin-bottom: 14px;
-      line-height: 1.8;
+      margin-bottom: 12px;
+      line-height: 1.75;
     }
 
     ul {
-      margin-top: 10px;
-      margin-bottom: 18px;
-      padding-right: 22px;
-      padding-left: 22px;
+      margin-top: 8px;
+      margin-bottom: 16px;
+      padding-left: 20px;
     }
 
     li {
-      font-size: 14.5px;
+      font-size: 14px;
       color: var(--text-muted);
       margin-bottom: 10px;
       line-height: 1.7;
@@ -231,28 +239,28 @@
     }
 
     code {
-      background: rgba(56, 189, 248, 0.12);
-      color: var(--accent);
-      padding: 3px 8px;
+      background: rgba(59, 130, 246, 0.10);
+      color: #93c5fd;
+      padding: 2px 6px;
       border-radius: 6px;
-      font-size: 13px;
+      font-size: 11.5px;
       font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
-      border: 1px solid rgba(56, 189, 248, 0.2);
+      border: 1px solid rgba(59, 130, 246, 0.12);
     }
 
     .perm-card {
-      background: rgba(9, 19, 34, 0.7);
+      background: rgba(2, 12, 24, 0.6);
       border: 1px solid var(--border-subtle);
-      border-radius: 14px;
-      padding: 16px 20px;
-      margin-bottom: 12px;
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-bottom: 10px;
       display: flex;
       flex-direction: column;
-      gap: 6px;
+      gap: 4px;
     }
 
     .perm-title {
-      font-size: 15px;
+      font-size: 14.5px;
       font-weight: 700;
       color: #f1f5f9;
       display: flex;
@@ -261,25 +269,25 @@
     }
 
     .perm-desc {
-      font-size: 13.5px;
+      font-size: 13px;
       color: var(--text-muted);
       line-height: 1.6;
     }
 
     .contact-box {
-      margin-top: 28px;
-      background: linear-gradient(135deg, rgba(56, 189, 248, 0.08), rgba(16, 185, 129, 0.05));
-      border: 1px solid rgba(56, 189, 248, 0.2);
-      border-radius: 18px;
-      padding: 24px;
+      margin-top: 26px;
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(34, 197, 94, 0.05));
+      border: 1px solid rgba(59, 130, 246, 0.18);
+      border-radius: 16px;
+      padding: 22px;
       text-align: center;
     }
 
     .contact-title {
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 700;
       color: #ffffff;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     .contact-email {
@@ -288,7 +296,8 @@
       padding: 10px 22px;
       border-radius: 999px;
       background: var(--accent);
-      color: #0f172a;
+      color: #ffffff;
+      font-size: 13px;
       font-weight: 700;
       text-decoration: none;
       box-shadow: 0 4px 16px var(--accent-glow);
@@ -301,19 +310,9 @@
 
     .footer-text {
       text-align: center;
-      margin-top: 32px;
-      font-size: 13px;
+      margin-top: 28px;
+      font-size: 12px;
       color: #64748b;
-    }
-
-    /* English LTR Adjustments */
-    [dir="ltr"] .section-title::before {
-      margin-right: 4px;
-    }
-
-    [dir="ltr"] ul {
-      padding-right: 0;
-      padding-left: 22px;
     }
 
     /* Hide language sections based on selection */
@@ -329,12 +328,12 @@
     <div class="top-controls">
       <div class="top-badge">
         <span class="dot"></span>
-        <span>تطابق 100% مع متطلبات Google Play 2025/2026</span>
+        <span>Google Play Policy Compliant 2025/2026</span>
       </div>
 
       <div class="lang-switcher">
-        <button class="lang-btn active" onclick="switchLanguage('ar')">العربية 🇸🇦</button>
-        <button class="lang-btn" onclick="switchLanguage('en')">English 🇺🇸</button>
+        <button class="lang-btn active" onclick="switchLanguage('en')">English 🇺🇸</button>
+        <button class="lang-btn" onclick="switchLanguage('de')">Deutsch 🇩🇪</button>
       </div>
     </div>
 
@@ -343,117 +342,127 @@
       
       <!-- Header Section -->
       <div class="header">
-        <div class="app-icon">🚗</div>
+        <div class="app-icon">🛰️</div>
         <h1 class="header-title">GPS Fleet</h1>
-        <p class="header-sub">سياسة الخصوصية وحماية البيانات | Privacy Policy & Data Protection</p>
-        <div class="tagline">🔒 حماية وتشفير عالي الجودة لأسطول المركبات وأجهزة التتبع</div>
+        <p class="header-sub">Privacy Policy | Datenschutzerklärung</p>
+        <div class="tagline">🛰️ Advanced Vehicle GPS Tracking & Fleet Management Security</div>
+      </div>
+
+      <div class="code-strip">
+        <span>SECURITY_PROTOCOL: TLS 1.3 HIGH ENCRYPTION</span>
+        <span class="status"><span class="dot"></span> ACTIVE & ENCRYPTED</span>
       </div>
 
       <hr class="divider" />
 
-      <!-- ARABIC CONTENT SECTION -->
-      <div id="content-ar" class="lang-content active">
+      <!-- ENGLISH CONTENT SECTION (DEFAULT) -->
+      <div id="content-en" class="lang-content active">
         
-        <p><strong>تاريخ التحديث:</strong> 6 أغسطس 2026</p>
-        <p>مرحباً بك في تطبيق <strong>GPS Fleet</strong>. نحن نلتزم بأعلى معايير الحماية والتشفير لحماية خصوصيتك وبيانات أسطول مركباتك. تشرح سياسة الخصوصية هذه كيفية جمع البيانات واستخدامها وحمايتها وفقاً لسياسات متجر Google Play الرسمية والقوانين الدولية لحماية البيانات.</p>
+        <p><strong>Last Updated:</strong> August 6, 2026</p>
+        <p>Welcome to <strong>GPS Fleet</strong> ("we", "our", or "us"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application <strong>GPS Fleet</strong>. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the application.</p>
 
-        <h2 class="section-title">1. المعلومات التي نجمعها والصلاحيات المطلوبة</h2>
-        <p>ليعمل تطبيق <strong>GPS Fleet</strong> بكفاءة عالية في تتبع المركبات وحساب السرعة وإصدار التقارير، نطلب الصلاحيات التالية بوضوح:</p>
+        <h2 class="section-title">1. Information We Collect & Device Permissions</h2>
+        <p>To provide accurate real-time GPS tracking, vehicle telemetry, and PDF route exports, <strong>GPS Fleet</strong> requires specific android device permissions:</p>
 
         <div class="perm-card">
-          <div class="perm-title">📍 موقع الجهاز (GPS Location & Background Tracking)</div>
-          <div class="perm-desc">نستخدم صلاحية <code>ACCESS_FINE_LOCATION</code> و <code>ACCESS_BACKGROUND_LOCATION</code> لنقل موقع المركبة المباشر وحساب سرعة السير ورسم خطوط الرحلات على الخريطة حتى عند إغلاق التطبيق أو عمله في الخلفية.</div>
+          <div class="perm-title">📍 Location Data (Foreground & Background GPS Tracking)</div>
+          <div class="perm-desc">We request <code>ACCESS_FINE_LOCATION</code> and <code>ACCESS_BACKGROUND_LOCATION</code> to continuously track physical vehicle positions, compute driving speed, draw trip route polylines, and trigger Geofence safety alerts even when the app is running in the background.</div>
         </div>
 
         <div class="perm-card">
-          <div class="perm-title">📱 معلومات أجهزة التتبع (Device IMEI & Identification)</div>
-          <div class="perm-desc">نقرأ رقم الـ <code>IMEI</code> ورمز الجهاز لربط شريحة تتبع المركبة بسيرفر المراقبة وتأكيد ملكية المركبة في الأسطول.</div>
+          <div class="perm-title">📡 Hardware Device Identifiers (IMEI & Serial Number)</div>
+          <div class="perm-desc">We collect and process your Tracki / Traccar hardware <code>IMEI</code> serial number to authenticate vehicle pairing, establish server connections, and maintain multi-vehicle fleet profiles.</div>
         </div>
 
         <div class="perm-card">
-          <div class="perm-title">📄 تصدير واستخراج التقارير (PDF & CSV Export)</div>
-          <div class="perm-desc">نطلب صلاحية التخزين لحفظ واستخراج ملفات تقارير المسارات والسرعة بصيغة PDF و CSV على هاتفك.</div>
+          <div class="perm-title">📄 Local Storage Access (PDF & CSV Telemetry Exports)</div>
+          <div class="perm-desc">We utilize local storage permissions to allow users to generate, format, and save 30-day historical trip telemetry reports in PDF and CSV format on their device.</div>
         </div>
 
         <div class="perm-card">
-          <div class="perm-title">🔔 الإشعارات وتنبيهات الأمان (Notifications & Speed Alerts)</div>
-          <div class="perm-desc">تُستخدم صلاحية <code>POST_NOTIFICATIONS</code> لإرسال تنبيهات فورية عند تجاوز السرعة المحددة أو تفعيل نظام الحماية ضد السرقة (Anti-Theft Guard).</div>
+          <div class="perm-title">🔔 Safety Push Notifications (Speed Alerts & Anti-Theft Guard)</div>
+          <div class="perm-desc">We use <code>POST_NOTIFICATIONS</code> to deliver urgent real-time alerts when a vehicle exceeds user-defined speed limits or leaves a designated Geofence perimeter.</div>
         </div>
 
-        <h2 class="section-title">2. كيفية استخدام البيانات والهدف منها</h2>
+        <h2 class="section-title">2. How We Use Your Information</h2>
+        <p>We use the collected information for the following specific purposes:</p>
         <ul>
-          <li><strong>مراقبة الأسطول المباشرة:</strong> عرض موقع السيارات على الخريطة التفاعلية وطبقات القمر الصناعي (Satellite View).</li>
-          <li><strong>تقارير الرحلات 30 يوماً:</strong> استرجاع السجلات وساعات التوقف والسرعة التاريخية عبر تقويم السجلات.</li>
-          <li><strong>تنبيهات السرعة والأمان:</strong> إرسال تنبيهات فورية عند تجاوز السرعة أو الخروج من النطاق الجغرافي (Geofence).</li>
+          <li><strong>Real-Time Fleet Visualization:</strong> Display live vehicle markers on interactive dark, light, and USGS High-Res Satellite maps.</li>
+          <li><strong>Trip History & Analytics:</strong> Retrieve and render past route logs, driving speeds, and stationary durations for up to 30 days.</li>
+          <li><strong>Safety & Theft Prevention:</strong> Execute Anti-Theft Guard monitoring and trigger immediate visual/auditory speed notifications.</li>
+          <li><strong>Subscription & Premium Features:</strong> Process Google Play In-App Billing subscriptions to unlock unlimited fleet profiles and ad-free experience.</li>
         </ul>
 
-        <h2 class="section-title">3. الإعلانات والخدمات التابعة لطرف ثالث (AdMob & Services)</h2>
-        <p>قد يستخدم التطبيق شبكة إعلانات Google AdMob لإظهار الإعلانات غير المزعجة للمستخدمين غير المشتركين. لا نقوم إطلاقاً ببيع أو مشاركة بيانات مواقع أسطولك الشخصية مع أي طرف ثالث.</p>
+        <h2 class="section-title">3. Advertising & Third-Party Services (AdMob)</h2>
+        <p>Non-subscribed users may see non-intrusive banner advertisements served by Google AdMob. We <strong>do not sell, trade, or rent</strong> your personal GPS telemetry data or location history to third-party advertisers or market research companies.</p>
 
-        <h2 class="section-title">4. طلبات حذف البيانات وحقوق المستخدم</h2>
-        <p>يحق لك في أي وقت حذف بيانات مركبتك وسجل رحلاتك مباشرة من داخل التطبيق عبر خيار <code>إزالة المركبة</code> أو بالتواصل معنا لحذف حسابك نهائياً من خوادمنا.</p>
+        <h2 class="section-title">4. Data Security & Retention</h2>
+        <p>We implement administrative, technical, and physical security measures to protect your personal location data. Your telemetry logs are encrypted during transmission using TLS/SSL protocols. Data is retained only as long as necessary to provide service.</p>
+
+        <h2 class="section-title">5. Data Deletion Requests & User Rights</h2>
+        <p>You have the right to request deletion of your account and vehicle tracking history at any time. You can remove individual vehicles directly within the app using the <code>Remove Device</code> option, or submit a full data deletion request by contacting our support team.</p>
 
         <div class="contact-box">
-          <div class="contact-title">📬 هل لديك سؤال أو طلب حذف البيانات؟</div>
-          <p>فريق الدعم الفني متواجد لمساعدتك 24/7</p>
-          <a href="mailto:support@trackigps.com" class="contact-email">📩 تواصل مع الدعم الفني: support@trackigps.com</a>
+          <div class="contact-title">📬 Questions & Data Deletion Requests</div>
+          <p>If you have questions about this Privacy Policy or wish to request complete data deletion, contact us at:</p>
+          <a href="mailto:hanii.ahmed209@gmail.com" class="contact-email">📩 hanii.ahmed209@gmail.com</a>
         </div>
 
       </div>
 
 
-      <!-- ENGLISH CONTENT SECTION -->
-      <div id="content-en" class="lang-content">
+      <!-- GERMAN CONTENT SECTION (DEUTSCH) -->
+      <div id="content-de" class="lang-content">
         
-        <p><strong>Last Updated:</strong> August 6, 2026</p>
-        <p>Welcome to <strong>GPS Fleet</strong>. We are committed to maintaining the highest security and encryption standards to protect your privacy and vehicle fleet data. This Privacy Policy outlines how we collect, use, and safeguard your information in full compliance with Google Play Developer Policies and global data privacy standards.</p>
+        <p><strong>Zuletzt aktualisiert:</strong> 6. August 2026</p>
+        <p>Willkommen bei <strong>GPS Fleet</strong> („wir“, „unser“ oder „uns“). Diese Datenschutzerklärung erläutert, wie wir Ihre Informationen erfassen, verwenden, offenlegen und schützen, wenn Sie unsere mobile Anwendung <strong>GPS Fleet</strong> nutzen. Bitte lesen Sie diese Datenschutzerklärung sorgfältig durch.</p>
 
-        <h2 class="section-title">1. Information We Collect & Required Permissions</h2>
-        <p>To provide real-time vehicle tracking, speed telemetry, and PDF report generation, <strong>GPS Fleet</strong> requests the following explicit permissions:</p>
+        <h2 class="section-title">1. Erfasste Informationen & Geräteberechtigungen</h2>
+        <p>Um eine genaue GPS-Echtzeit-Ortung, Fahrzeugtelemetrie und PDF-Routenexporte bereitzustellen, benötigt <strong>GPS Fleet</strong> bestimmte Android-Berechtigungen:</p>
 
         <div class="perm-card">
-          <div class="perm-title">📍 Location Access (GPS Location & Background Tracking)</div>
-          <div class="perm-desc">We use <code>ACCESS_FINE_LOCATION</code> and <code>ACCESS_BACKGROUND_LOCATION</code> to stream real-time vehicle positions, compute driving speed, and render trip routes on satellite maps even when the app is minimized or running in the background.</div>
+          <div class="perm-title">📍 Standortdaten (Vorder- & Hintergrund-GPS-Ortung)</div>
+          <div class="perm-desc">Wir fordern <code>ACCESS_FINE_LOCATION</code> und <code>ACCESS_BACKGROUND_LOCATION</code> an, um physische Fahrzeugpositionen kontinuierlich zu verfolgen, die Geschwindigkeit zu berechnen, Routen auf der Karte anzuzeigen und Geofence-Sicherheitsalarme auszulösen.</div>
         </div>
 
         <div class="perm-card">
-          <div class="perm-title">📱 Hardware Identifier (Device IMEI & Serial ID)</div>
-          <div class="perm-desc">We process the hardware <code>IMEI</code> serial number to pair your physical Tracki hardware device with your fleet dashboard and verify vehicle ownership.</div>
+          <div class="perm-title">📡 Hardware-Geräte-ID (IMEI-Seriennummer)</div>
+          <div class="perm-desc">Wir verarbeiten die <code>IMEI</code>-Seriennummer Ihres Tracki / Traccar-Geräts, um die Fahrzeugkopplung zu authentifizieren und Flottenprofile zu verwalten.</div>
         </div>
 
         <div class="perm-card">
-          <div class="perm-title">📄 Storage & Document Generation (PDF & CSV Exports)</div>
-          <div class="perm-desc">Required to export and save historical telemetry documents and trip logs directly onto your local device storage.</div>
+          <div class="perm-title">📄 Lokaler Speicherzugriff (PDF- & CSV-Telemetrie-Exporte)</div>
+          <div class="perm-desc">Ermöglicht Benutzern das Generieren und Speichern von 30-Tage-Fahrtenberichten im PDF- und CSV-Format auf dem Gerät.</div>
         </div>
 
         <div class="perm-card">
-          <div class="perm-title">🔔 Safety Notifications & Alerts (Speed & Anti-Theft Guard)</div>
-          <div class="perm-desc">Utilizes <code>POST_NOTIFICATIONS</code> to deliver instant push notifications whenever a vehicle exceeds speed limits or breaks Geofence safety boundaries.</div>
+          <div class="perm-title">🔔 Sicherheits-Push-Benachrichtigungen (Geschwindigkeits- & Anti-Diebstahl-Alarm)</div>
+          <div class="perm-desc">Nutzt <code>POST_NOTIFICATIONS</code> für sofortige Warnungen bei Geschwindigkeitsüberschreitungen oder Verlassen von Sicherheitszonen.</div>
         </div>
 
-        <h2 class="section-title">2. How We Use Your Information</h2>
+        <h2 class="section-title">2. Nutzung Ihrer Informationen</h2>
         <ul>
-          <li><strong>Live Fleet Monitoring:</strong> Render real-time vehicle markers on interactive USGS High-Res Satellite maps.</li>
-          <li><strong>30-Day Trip History:</strong> Retrieve past route logs, stationary status, and driving history via bounded calendar picker.</li>
-          <li><strong>Safety & Geofencing:</strong> Send real-time alerts for speed threshold breaches and anti-theft security triggers.</li>
+          <li><strong>Echtzeit-Flottenvisualisierung:</strong> Anzeige von Live-Fahrzeugmarkierungen auf interaktiven Karten und USGS-Satellitenbildern.</li>
+          <li><strong>Fahrtenverlauf & Analysen:</strong> Abruf von Routenprotokollen und Geschwindigkeiten für bis zu 30 Tage.</li>
+          <li><strong>Sicherheit & Diebstahlschutz:</strong> Überwachung durch Anti-Theft Guard und sofortige Benachrichtigungen.</li>
         </ul>
 
-        <h2 class="section-title">3. Third-Party Services & Advertisements (AdMob)</h2>
-        <p>Non-subscribed users may view non-intrusive banner advertisements provided by Google AdMob. We strictly <strong>NEVER sell or share</strong> your private GPS telemetry location data with any third parties or advertising networks.</p>
+        <h2 class="section-title">3. Werbung & Drittanbieter-Dienste (AdMob)</h2>
+        <p>Nicht abonnierte Benutzer sehen nicht-invasive Werbung von Google AdMob. Wir verkaufen oder vermieten Ihre persönlichen GPS-Standortdaten <strong>niemals</strong> an Dritte.</p>
 
-        <h2 class="section-title">4. Data Deletion Requests & User Rights</h2>
-        <p>You reserve full ownership of your data. You may delete individual vehicle records directly from the app via the <code>Remove Vehicle</code> option, or request full account and data purge by contacting our support team below.</p>
+        <h2 class="section-title">4. Datenlöschung & Benutzerrechte</h2>
+        <p>Sie haben das Recht, jederzeit die Löschung Ihrer Daten zu beantragen. Sie können Fahrzeuge direkt in der App über die Option <code>Gerät entfernen</code> löschen oder eine vollständige Löschung per E-Mail anfordern.</p>
 
         <div class="contact-box">
-          <div class="contact-title">📬 Have Questions or Data Deletion Requests?</div>
-          <p>Our dedicated support team is available 24/7</p>
-          <a href="mailto:support@trackigps.com" class="contact-email">📩 Contact Support: support@trackigps.com</a>
+          <div class="contact-title">📬 Fragen & Datenlöschungsanfragen</div>
+          <p>Wenn Sie Fragen zu dieser Datenschutzerklärung haben oder eine Datenlöschung wünschen, kontaktieren Sie uns unter:</p>
+          <a href="mailto:hanii.ahmed209@gmail.com" class="contact-email">📩 hanii.ahmed209@gmail.com</a>
         </div>
 
       </div>
 
       <div class="footer-text">
-        © 2026 GPS Fleet App. All Rights Reserved. Compliant with Google Play Console Policies.
+        © 2026 GPS Fleet App. All Rights Reserved. Compliant with Google Play Console Developer Policies.
       </div>
 
     </div>
@@ -462,24 +471,19 @@
 
   <script>
     function switchLanguage(lang) {
-      const htmlEl = document.documentElement;
-      const arContent = document.getElementById('content-ar');
       const enContent = document.getElementById('content-en');
+      const deContent = document.getElementById('content-de');
       const buttons = document.querySelectorAll('.lang-btn');
 
       buttons.forEach(btn => btn.classList.remove('active'));
 
-      if (lang === 'ar') {
-        htmlEl.setAttribute('lang', 'ar');
-        htmlEl.setAttribute('dir', 'rtl');
-        arContent.classList.add('active');
-        enContent.classList.remove('active');
+      if (lang === 'en') {
+        enContent.classList.add('active');
+        deContent.classList.remove('active');
         buttons[0].classList.add('active');
       } else {
-        htmlEl.setAttribute('lang', 'en');
-        htmlEl.setAttribute('dir', 'ltr');
-        enContent.classList.add('active');
-        arContent.classList.remove('active');
+        deContent.classList.add('active');
+        enContent.classList.remove('active');
         buttons[1].classList.add('active');
       }
     }
