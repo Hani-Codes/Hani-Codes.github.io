@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hani Codes | مطور تطبيقات أندرويد و Wear OS</title>
-    <meta name="description" content="موقع المطور Hani Codes لعرض التطبيقات المنشورة وتتطبيقات قيد التطوير والمراجعة، متوافق مع متطلبات AdMob و Google Play.">
+    <meta name="description" content="موقع المطور Hani Codes لعرض التطبيقات المنشورة وتطبيقات قيد التطوير والمراجعة، متوافق مع متطلبات AdMob و Google Play.">
     <!-- Style CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -85,14 +85,42 @@
     <section class="apps-section">
         <div class="container">
             <h2 class="section-title">
-                <span class="text-ar">تطبيقات الهواتف والساعات</span>
+                <span class="text-ar">تتطبيقات الهواتف والساعات</span>
                 <span class="text-en">My Applications</span>
             </h2>
+
+            <!-- Category Filters -->
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">
+                    <span class="text-ar">الكل</span>
+                    <span class="text-en">All</span>
+                </button>
+                <button class="filter-btn" data-filter="gps">
+                    <span class="text-ar">التتبع والـ GPS</span>
+                    <span class="text-en">GPS & Tracking</span>
+                </button>
+                <button class="filter-btn" data-filter="watch">
+                    <span class="text-ar">الأجهزة والساعات</span>
+                    <span class="text-en">Smart Watch</span>
+                </button>
+                <button class="filter-btn" data-filter="audio">
+                    <span class="text-ar">الصوت والترفيه</span>
+                    <span class="text-en">Audio & Equalizers</span>
+                </button>
+                <button class="filter-btn" data-filter="utilities">
+                    <span class="text-ar">المالية والأدوات</span>
+                    <span class="text-en">Utilities & Finance</span>
+                </button>
+                <button class="filter-btn" data-filter="health">
+                    <span class="text-ar">الصحة واللياقة</span>
+                    <span class="text-en">Health & Workout</span>
+                </button>
+            </div>
 
             <div class="apps-grid">
 
                 <!-- 1. أقساطي -->
-                <div class="app-card" id="app-aqsati">
+                <div class="app-card" data-category="utilities" id="app-aqsati">
                     <div class="app-card-header">
                         <div class="app-icon-wrapper">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -124,11 +152,11 @@
                         </p>
                     </div>
                     <div class="app-actions">
-                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.aqsati" target="_blank" class="btn btn-primary" id="btn-aqsati-play">
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.aqsati" target="_blank" class="btn btn-primary">
                             <span class="text-ar">تحميل من متجر Google Play</span>
                             <span class="text-en">Get on Google Play</span>
                         </a>
-                        <a href="./privacy.html" class="btn btn-secondary" id="btn-aqsati-privacy">
+                        <a href="./privacy.html" class="btn btn-secondary">
                             <span class="text-ar">سياسة الخصوصية</span>
                             <span class="text-en">Privacy Policy</span>
                         </a>
@@ -136,7 +164,7 @@
                 </div>
 
                 <!-- 2. متابع الاشتراكات (SupAlert) -->
-                <div class="app-card" id="app-subscription">
+                <div class="app-card" data-category="utilities" id="app-subscription">
                     <div class="app-card-header">
                         <div class="app-icon-wrapper">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -165,11 +193,11 @@
                         </p>
                     </div>
                     <div class="app-actions">
-                        <a href="https://play.google.com/store/apps/details?id=com.antigravity.subscriptiontracker" target="_blank" class="btn btn-primary" id="btn-sub-play">
+                        <a href="https://play.google.com/store/apps/details?id=com.antigravity.subscriptiontracker" target="_blank" class="btn btn-primary">
                             <span class="text-ar">تحميل من متجر Google Play</span>
                             <span class="text-en">Get on Google Play</span>
                         </a>
-                        <a href="./privacy.html" class="btn btn-secondary" id="btn-sub-privacy">
+                        <a href="./privacy.html" class="btn btn-secondary">
                             <span class="text-ar">سياسة الخصوصية</span>
                             <span class="text-en">Privacy Policy</span>
                         </a>
@@ -177,7 +205,7 @@
                 </div>
 
                 <!-- 3. Ultra Pro -->
-                <div class="app-card" id="app-ultrapro">
+                <div class="app-card" data-category="watch" id="app-ultrapro">
                     <div class="app-card-header">
                         <div class="app-icon-wrapper">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -198,28 +226,267 @@
                             <span class="text-en">Personalization</span>
                         </span>
                         <h3>
-                            <span class="text-ar">Ultra Pro - واجهات الساعات</span>
-                            <span class="text-en">Ultra Pro: Watch Faces & Tools</span>
+                            <span class="text-ar">Ultra Pro - واجهات وأدوات الساعة</span>
+                            <span class="text-en">Ultra Watch Tools: X8, HK & DT</span>
                         </h3>
                         <p class="app-description">
-                            <span class="text-ar">واجهات ساعات ذكية متميزة، موفر بطارية، أداة العثور على الساعة، وإصلاح الإشعارات (أدوات ذكية).</span>
-                            <span class="text-en">Smartwatch faces, battery saver, watch finder & notification fix (smart tools)</span>
+                            <span class="text-ar">واجهات ساعات ذكية متميزة وأدوات مفيدة لساعات Huawei و Galaxy و Amazfit و Wearfit وغيرها.</span>
+                            <span class="text-en">Watch Faces, Find Watch & Tools for Huawei, Galaxy, Wearfit, Amazfit & More</span>
                         </p>
                     </div>
                     <div class="app-actions">
-                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.ultrapro" target="_blank" class="btn btn-primary" id="btn-watch-play">
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.ultrapro" target="_blank" class="btn btn-primary">
                             <span class="text-ar">تحميل من متجر Google Play</span>
                             <span class="text-en">Get on Google Play</span>
                         </a>
-                        <a href="./watch-privacy.html" class="btn btn-secondary" id="btn-watch-privacy">
+                        <a href="./watch-privacy.html" class="btn btn-secondary">
                             <span class="text-ar">سياسة الخصوصية</span>
                             <span class="text-en">Privacy Policy</span>
                         </a>
                     </div>
                 </div>
 
-                <!-- 4. Dog Walk Tracker -->
-                <div class="app-card" id="app-dogtracker">
+                <!-- 4. Smart GPS (GL300) -->
+                <div class="app-card" data-category="gps" id="app-smartgps">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">تتبع و GPS</span>
+                            <span class="text-en">GPS & Tracking</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">Smart GPS - متتبع المواقع الذكي</span>
+                            <span class="text-en">Smart Gps : Spytec GPS GL300</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">تطبيق تتبع GPS يدعم أجهزة Spytec GPS و LandAirSea 54 و Traccar و Coban و TK905 والمزيد.</span>
+                            <span class="text-en">Supports Spytec GPS, LandAirSea 54, Traccar, Coban, TK905, TK915 & more</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.smartgps" target="_blank" class="btn btn-primary">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
+                        </a>
+                        <a href="./tracking-privacy.html" class="btn btn-secondary">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 5. عضلات البطن في 30 يوماً -->
+                <div class="app-card" data-category="health" id="app-bellyfat">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1M6 8H5a4 4 0 0 0 0 8h1M2 12h20M12 2v20"></path>
+                            </svg>
+                        </div>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">الصحة واللياقة</span>
+                            <span class="text-en">Health & Fitness</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">عضلات البطن في 30 يوماً</span>
+                            <span class="text-en">Six Pack in 30 Days - Home Fit</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">تمارين منزلية خلال 30 يوماً لحرق دهون البطن وخسارة الوزن وبناء عضلات البطن بدون معدات.</span>
+                            <span class="text-en">30-Day Home Workout for Belly Fat, Weight Loss & Six-Pack Abs. No Equipment.</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.bellyfat30day" target="_blank" class="btn btn-primary">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
+                        </a>
+                        <a href="./privacy.html" class="btn btn-secondary">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 6. مساعد آبل آيدي -->
+                <div class="app-card" data-category="utilities" id="app-appleid">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">مساعد وأدوات</span>
+                            <span class="text-en">Utilities</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">مساعد إنشاء حساب آبل آيدي</span>
+                            <span class="text-en">Create Apple ID Switch Helper</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">دليلك المتكامل لإنشاء حساب آبل، الانتقال إلى نظام iOS، ومزامنة خدمات آبل على أجهزة أندرويد.</span>
+                            <span class="text-en">Your guide to create accounts, switch to iOS, and sync Apple services on Android</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.appleid" target="_blank" class="btn btn-primary">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
+                        </a>
+                        <a href="./account-privacy.html" class="btn btn-secondary">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 7. حفظ موقع السيارة -->
+                <div class="app-card" data-category="gps" id="app-findmycar">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path>
+                                <circle cx="7" cy="17" r="2"></circle>
+                                <circle cx="17" cy="17" r="2"></circle>
+                            </svg>
+                        </div>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">أدوات ملاحة</span>
+                            <span class="text-en">GPS & Navigation</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">حفظ موقع السيارة - Find My Car</span>
+                            <span class="text-en">Find My Car</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">حدد مكان سيارتك المركونة باستخدام الـ GPS والخرائط والبوصلة مع مؤقتات الموقف وإمكانية إضافة صور وملاحظات.</span>
+                            <span class="text-en">Find your parked car with GPS, maps, compass & parking timers, photos, and voice notes</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.findmycar" target="_blank" class="btn btn-primary">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
+                        </a>
+                        <a href="./tracking-privacy.html" class="btn btn-secondary">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 8. LandAirSea 54 -->
+                <div class="app-card" data-category="gps" id="app-landairsea">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">تتبع ملاحة</span>
+                            <span class="text-en">GPS & Tracking</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">LandAirSea 54 GPS Traccar</span>
+                            <span class="text-en">LandAirSea 54 GPS Traccar</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">تطبيق تتبع يدعم أجهزة LandAirSea 54 و Traccar و Spytec GPS و TK905 و TK915 وأجهزة تتبع الـ GPS الأخرى.</span>
+                            <span class="text-en">Supports LandAirSea 54, Traccar, Spytec GPS, TK905, TK915 & more GPS trackers</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.landairsea54" target="_blank" class="btn btn-primary">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
+                        </a>
+                        <a href="./tracking-privacy.html" class="btn btn-secondary">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 9. إضاءة الحواف -->
+                <div class="app-card" data-category="utilities" id="app-edgelighting">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                <path d="M12 18h.01M8 21h8"></path>
+                            </svg>
+                        </div>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">تخصيص وأدوات</span>
+                            <span class="text-en">Personalization</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">إضاءة الحواف - Edge Lighting</span>
+                            <span class="text-en">Edge Lighting – LED Border</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">تأثيرات إضاءة حواف مميزة للمكالمات والوارد والاشعارات وخلفيات الشاشة الحية وتأثيرات حدود LED.</span>
+                            <span class="text-en">Edge lighting for calls, notifications, live wallpapers & LED border effects</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.edgelighting" target="_blank" class="btn btn-primary">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
+                        </a>
+                        <a href="./privacy.html" class="btn btn-secondary">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 10. تطبيق الكلاب (Dog Walk Tracker) -->
+                <div class="app-card" data-category="gps" id="app-dogtracker">
                     <div class="app-card-header">
                         <div class="app-icon-wrapper">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -227,81 +494,120 @@
                                 <circle cx="12" cy="9" r="2.5"></circle>
                             </svg>
                         </div>
-                        <span class="badge badge-review">
-                            <span class="text-ar">قيد المراجعة</span>
-                            <span class="text-en">In Review</span>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
                         </span>
                     </div>
                     <div class="app-info">
                         <span class="app-category">
-                            <span class="text-ar">نمط حياة وصحة</span>
-                            <span class="text-en">Lifestyle</span>
+                            <span class="text-ar">تتبع ونشاط</span>
+                            <span class="text-en">GPS & Tracking</span>
                         </span>
                         <h3>
-                            <span class="text-ar">Dog Walk Tracker</span>
+                            <span class="text-ar">Dog Walk Tracker - متتبع الكلاب</span>
                             <span class="text-en">Dog Walk Tracker</span>
                         </h3>
                         <p class="app-description">
-                            <span class="text-ar">تطبيق متكامل لتتبع جولات مشي الكلاب عبر الخريطة وحساب المسافات ومراقبة نشاط حيوانك الأليف.</span>
-                            <span class="text-en">An all-in-one tracker for dog walks. Map your routes, log activities, and monitor your pet's daily health and exercise.</span>
+                            <span class="text-ar">تتبع جولات مشي الكلاب عبر الـ GPS، احصل على تقارير بيطرية بصيغة PDF وسجلات أداء دورية لحيوانك الأليف.</span>
+                            <span class="text-en">GPS dog walk tracker, PDF vet reports & walking streaks.</span>
                         </p>
                     </div>
                     <div class="app-actions">
-                        <a href="#" class="btn btn-disabled" id="btn-dog-play">
-                            <span class="text-ar">قريباً على Google Play</span>
-                            <span class="text-en">Coming soon on Play Store</span>
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.dogtracker" target="_blank" class="btn btn-primary">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
                         </a>
-                        <a href="./tracking-privacy.html" class="btn btn-secondary" id="btn-dog-privacy">
+                        <a href="./tracking-privacy.html" class="btn btn-secondary">
                             <span class="text-ar">سياسة الخصوصية</span>
                             <span class="text-en">Privacy Policy</span>
                         </a>
                     </div>
                 </div>
 
-                <!-- 5. Bass Booster -->
-                <div class="app-card" id="app-bassbooster">
+                <!-- 11. تطبيق الكهرباء -->
+                <div class="app-card" data-category="utilities" id="app-powerbill">
                     <div class="app-card-header">
                         <div class="app-icon-wrapper">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M12 2A10 10 0 0 0 2 12v1a4 4 0 0 0 4 4h1a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2H4a8 8 0 0 1 16 0h-2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h1a4 4 0 0 0 4-4v-1a10 10 0 0 0-10-10z"></path>
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
                             </svg>
                         </div>
-                        <span class="badge badge-review">
-                            <span class="text-ar">قيد المراجعة</span>
-                            <span class="text-en">In Review</span>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
                         </span>
                     </div>
                     <div class="app-info">
                         <span class="app-category">
-                            <span class="text-ar">موسيقى وصوتيات</span>
-                            <span class="text-en">Audio</span>
+                            <span class="text-ar">حساب وأدوات</span>
+                            <span class="text-en">Utilities</span>
                         </span>
                         <h3>
-                            <span class="text-ar">Bass Booster - مضخم الصوت</span>
-                            <span class="text-en">Bass Booster - Equalizer</span>
+                            <span class="text-ar">حاسبة تكلفة الكهرباء</span>
+                            <span class="text-en">Electricity Cost Calculator</span>
                         </h3>
                         <p class="app-description">
-                            <span class="text-ar">تطبيق احترافي لتضخيم الصوت وموازنة الترددات لتحسين جودة الصوت ورفع مستوى الصوت وتخصيص تجربة الاستماع.</span>
-                            <span class="text-en">A professional bass booster and equalizer to enhance your sound quality, boost volume, and customize your music listening experience.</span>
+                            <span class="text-ar">حساب وتقدير تكاليف الكهرباء، مسح الفواتير بالذكاء الاصطناعي، وتتبع استهلاك الطاقة للأجهزة الكهربائية.</span>
+                            <span class="text-en">Estimate electricity costs, scan bills, and track appliance energy usage.</span>
                         </p>
                     </div>
                     <div class="app-actions">
-                        <a href="#" class="btn btn-disabled" id="btn-bass-play">
-                            <span class="text-ar">قريباً على Google Play</span>
-                            <span class="text-en">Coming soon on Play Store</span>
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.powerbill" target="_blank" class="btn btn-primary">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
                         </a>
-                        <a href="./bassbooster-privacy.html" class="btn btn-secondary" id="btn-bass-privacy">
+                        <a href="./privacy.html" class="btn btn-secondary">
                             <span class="text-ar">سياسة الخصوصية</span>
                             <span class="text-en">Privacy Policy</span>
                         </a>
                     </div>
                 </div>
 
-                <!-- 6. حقيبة أدوات الدرون (Drone Toolbox) -->
-                <div class="app-card" id="app-dronetoolbox">
+                <!-- 12. سماعات هواوي -->
+                <div class="app-card" data-category="utilities" id="app-freebuds">
                     <div class="app-card-header">
                         <div class="app-icon-wrapper">
-                            <!-- Drone SVG Icon -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                                <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+                            </svg>
+                        </div>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">أدوات اتصال</span>
+                            <span class="text-en">Connectivity</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">Huawei FreeBuds 5i & Connect</span>
+                            <span class="text-en">Huawei FreeBuds 5i & Connect</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">اتصال بلوتوث سريع وإقران وإدارة تطبيق سماعات Huawei FreeBuds وسماعات Apple AirPods.</span>
+                            <span class="text-en">Fast Bluetooth connect, pair & manage app for Huawei FreeBuds & Apple AirPods</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.huaweifreebuds" target="_blank" class="btn btn-primary">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
+                        </a>
+                        <a href="./privacy.html" class="btn btn-secondary">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 13. تطبيق الدرون -->
+                <div class="app-card" data-category="utilities" id="app-drone">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M2 12h20M12 2v20M5 5l14 14M19 5L5 19"></path>
                                 <circle cx="12" cy="12" r="3"></circle>
@@ -311,31 +617,273 @@
                                 <circle cx="19" cy="19" r="2.5"></circle>
                             </svg>
                         </div>
-                        <span class="badge badge-dev">
-                            <span class="text-ar">الاختبار المغلق</span>
-                            <span class="text-en">Closed Testing</span>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
                         </span>
                     </div>
                     <div class="app-info">
                         <span class="app-category">
                             <span class="text-ar">أدوات طيران</span>
-                            <span class="text-en">Utilities</span>
+                            <span class="text-en">Aviation Tools</span>
                         </span>
                         <h3>
-                            <span class="text-ar">Drone Toolbox - حقيبة أدوات الدرون</span>
-                            <span class="text-en">Drone Toolbox</span>
+                            <span class="text-ar">Drone Tools - أدوات الدرون DJI</span>
+                            <span class="text-en">Drone Tools : DJI Mavic & Mini</span>
                         </h3>
                         <p class="app-description">
-                            <span class="text-ar">تطبيق متكامل لطياري الدرون يحتوي على قوائم الفحص وتوقعات الطقس وسجلات الرحلات لضمان طيران آمن ومحترف.</span>
-                            <span class="text-en">A premium all-in-one companion app for drone pilots. Features pre-flight checklists, weather, flight logging, and safety tools.</span>
+                            <span class="text-ar">أدوات طيران متكاملة لـ DJI Mini و Mavic و DJI Neo، توقعات طقس الطيران، وخرائط الحظر الجوي UAV.</span>
+                            <span class="text-en">DJI Mini, Mavic, DJI Flip, DJI Neo, FPV, Drone Weather, UAV Maps & No-Fly Zones</span>
                         </p>
                     </div>
                     <div class="app-actions">
-                        <a href="#" class="btn btn-disabled" id="btn-drone-play">
-                            <span class="text-ar">قريباً على Google Play (في الاختبار)</span>
-                            <span class="text-en">Coming soon (In Testing)</span>
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.drone" target="_blank" class="btn btn-primary">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
                         </a>
-                        <a href="./privacy.html" class="btn btn-secondary" id="btn-drone-privacy">
+                        <a href="./privacy.html" class="btn btn-secondary">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 14. طبيب النباتات -->
+                <div class="app-card" data-category="utilities" id="app-plantdoctor">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">زراعة ورعاية</span>
+                            <span class="text-en">Agriculture</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">Plant Doctor - طبيب النباتات</span>
+                            <span class="text-en">Plant Doctor—Plant Care Expert</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">تشخيص فوري لكافة أمراض النباتات 🌿 نصائح خبراء للرعاية 📋 تقارير كاملة 🌐 يدعم 5 لغات.</span>
+                            <span class="text-en">Diagnose all plant diseases 🌿 expert care tips 📋 full reports 🌐 5 languages</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.plantdoctor" target="_blank" class="btn btn-primary">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
+                        </a>
+                        <a href="./privacy.html" class="btn btn-secondary">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 15. مغير الأصوات الذكي -->
+                <div class="app-card" data-category="audio" id="app-voicechanger">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"></path>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"></path>
+                            </svg>
+                        </div>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">ترفيه وصوت</span>
+                            <span class="text-en">Audio & AI</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">Voice Changer AI - مغير الأصوات</span>
+                            <span class="text-en">Voice Changer AI:Sound Effects</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">مغير الأصوات بالذكاء الاصطناعي، مؤثرات صوتية، تحويل النص إلى كلام، استنساخ الأصوات وأصوات المشاهير.</span>
+                            <span class="text-en">AI Voice Changer, Voice Effects, Text to Speech, Voice Clone & Celebrity Voice</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.voicechangerai" target="_blank" class="btn btn-primary">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
+                        </a>
+                        <a href="./privacy.html" class="btn btn-secondary">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 16. مضخم الصوت EQ PRO -->
+                <div class="app-card" data-category="audio" id="app-bassbooster">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2A10 10 0 0 0 2 12v1a4 4 0 0 0 4 4h1a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2H4a8 8 0 0 1 16 0h-2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h1a4 4 0 0 0 4-4v-1a10 10 0 0 0-10-10z"></path>
+                            </svg>
+                        </div>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">موسيقى وصوت</span>
+                            <span class="text-en">Audio & Equalizers</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">Bass Booster - مضخم الصوت EQ PRO</span>
+                            <span class="text-en">EQ PRO: Bass Booster & Volume</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">مضخم صوت وموازن ترددات احترافي. مثالي لسماعات JBL وسماعات البلوتوث والسيارات.</span>
+                            <span class="text-en">Bass Booster & Equalizer. Perfect for JBL Connect, Flip & Bluetooth speakers.</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.bassbooster" target="_blank" class="btn btn-primary">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
+                        </a>
+                        <a href="./bassbooster-privacy.html" class="btn btn-secondary">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 17. Equalizer Pro -->
+                <div class="app-card" data-category="audio" id="app-eqpro">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 10h16M4 14h16M4 18h16M4 6h16"></path>
+                                <circle cx="8" cy="6" r="2"></circle>
+                                <circle cx="16" cy="10" r="2"></circle>
+                                <circle cx="12" cy="14" r="2"></circle>
+                                <circle cx="6" cy="18" r="2"></circle>
+                            </svg>
+                        </div>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">محسنات الصوت</span>
+                            <span class="text-en">Audio & Equalizers</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">Equalizer Pro - موازن الصوت</span>
+                            <span class="text-en">Equalizer Pro & Bass Booster</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">رفع مستوى الصوت وتضخيم البيس، ومعايرة جودة الصوت لسماعات JBL و Sony ومختلف الأنواع.</span>
+                            <span class="text-en">Boost volume & bass, calibrate headphones (JBL, Sony..More+) with Equalizer Pro.</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.qreequalizerpro" target="_blank" class="btn btn-primary">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
+                        </a>
+                        <a href="./bassbooster-privacy.html" class="btn btn-secondary">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 18. ساعة Huawei Watch GT 6 -->
+                <div class="app-card" data-category="watch" id="app-gt6watch">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="7" y="2" width="10" height="20" rx="5" ry="5"></rect>
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path d="M12 2v3M12 19v3"></path>
+                            </svg>
+                        </div>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">تطبيقات الساعات</span>
+                            <span class="text-en">Smart Watch Utilities</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">GT6 Watch - تطبيق ساعة هواوي</span>
+                            <span class="text-en">Huawei Watch GT 6 App</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">مزامنة وإدارة ساعات Huawei GT الذكية. يدعم موديلات GT6 Pro و GT5 و GT4.</span>
+                            <span class="text-en">Sync and manage your Huawei GT watch. Supports GT6 Pro, GT5 & GT4.</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.gt6watch" target="_blank" class="btn btn-primary">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
+                        </a>
+                        <a href="./gt6watch-privacy.html" class="btn btn-secondary">
+                            <span class="text-ar">سياسة الخصوصية</span>
+                            <span class="text-en">Privacy Policy</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 19. Tracker Detect -->
+                <div class="app-card" data-category="gps" id="app-trackerdetect">
+                    <div class="app-card-header">
+                        <div class="app-icon-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <circle cx="12" cy="11" r="3"></circle>
+                            </svg>
+                        </div>
+                        <span class="badge badge-live">
+                            <span class="text-ar">منشور</span>
+                            <span class="text-en">Live</span>
+                        </span>
+                    </div>
+                    <div class="app-info">
+                        <span class="app-category">
+                            <span class="text-ar">أمان وتتبع</span>
+                            <span class="text-en">Anti-Spy & Tracking</span>
+                        </span>
+                        <h3>
+                            <span class="text-ar">Tracker Detect - كاشف التتبع</span>
+                            <span class="text-en">Tracker Detect</span>
+                        </h3>
+                        <p class="app-description">
+                            <span class="text-ar">ابحث عن أجهزة التتبع الخفية و AirTags باستخدام ماسح البلوتوث لحماية خصوصيتك وضد التجسس.</span>
+                            <span class="text-en">Tracker Detect – Find AirTag & Hidden Trackers | Bluetooth Scanner & Anti Spy</span>
+                        </p>
+                    </div>
+                    <div class="app-actions">
+                        <a href="https://play.google.com/store/apps/details?id=com.hani.apps.trackerdetect" target="_blank" class="btn btn-primary">
+                            <span class="text-ar">تحميل من متجر Google Play</span>
+                            <span class="text-en">Get on Google Play</span>
+                        </a>
+                        <a href="./privacy.html" class="btn btn-secondary">
                             <span class="text-ar">سياسة الخصوصية</span>
                             <span class="text-en">Privacy Policy</span>
                         </a>
@@ -358,6 +906,10 @@
                     <span class="text-ar">سياسة خصوصية الساعات</span>
                     <span class="text-en">Watch Faces Privacy Policy</span>
                 </a>
+                <a href="./gt6watch-privacy.html" class="footer-link">
+                    <span class="text-ar">سياسة خصوصية ساعة GT6</span>
+                    <span class="text-en">GT6 Watch Privacy Policy</span>
+                </a>
                 <a href="./tracking-privacy.html" class="footer-link">
                     <span class="text-ar">سياسة خصوصية التتبع</span>
                     <span class="text-en">Tracking Privacy Policy</span>
@@ -365,6 +917,10 @@
                 <a href="./bassbooster-privacy.html" class="footer-link">
                     <span class="text-ar">سياسة خصوصية مضخم الصوت</span>
                     <span class="text-en">Bass Booster Privacy Policy</span>
+                </a>
+                <a href="./account-privacy.html" class="footer-link">
+                    <span class="text-ar">سياسة خصوصية الحسابات</span>
+                    <span class="text-en">Account Privacy Policy</span>
                 </a>
                 <a href="./app-ads.txt" class="footer-link" target="_blank">app-ads.txt</a>
             </div>
