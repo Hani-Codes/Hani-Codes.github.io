@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy | Datenschutzerklärung · Americaloc GPS</title>
+  <meta name="description" content="Privacy Policy for Americaloc GL300W GPS Tracker application. Learn how we handle your data, permissions, and security." />
+  <style>
+    :root {
+      --bg-gradient-start: #081a0e;
+      --bg-gradient-end: #020b05;
+      --card-bg: rgba(12, 35, 18, 0.70);
+      --accent: #2ecc71;
+      --accent-glow: rgba(46, 204, 113, 0.4);
+      --accent-soft: rgba(46, 204, 113, 0.08);
+      --gold: #ffd700;
+      --gold-glow: rgba(255, 215, 0, 0.3);
+      --gold-soft: rgba(255, 215, 0, 0.08);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border-subtle: rgba(255, 255, 255, 0.06);
+      --code-bg: #041209;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+        "Segoe UI", "Inter", sans-serif;
+    }
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: var(--bg-gradient-end); }
+    ::-webkit-scrollbar-thumb {
+      background: #0d2814;
+      border-radius: 999px;
+      border: 2px solid var(--bg-gradient-end);
+    }
+    ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+    body {
+      min-height: 100vh;
+      background: radial-gradient(ellipse at top, #092a14, #020b05);
+      padding: 24px 12px 48px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      color: var(--text-main);
+    }
+    .shell {
+      width: 100%;
+      max-width: 920px;
+    }
+    .top-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(4, 20, 10, 0.9);
+      border: 1px solid rgba(46, 204, 113, 0.12);
+      color: #94a3b8;
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .top-badge span.dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #2ecc71;
+      box-shadow: 0 0 10px rgba(46, 204, 113, 0.6);
+      animation: pulse-dot 2s infinite;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: 22px;
+      padding: 32px 28px 36px;
+      border: 1px solid var(--border-subtle);
+      box-shadow:
+        0 30px 60px -12px rgba(0, 0, 0, 0.6),
+        0 0 0 1px rgba(46, 204, 113, 0.04);
+    }
+    /* ── Header ───────────────────────────────── */
+    .header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .app-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #0d3c1c, #165b2d);
+      border: 1.5px solid rgba(46, 204, 113, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      font-size: 30px;
+      box-shadow: 0 8px 24px rgba(46, 204, 113, 0.25);
+    }
+    .header-title {
+      font-size: 26px;
+      font-weight: 800;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+    }
+    .header-sub {
+      margin-top: 8px;
+      font-size: 12.5px;
+      color: var(--text-muted);
+    }
+    .tagline {
+      margin-top: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(46, 204, 113, 0.18);
+      color: #a7f3d0;
+      font-size: 11px;
+      font-weight: 500;
+    }
+    /* ── Divider ───────────────────────────────── */
+    .divider {
+      margin: 26px 0;
+      border: none;
+      border-top: 1px dashed rgba(255, 255, 255, 0.08);
+    }
+    /* ── Code strip ───────────────────────────── */
+    .code-strip {
+      margin-top: 0;
+      padding: 10px 16px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: var(--code-bg);
+      border: 1px solid rgba(46, 204, 113, 0.08);
+      color: #64748b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .code-strip span.status {
+      color: #2ecc71;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .code-strip span.status-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: #2ecc71;
+      box-shadow: 0 0 8px rgba(46, 204, 113, 0.5);
+    }
+    /* ── Section ───────────────────────────────── */
+    .lang-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #047857;
+      margin-bottom: 8px;
+    }
+    .pill {
+      display: inline-block;
+      margin-bottom: 8px;
+      padding: 3px 11px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #a7f3d0;
+      background: var(--accent-soft);
+      border: 1px solid rgba(46, 204, 113, 0.18);
+    }
+    .section {
+      margin-bottom: 32px;
+    }
+    .section h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #ffffff;
+      margin-top: 26px;
+      border-left: 3px solid var(--accent);
+      padding-left: 10px;
+    }
+    .section h3 {
+      font-size: 14.5px;
+      margin: 18px 0 6px;
+      color: #e2e8f0;
+      font-weight: 600;
+    }
+    .section p {
+      font-size: 14px;
+      line-height: 1.78;
+      color: var(--text-muted);
+    }
+    .section ul {
+      margin-top: 12px;
+      margin-bottom: 14px;
+      padding-left: 20px;
+    }
+    .section ul li {
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+    .section ul li strong {
+      color: #e2e8f0;
+    }
+    .section code {
+      background: rgba(46, 204, 113, 0.10);
+      color: #a7f3d0;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 11.5px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      border: 1px solid rgba(46, 204, 113, 0.12);
+    }
+    /* ── Contact box ───────────────────────────── */
+    .contact-box {
+      margin-top: 14px;
+      padding: 14px 18px;
+      border-radius: 14px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(46, 204, 113, 0.18);
+      font-size: 13px;
+      color: #cbd5e1;
+    }
+    .contact-box strong {
+      color: #ffffff;
+      display: inline-block;
+      margin-bottom: 4px;
+    }
+    .contact-box a {
+      color: #a7f3d0;
+      text-decoration: none;
+    }
+    .contact-box a:hover { text-decoration: underline; }
+    /* ── Gold note ─────────────────────────────── */
+    .gold-note {
+      margin-top: 14px;
+      padding: 12px 16px;
+      border-radius: 12px;
+      background: var(--gold-soft);
+      border: 1px solid rgba(255, 215, 0, 0.18);
+      font-size: 13px;
+      color: #fde68a;
+      line-height: 1.7;
+    }
+    .gold-note strong { color: #ffd700; }
+    /* ── Footer ────────────────────────────────── */
+    .footer-note {
+      margin-top: 18px;
+      font-size: 11px;
+      color: #334155;
+      text-align: center;
+      line-height: 1.7;
+    }
+    @media (max-width: 640px) {
+      .card { padding: 22px 16px 28px; border-radius: 18px; }
+    }
+  </style>
+</head>
+<body>
+<main class="shell">
+  <div class="top-badge">
+    <span class="dot"></span>
+    <span>Americaloc GPS · Privacy Policy</span>
+  </div>
+  <article class="card">
+    <!-- ── Header ─────────────────────────────── -->
+    <header class="header">
+      <div class="app-icon">📡</div>
+      <div class="header-title">Privacy Policy – Datenschutzerklärung</div>
+      <p class="header-sub">Last updated: August 2026 &nbsp;·&nbsp; Zuletzt aktualisiert: August 2026</p>
+      <div class="tagline">Americaloc GL300W · Live Vehicle Tracking · No Phone Tracking · GDPR Ready</div>
+    </header>
+    <div class="code-strip" aria-hidden="true">
+      <span class="path">privacy-policy.html</span>
+      <span class="status">
+        <span class="status-dot"></span>
+        live · production
+      </span>
+    </div>
+    
+    <hr class="divider" />
+    
+    <!-- ═══════════════════════════════════════════
+         ENGLISH VERSION
+    ═══════════════════════════════════════════ -->
+    <section class="section">
+      <div class="lang-label">English Version</div>
+      <span class="pill">Privacy Policy</span>
+      <h2>1. Introduction</h2>
+      <p>
+        Thank you for using <strong>Americaloc GPS Tracker</strong> (designed specifically for Americaloc GL300W devices). We are committed to protecting your privacy and being fully transparent about how the application operates. This policy explains what data is (and is not) collected, which device permissions are required, how third-party services are used, and how you can reach us with any questions.
+      </p>
+      
+      <h2>2. Data We Collect &amp; Process</h2>
+      <h3>2.1 Personal Information</h3>
+      <p>
+        Americaloc GPS Tracker does <strong>not</strong> collect any personally identifiable information such as your name, email address, phone number, or personal location. No account registration is required to use the app.
+      </p>
+      <h3>2.2 Phone Location Tracking</h3>
+      <p>
+        The app <strong>does not</strong> track, record, or share your smartphone's personal GPS location. It is built strictly to display the coordinates of your external <strong>GL300W vehicle tracker</strong>. Your personal location remains completely private.
+      </p>
+      <h3>2.3 Vehicle GPS Data</h3>
+      <p>
+        The app displays the real-time coordinates of your vehicle's tracker retrieved directly from your configured Traccar GPS server. This data is processed on-device and is never uploaded to any servers owned by the developer.
+      </p>
+      <h3>2.4 Local Preferences</h3>
+      <p>
+        A minimal set of settings (tracker phone number, device password, vehicle name, server URL, and premium status) are stored locally in your device's secure SharedPreferences. This data never leaves your device.
+      </p>
+
+      <h2>3. Device Permissions &amp; Usage</h2>
+      <p>
+        The application requests the following permissions solely to deliver its core tracking features:
+      </p>
+      <ul>
+        <li>
+          <strong>Internet Access (<code>INTERNET</code>):</strong>
+          Required to fetch vehicle coordinates from the Traccar server, load map tiles, and process premium subscriptions or display Google AdMob ads.
+        </li>
+        <li>
+          <strong>Network State (<code>ACCESS_NETWORK_STATE</code>):</strong>
+          Allows the app to check network status before sending queries to ensure a smooth online experience.
+        </li>
+        <li>
+          <strong>Camera Access (<code>CAMERA</code>):</strong>
+          Used exclusively to scan the QR code printed on your GL300W tracker for instant device pairing. No media is stored or transmitted.
+        </li>
+        <li>
+          <strong>SMS Intents &amp; Device Configuration:</strong>
+          The app prepares configuration SMS templates (like server configuration, update interval, deep sleep mode) for your GL300W tracker. 
+          <strong>Note:</strong> The app does not request background SMS sending permissions. It pre-fills the command text and the tracker's SIM number, then redirects you to your system's default SMS app to review and send the message manually.
+        </li>
+      </ul>
+
+      <h2>4. Third-Party Services</h2>
+      <h3>4.1 Google AdMob (Advertising)</h3>
+      <p>
+        The free version integrates Google AdMob to show ads. AdMob may use anonymous advertising identifiers. Premium subscribers enjoy a completely ad-free experience.
+      </p>
+      <h3>4.2 Traccar (GPS Tracking Server)</h3>
+      <p>
+        Premium members can connect the app directly to their own private self-hosted Traccar servers to guarantee complete data sovereignty and GDPR compliance.
+      </p>
+
+      <h2>5. Contact</h2>
+      <p>
+        If you have any questions regarding this policy or the app's data handling, please contact us at:
+      </p>
+      <div class="contact-box">
+        <strong>Developer Support:</strong><br />
+        <a href="mailto:hanii.ahmed209@gmail.com">hanii.ahmed209@gmail.com</a>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- ═══════════════════════════════════════════
+         GERMAN VERSION (DEUTSCH)
+    ═══════════════════════════════════════════ -->
+    <section class="section">
+      <div class="lang-label">Deutsche Version</div>
+      <span class="pill">Datenschutzerklärung</span>
+      <h2>1. Einleitung</h2>
+      <p>
+        Vielen Dank, dass Sie <strong>Americaloc GPS Tracker</strong> (entwickelt für Americaloc GL300W Tracker) verwenden. Wir verpflichten uns zum Schutz Ihrer Privatsphäre und zur vollständigen Transparenz. Diese Richtlinie erläutert, welche Daten erfasst oder nicht erfasst werden, welche Berechtigungen erforderlich sind und wie Sie uns kontaktieren können.
+      </p>
+      
+      <h2>2. Erhebung und Verarbeitung von Daten</h2>
+      <h3>2.1 Personenbezogene Daten</h3>
+      <p>
+        Die App erfasst <strong>keine</strong> personenbezogenen Daten wie Name, E-Mail-Adresse, Telefonnummer oder persönlichen Standort. Eine Kontoregistrierung ist zur Nutzung nicht erforderlich.
+      </p>
+      <h3>2.2 Smartphone-Standort</h3>
+      <p>
+        Die App verfolgt oder speichert den Standort Ihres Smartphones zu **keinem Zeitpunkt**. Die App zeigt ausschließlich den Standort Ihres externen <strong>GL300W-Fahrzeugtrackers</strong> an.
+      </p>
+      <h3>2.3 Lokale Einstellungen</h3>
+      <p>
+        Einstellungen wie Tracker-Telefonnummer, Gerätepasswort, Fahrzeugname und Abonnementstatus werden ausschließlich lokal auf Ihrem Gerät gesichert.
+      </p>
+
+      <h2>3. Geräteberechtigungen</h2>
+      <ul>
+        <li>
+          <strong>Internetzugang (<code>INTERNET</code>):</strong>
+          Zum Abrufen der Fahrzeugkoordinaten vom Traccar-Server und Laden von OpenStreetMap-Kartenkacheln.
+        </li>
+        <li>
+          <strong>Netzwerkstatus (<code>ACCESS_NETWORK_STATE</code>):</strong>
+          Prüft die Verbindung vor Serveranfragen.
+        </li>
+        <li>
+          <strong>Kamera (<code>CAMERA</code>):</strong>
+          Zum Scannen des QR-Codes auf dem GL300W-Tracker für eine schnelle Verknüpfung.
+        </li>
+        <li>
+          <strong>SMS-Konfigurationen:</strong>
+          Die App bereitet Befehls-SMS-Vorlagen für den Tracker vor. Die App sendet **keine** SMS im Hintergrund. Sie leitet Sie zur System-SMS-App weiter, damit Sie den Befehl manuell senden können.
+        </li>
+      </ul>
+
+      <h2>4. Drittanbieterdienste</h2>
+      <p>
+        Die kostenlose Version integriert <strong>Google AdMob</strong> für Werbung. Premium-Mitglieder genießen ein vollständig werbefreies Erlebnis und können einen eigenen privaten Traccar-Server anbinden.
+      </p>
+
+      <h2>5. Kontakt</h2>
+      <div class="contact-box">
+        <strong>Entwickler-Support:</strong><br />
+        <a href="mailto:hanii.ahmed209@gmail.com">hanii.ahmed209@gmail.com</a>
+      </div>
+    </section>
+  </article>
+  
+  <p class="footer-note">
+    Americaloc GPS Tracker · © 2026 Hani Ahmed · All rights reserved<br />
+    This policy applies to the Android application published on Google Play.
+  </p>
+</main>
+</body>
+</html>
