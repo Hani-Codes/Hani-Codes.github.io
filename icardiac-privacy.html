@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - iCardiac</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #E11D48;
+            --primary-light: #FFF1F2;
+            --primary-border: #FFE4E6;
+            --text-dark: #0F172A;
+            --text-muted: #64748B;
+            --bg-page: #F8FAFC;
+            --bg-card: #FFFFFF;
+            --border-card: #E2E8F0;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 6px 24px -4px rgba(0, 0, 0, 0.06);
+            --radius-lg: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-dark);
+            line-height: 1.7;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Top Header */
+        header {
+            background-color: #FFFFFF;
+            border-bottom: 1px solid var(--border-card);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .header-container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-dark);
+        }
+
+        .brand-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #FF2D55 0%, #E11D48 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            font-size: 20px;
+            box-shadow: 0 4px 10px rgba(225, 29, 72, 0.25);
+        }
+
+        .brand-text h1 {
+            font-size: 19px;
+            font-weight: 800;
+            color: var(--text-dark);
+            line-height: 1.2;
+        }
+
+        .brand-text span {
+            font-size: 12px;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        /* Container */
+        .container {
+            max-width: 860px;
+            margin: 36px auto 70px auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Banner */
+        .hero {
+            background: linear-gradient(180deg, #FFFFFF 0%, #FFF5F7 100%);
+            border: 1px solid var(--primary-border);
+            border-radius: var(--radius-lg);
+            padding: 34px 28px;
+            text-align: center;
+            margin-bottom: 28px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background-color: var(--primary);
+            color: #FFFFFF;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 14px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero p {
+            font-size: 15px;
+            color: var(--text-muted);
+            max-width: 620px;
+            margin: 0 auto;
+        }
+
+        .hero-meta {
+            margin-top: 14px;
+            font-size: 12px;
+            color: #94A3B8;
+            font-weight: 500;
+        }
+
+        /* Policy Cards */
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-card);
+            border-radius: var(--radius-lg);
+            padding: 26px 28px;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .card:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+
+        .card-icon {
+            width: 38px;
+            height: 38px;
+            background-color: var(--primary-light);
+            color: var(--primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 19px;
+            flex-shrink: 0;
+        }
+
+        .card-header h3 {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-dark);
+        }
+
+        .card-content p {
+            font-size: 14.5px;
+            color: #334155;
+            margin-bottom: 12px;
+        }
+
+        .card-content ul {
+            list-style: none;
+            padding: 0;
+            margin: 12px 0;
+        }
+
+        .card-content li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            font-size: 14px;
+            color: #475569;
+        }
+
+        .card-content li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        /* Alert Callout */
+        .callout {
+            background-color: var(--primary-light);
+            border-left: 4px solid var(--primary);
+            border-radius: 8px;
+            padding: 14px 16px;
+            margin: 14px 0;
+            font-size: 13.5px;
+            color: #9F1239;
+        }
+
+        /* Contact Box */
+        .contact-box {
+            background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+            color: #FFFFFF;
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-box h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .contact-box p {
+            color: #94A3B8;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: var(--primary);
+            color: #FFFFFF;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            box-shadow: 0 4px 14px rgba(225, 29, 72, 0.4);
+            transition: opacity 0.2s ease;
+        }
+
+        .contact-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 28px 20px;
+            color: var(--text-muted);
+            font-size: 13px;
+            border-top: 1px solid var(--border-card);
+            background-color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="brand">
+                <div class="brand-icon">❤️</div>
+                <div class="brand-text">
+                    <h1>iCardiac</h1>
+                    <span>Heart Health & Wellness</span>
+                </div>
+            </a>
+            <div style="font-size: 13px; color: var(--text-muted); font-weight: 600;">
+                Privacy Document
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="container">
+
+        <!-- Hero Section -->
+        <div class="hero">
+            <span class="hero-badge">Data Privacy Commitment</span>
+            <h2>Privacy & Data Protection Policy</h2>
+            <p>
+                Your privacy and health data security are our highest priorities. iCardiac is engineered with a strict on-device local architecture ensuring your personal health metrics never leave your smartphone.
+            </p>
+            <div class="hero-meta">
+                Application: iCardiac (com.hani.apps.icardiac) • Last Updated: September 2026 • Version 1.0
+            </div>
+        </div>
+
+        <!-- Section 1: Zero-Cloud / Local Storage -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">🔒</div>
+                <h3>1. 100% On-Device Local Storage Architecture</h3>
+            </div>
+            <div class="card-content">
+                <p>
+                    We operate zero remote cloud databases collecting, hosting, or indexing your confidential health metrics:
+                </p>
+                <ul>
+                    <li><strong>Sandboxed Local Storage:</strong> All pulse measurements, blood pressure logs, blood oxygen (SpO2) readings, blood sugar data, and medication schedules reside exclusively within your device's isolated application storage.</li>
+                    <li><strong>No Sign-Up or Accounts:</strong> You are never asked to create an account, register an email address, or provide personal credentials. The application functions entirely anonymously.</li>
+                    <li><strong>Complete Data Sovereignty:</strong> No external entity or remote server can access, read, or monetize your health logs.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 2: Camera & PPG Optical Sensor -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">📸</div>
+                <h3>2. Camera & Optical Sensor Privacy (Photoplethysmography)</h3>
+            </div>
+            <div class="card-content">
+                <p>
+                    To compute your heart rate and heart rate variability (HRV), iCardiac accesses your smartphone's camera and LED flashlight using standard optical photoplethysmography (PPG) algorithms:
+                </p>
+                <div class="callout">
+                    ⚠️ <strong>Strict Zero-Recording Guarantee:</strong> The application NEVER captures, saves, encodes, or transmits photographs or video recordings of your fingertip, face, or environment. Video frame analysis takes place entirely in volatile device memory (RAM) in real time and is discarded immediately after extracting numerical pulse values.
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Profile Inputs & Technical Diagnostics -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">👤</div>
+                <h3>3. User Profile Metrics & Technical Diagnostics</h3>
+            </div>
+            <div class="card-content">
+                <ul>
+                    <li><strong>User-Entered Metrics:</strong> User-provided parameters (such as age, gender, height, and weight) are used strictly on-device to compute Body Mass Index (BMI) and biological heart age estimates based on published physiological benchmarks.</li>
+                    <li><strong>Limited Technical Diagnostics:</strong> Non-personally identifiable technical diagnostics (such as device model, Android OS version, and language locale) may be processed via standard Android OS APIs solely to ensure user interface responsiveness and crash resolution.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 4: Third-Party Service Providers -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">🌐</div>
+                <h3>4. Third-Party Integrations & Advertising</h3>
+            </div>
+            <div class="card-content">
+                <p>
+                    We strictly prohibit selling, renting, or leasing your data to data brokers or third parties. External services are limited to the following verified providers:
+                </p>
+                <ul>
+                    <li><strong>Google AdMob:</strong> Serves standard mobile advertisements for free-tier users in compliance with Google Play Developer Policies and privacy regulations. Subscribers to iCardiac Pro enjoy an ad-free experience.</li>
+                    <li><strong>Secure Cloud AI Technologies:</strong> Powers real-time interactive wellbeing responses and educational lifestyle guidance anonymously without retaining personal profiles or associating requests with your identity.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 5: Data Erasure & Control -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">🗑️</div>
+                <h3>5. User Data Erasure & Complete Control</h3>
+            </div>
+            <div class="card-content">
+                <p>
+                    You retain absolute control over your health information at all times:
+                </p>
+                <ul>
+                    <li>You can review, modify, or delete individual pulse, blood pressure, or blood sugar logs directly from the application records.</li>
+                    <li>You can update your age, gender, height, and weight metrics anytime in the "My Profile" screen.</li>
+                    <li><strong>Permanent Total Erasure:</strong> Because all data is stored on-device, clearing application storage in Android Settings or uninstalling the app permanently deletes all stored records instantly.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 6: Medical Disclaimer & Minor Protection -->
+        <div class="card">
+            <div class="card-header">
+                <div class="card-icon">⚕️</div>
+                <h3>6. Medical Disclaimer & Children's Privacy</h3>
+            </div>
+            <div class="card-content">
+                <ul>
+                    <li><strong>Non-Clinical Wellness Tool:</strong> iCardiac is designed solely for personal fitness, lifestyle guidance, and wellness tracking. It is NOT an FDA-cleared or CE-certified medical diagnostic device and cannot diagnose, treat, prevent, or cure any medical condition or disease. Always seek professional advice from a certified physician or cardiologist for health concerns.</li>
+                    <li><strong>Children's Privacy:</strong> iCardiac is intended for adults aged 18 and older. We do not knowingly collect or solicit data from children under the age of 13.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Support Box -->
+        <div class="contact-box">
+            <h3>Have Questions or Inquiries?</h3>
+            <p>Our support team is dedicated to safeguarding your privacy rights and answering any questions.</p>
+            <a href="mailto:hanii.ahmed209@gmail.com" class="contact-btn">
+                <span>✉️</span>
+                <span>hanii.ahmed209@gmail.com</span>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 iCardiac (com.hani.apps.icardiac). All rights reserved.</p>
+        <p style="margin-top: 6px;">Developer Support: hanii.ahmed209@gmail.com</p>
+    </footer>
+
+</body>
+</html>
