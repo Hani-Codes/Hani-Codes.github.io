@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Get Done AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6750A4;
+            --primary-light: #F3EDF7;
+            --background: #0F172A;
+            --card-bg: #1E293B;
+            --text-main: #F8FAFC;
+            --text-sub: #94A3B8;
+            --border: #334155;
+            --success: #22C55E;
+            --danger: #EF4444;
+            --info: #3B82F6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: var(--text-sub);
+            font-size: 0.95rem;
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #A855F7;
+            margin: 30px 0 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .card-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: rgba(168, 85, 247, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .card-body {
+            color: var(--text-sub);
+            font-size: 0.95rem;
+        }
+
+        .permission-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            padding: 16px;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin-bottom: 12px;
+        }
+
+        .permission-icon {
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        .permission-title {
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 4px;
+        }
+
+        .permission-desc {
+            font-size: 0.88rem;
+            color: var(--text-sub);
+        }
+
+        .list-card {
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+
+        .list-card.collected {
+            background-color: rgba(34, 197, 94, 0.05);
+            border: 1px solid rgba(34, 197, 94, 0.2);
+        }
+
+        .list-card.not-collected {
+            background-color: rgba(239, 68, 68, 0.05);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+        }
+
+        .list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 10px;
+            font-size: 0.93rem;
+            color: var(--text-main);
+        }
+
+        .list-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .badge-icon {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .collected .badge-icon { color: var(--success); }
+        .not-collected .badge-icon { color: var(--danger); }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-sub);
+            font-size: 0.85rem;
+        }
+
+        .email-link {
+            color: #A855F7;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Privacy Policy</h1>
+        <p>Get Done AI &bull; Last Updated: October 2026</p>
+    </div>
+
+    <!-- Commitment Section -->
+    <div class="card">
+        <div class="card-header">
+            <div class="card-icon">🔒</div>
+            <div class="card-title">Our Commitment to Your Privacy</div>
+        </div>
+        <div class="card-body">
+            We respect your privacy completely. <strong>Get Done AI</strong> is designed to operate locally on your device without collecting, transmitting, or selling any of your personal data to external servers.
+        </div>
+    </div>
+
+    <!-- App Permissions -->
+    <h2 class="section-title">🛡️ App Permissions Used</h2>
+
+    <div class="permission-item">
+        <div class="permission-icon" style="background-color: rgba(168, 85, 247, 0.15); color: #A855F7;">🔔</div>
+        <div>
+            <div class="permission-title">Notifications (POST_NOTIFICATIONS)</div>
+            <div class="permission-desc">Used strictly to send task reminders at the exact times you set. No notification data is sent to external servers.</div>
+        </div>
+    </div>
+
+    <div class="permission-item">
+        <div class="permission-icon" style="background-color: rgba(59, 130, 246, 0.15); color: #3B82F6;">🌐</div>
+        <div>
+            <div class="permission-title">Internet Access (INTERNET)</div>
+            <div class="permission-desc">Used solely to communicate with the Gemini AI Assistant when you explicitly ask a prompt. Your personal task database is never sent automatically.</div>
+        </div>
+    </div>
+
+    <div class="permission-item">
+        <div class="permission-icon" style="background-color: rgba(245, 158, 11, 0.15); color: #F59E0B;">⏰</div>
+        <div>
+            <div class="permission-title">Wake Lock (WAKE_LOCK / SCHEDULE_EXACT_ALARM)</div>
+            <div class="permission-desc">Ensures your scheduled task alarms and notifications trigger reliably, even when your device screen is off.</div>
+        </div>
+    </div>
+
+    <div class="permission-item">
+        <div class="permission-icon" style="background-color: rgba(34, 197, 94, 0.15); color: #22C55E;">⚡</div>
+        <div>
+            <div class="permission-title">Boot Completed (RECEIVE_BOOT_COMPLETED)</div>
+            <div class="permission-desc">Automatically reschedules your pending reminders after device restarts so you never miss an important notification.</div>
+        </div>
+    </div>
+
+    <!-- What We Collect -->
+    <h2 class="section-title">📥 What Data We Collect</h2>
+    <div class="list-card collected">
+        <div class="list-item">
+            <span class="badge-icon">✓</span>
+            <span><strong>Task Data:</strong> Titles, descriptions, due dates, times, and priorities you enter are stored <em>locally</em> on your device database.</span>
+        </div>
+        <div class="list-item">
+            <span class="badge-icon">✓</span>
+            <span><strong>App Preferences:</strong> Language, theme mode, and notification toggle settings stored locally.</span>
+        </div>
+        <div class="list-item">
+            <span class="badge-icon">✓</span>
+            <span><strong>Reminder Schedules:</strong> Processed entirely locally on your phone without cloud storage.</span>
+        </div>
+    </div>
+
+    <!-- What We Do NOT Collect -->
+    <h2 class="section-title">🚫 What Data We Do NOT Collect</h2>
+    <div class="list-card not-collected">
+        <div class="list-item">
+            <span class="badge-icon">✕</span>
+            <span>Your name, email address, phone number, or personal identity information.</span>
+        </div>
+        <div class="list-item">
+            <span class="badge-icon">✕</span>
+            <span>Your geographic GPS location.</span>
+        </div>
+        <div class="list-item">
+            <span class="badge-icon">✕</span>
+            <span>Contacts, photos, media, or device storage files.</span>
+        </div>
+        <div class="list-item">
+            <span class="badge-icon">✕</span>
+            <span>Analytics data, tracking metrics, or behavioral logs.</span>
+        </div>
+        <div class="list-item">
+            <span class="badge-icon">✕</span>
+            <span>Device IDs, advertising identifiers, or IP tracking.</span>
+        </div>
+        <div class="list-item">
+            <span class="badge-icon">✕</span>
+            <span>Financial or payment information.</span>
+        </div>
+    </div>
+
+    <!-- Data Storage -->
+    <h2 class="section-title">💾 Local Data Storage & Security</h2>
+    <div class="card">
+        <div class="card-body">
+            All your tasks, preferences, and data remain exclusively on your device inside an encrypted local Room Database. No cloud synchronization or remote backups occur. If you uninstall the application, all data is permanently deleted from your phone.
+        </div>
+    </div>
+
+    <!-- Gemini AI Assistant -->
+    <h2 class="section-title">🤖 Gemini AI Assistant Integration</h2>
+    <div class="card">
+        <div class="card-body">
+            When you interact with the Gemini AI Assistant feature, only the text prompt you send is transmitted to the official Google Gemini API to return an answer. Your saved tasks, notes, and personal preferences are never shared or uploaded.
+        </div>
+    </div>
+
+    <!-- Contact Us -->
+    <h2 class="section-title">✉️ Contact Us</h2>
+    <div class="card">
+        <div class="card-body">
+            If you have any questions or concerns regarding this Privacy Policy, feel free to contact us via email at:<br>
+            <a href="mailto:hanii.ahmed209@gmail.com" class="email-link">hanii.ahmed209@gmail.com</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        &copy; 2026 Get Done AI. All rights reserved.
+    </div>
+
+</div>
+
+</body>
+</html>
