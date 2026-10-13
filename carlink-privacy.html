@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CarLink HUD - Official Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #090d16;
+      --card: #131b2e;
+      --accent: #00e5ff;
+      --text: #ffffff;
+      --subtext: #b0bec5;
+      --border: rgba(255, 255, 255, 0.1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 24px 16px;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    .header {
+      background: linear-gradient(135deg, #131b2e 0%, #0d253f 100%);
+      border: 1px solid rgba(0, 229, 255, 0.3);
+      border-radius: 24px;
+      padding: 32px 24px;
+      text-align: center;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+    .app-badge {
+      display: inline-block;
+      background: rgba(0, 229, 255, 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(0, 229, 255, 0.35);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 13px;
+      margin-bottom: 12px;
+      letter-spacing: 0.5px;
+    }
+    h1 { font-size: 28px; margin-bottom: 8px; color: var(--text); }
+    .package-id { font-family: monospace; color: var(--subtext); font-size: 13px; margin-bottom: 10px; }
+    .card {
+      background-color: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: var(--accent);
+      font-size: 20px;
+      margin-bottom: 14px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    h3 { color: var(--text); font-size: 16px; margin: 14px 0 6px; }
+    p, li { color: var(--subtext); font-size: 15px; }
+    ul { padding-left: 22px; margin-top: 8px; }
+    li { margin-bottom: 8px; }
+    .contact-box {
+      background: rgba(0, 229, 255, 0.08);
+      border: 1px solid rgba(0, 229, 255, 0.3);
+      border-radius: 14px;
+      padding: 16px;
+      margin-top: 12px;
+      text-align: center;
+    }
+    .contact-box a { color: var(--accent); font-weight: bold; font-size: 17px; text-decoration: none; }
+    .footer { text-align: center; color: var(--subtext); font-size: 13px; margin-top: 30px; padding-bottom: 20px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="app-badge">OFFICIAL PRIVACY POLICY</div>
+      <h1>CarLink HUD - Car Screen Mirror &amp; GPS Speedometer</h1>
+      <div class="package-id">Package ID: com.hani.apps.carlinkhud</div>
+      <p>Effective Date &amp; Last Updated: October 2026</p>
+    </div>
+
+    <div class="card">
+      <h2>Introduction</h2>
+      <p>
+        Welcome to <strong>CarLink HUD</strong> (Package ID: <code>com.hani.apps.carlinkhud</code>). Your privacy and data security are our top priorities. This Privacy Policy transparently explains what data the application processes, what data we never collect, how local device storage works, and how third-party services such as Google AdMob and Google Play Billing operate.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>1. Information We Do NOT Collect</h2>
+      <ul>
+        <li><strong>Zero Personal Identity Collection:</strong> CarLink HUD does not require user registration or account creation, and does not collect your name, phone number, email address, contacts, photos, or personal files.</li>
+        <li><strong>No External Location Tracking:</strong> We never transmit, record, sell, or share your GPS location history or driving routes on any external servers.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>2. Local Device Storage Only</h2>
+      <p>All user-created vehicle and maintenance data is stored strictly locally on your smartphone's internal storage (via <code>SharedPreferences</code>):</p>
+      <ul>
+        <li><strong>Digital Garage Profiles:</strong> Vehicle make, model, production year, fuel type, body style, nickname, license plate number, and odometer mileage remain exclusively on your device.</li>
+        <li><strong>Maintenance &amp; Expense Logs:</strong> Oil change records, service history, maintenance costs, and scheduled reminders are saved locally on your phone.</li>
+        <li><strong>Saved Parking Location &amp; Preferences:</strong> Parked car GPS coordinates, selected dashboard themes, language, and currency settings are stored locally and can be permanently cleared anytime using the "Reset App Data" option in Settings.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>3. App Permissions &amp; How We Use Them</h2>
+      <ul>
+        <li><strong>Location Permission (GPS):</strong> Used strictly in real time while the app is active to calculate live vehicle driving speed (KM/H or MPH), altitude, and compass direction for the HUD speedometer, and to save your parked car location or locate nearby gas and EV charging stations at your request.</li>
+        <li><strong>Internet &amp; Audio Playback:</strong> Used to stream live in-car radio stations, load vehicle preview assets, and display banner advertisements in the free version.</li>
+        <li><strong>Notifications Permission:</strong> Used solely to alert you when scheduled vehicle maintenance or oil change intervals are due.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>4. Advertising &amp; Third-Party Services (Google AdMob &amp; Play Billing)</h2>
+      <h3>A. Google AdMob Advertising (What Is Collected Automatically)</h3>
+      <p>
+        The free version of <strong>CarLink HUD</strong> uses official <strong>Google AdMob</strong> SDKs to display non-intrusive banner advertisements:
+      </p>
+      <ul>
+        <li>Google AdMob may automatically collect and process your device's anonymous Advertising ID (AdID), coarse device information, and ad performance/crash diagnostics to serve relevant ads and prevent fraud in accordance with <a href="https://policies.google.com/privacy" target="_blank" style="color:#00e5ff;">Google's Privacy Policy</a>.</li>
+        <li>You can reset your Advertising ID or opt out of personalized advertising at any time in your Android device Settings (<code>Settings &gt; Google &gt; Ads</code>).</li>
+        <li>Upgrading to <strong>CarLink HUD PRO</strong> automatically disables and removes all banner advertisements across the application.</li>
+      </ul>
+
+      <h3>B. In-App Subscriptions (Google Play Billing)</h3>
+      <p>
+        All <strong>CarLink HUD PRO</strong> subscriptions (<code>carlink_hud_pro_monthly</code> and <code>carlink_hud_pro_annual</code>) are processed securely and directly by <strong>Google Play Billing</strong>. We never access, collect, or store your credit card or payment method details.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>5. Contact Us</h2>
+      <p>
+        If you have any questions or concerns regarding this Privacy Policy or need technical support for <strong>CarLink HUD</strong>, please contact the developer directly via email:
+      </p>
+      <div class="contact-box">
+        <a href="mailto:hanii.ahmed209@gmail.com">hanii.ahmed209@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      &copy; 2026 CarLink HUD (com.hani.apps.carlinkhud). All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
