@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // --- Apps Category Filter ---
+    // --- Apps Category & Platform Filter ---
     const filterButtons = document.querySelectorAll('.filter-btn');
     const appCards = document.querySelectorAll('.app-card');
 
@@ -40,14 +40,19 @@ document.addEventListener('DOMContentLoaded', () => {
             const filterValue = button.getAttribute('data-filter');
 
             appCards.forEach(card => {
-                const cardCategory = card.getAttribute('data-category');
+                const cardCategory = card.getAttribute('data-category') || '';
+                const cardPlatform = card.getAttribute('data-platform') || '';
                 
                 // Hide card temporarily for animation reset
                 card.style.opacity = '0';
                 card.style.transform = 'scale(0.95)';
                 
                 setTimeout(() => {
-                    if (filterValue === 'all' || cardCategory === filterValue) {
+                    const matches = filterValue === 'all' || 
+                                    cardCategory.split(' ').includes(filterValue) || 
+                                    cardPlatform.split(' ').includes(filterValue);
+                    
+                    if (matches) {
                         card.classList.remove('hidden');
                         // Fade back in
                         setTimeout(() => {
