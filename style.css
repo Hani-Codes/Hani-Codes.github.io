@@ -550,3 +550,38 @@ footer {
         padding: 0 1rem;
     }
 }
+
+/* --- Apple App Store Button & Platform Tags --- */
+.btn-apple {
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5);
+}
+
+.btn-apple:hover {
+    background: #111827;
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.platform-tags {
+    display: flex;
+    gap: 0.4rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.platform-tag {
+    font-size: 0.72rem;
+    padding: 0.2rem 0.55rem;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-secondary);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    border: 1px solid var(--card-border);
+}
+
