@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Smart Print</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-gradient: radial-gradient(circle at 50% 0%, #172554 0%, #0a0f1d 75%);
+            --card-bg: rgba(255, 255, 255, 0.04);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --accent-blue: #0071e3;
+            --accent-green: #10b981;
+            --accent-red: #ef4444;
+            --accent-amber: #f59e0b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-gradient);
+            background-color: #0a0f1d;
+            color: var(--text-main);
+            min-height: 100vh;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        /* Language Toggle */
+        .lang-switch {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid var(--card-border);
+            color: var(--text-main);
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 13px;
+            transition: all 0.2s ease;
+        }
+
+        .lang-btn.active, .lang-btn:hover {
+            background: var(--accent-blue);
+            border-color: var(--accent-blue);
+        }
+
+        /* Header Card */
+        .header-card {
+            background: linear-gradient(135deg, rgba(0, 113, 227, 0.15) 0%, rgba(255, 255, 255, 0.02) 100%);
+            border: 1px solid rgba(0, 113, 227, 0.3);
+            border-radius: 24px;
+            padding: 36px 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            backdrop-filter: blur(12px);
+        }
+
+        .app-icon {
+            width: 76px;
+            height: 76px;
+            background: linear-gradient(135deg, #0071e3, #38bdf8);
+            border-radius: 20px;
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
+            box-shadow: 0 10px 25px rgba(0, 113, 227, 0.4);
+        }
+
+        .header-card h1 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        .effective-date {
+            font-size: 13px;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .badge-zero {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid rgba(16, 185, 129, 0.35);
+            color: var(--accent-green);
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-top: 16px;
+        }
+
+        /* Grid Cards */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 24px 26px;
+            backdrop-filter: blur(8px);
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .card:hover {
+            border-color: rgba(255, 255, 255, 0.18);
+            transform: translateY(-2px);
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 14px;
+        }
+
+        .card-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+
+        .icon-red { background: rgba(239, 68, 68, 0.15); color: var(--accent-red); }
+        .icon-green { background: rgba(16, 185, 129, 0.15); color: var(--accent-green); }
+        .icon-blue { background: rgba(0, 113, 227, 0.15); color: var(--accent-blue); }
+        .icon-amber { background: rgba(245, 158, 11, 0.15); color: var(--accent-amber); }
+
+        .card h2 {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .card p, .card ul {
+            font-size: 14.5px;
+            color: #cbd5e1;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        .card ul li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 8px;
+        }
+
+        .card ul li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-green);
+            font-weight: bold;
+        }
+
+        .card.negative ul li::before {
+            content: "✕";
+            color: var(--accent-red);
+        }
+
+        /* Support Footer Card */
+        .support-card {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .support-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--accent-blue);
+            color: white;
+            text-decoration: none;
+            padding: 12px 26px;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 15px;
+            margin-top: 12px;
+            box-shadow: 0 4px 15px rgba(0, 113, 227, 0.35);
+            transition: opacity 0.2s;
+        }
+
+        .support-btn:hover {
+            opacity: 0.9;
+        }
+
+        /* RTL Styles for Arabic */
+        body.rtl {
+            font-family: 'Tajawal', sans-serif;
+            direction: rtl;
+        }
+
+        body.rtl .card ul li {
+            padding-left: 0;
+            padding-right: 24px;
+        }
+
+        body.rtl .card ul li::before {
+            left: auto;
+            right: 0;
+        }
+
+        body.rtl .lang-switch {
+            justify-content: flex-start;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Language Switcher -->
+        <div class="lang-switch">
+            <button class="lang-btn active" onclick="setLang('en')">English</button>
+            <button class="lang-btn" onclick="setLang('ar')">العربية</button>
+        </div>
+
+        <!-- ==================== ENGLISH SECTION ==================== -->
+        <div id="content-en">
+            <div class="header-card">
+                <div class="app-icon">🖨️</div>
+                <h1>Smart Print Privacy Policy</h1>
+                <p class="effective-date">Last Updated & Effective Date: November 2026</p>
+                <div class="badge-zero">🛡️ 100% Local Processing & Zero Cloud Storage</div>
+            </div>
+
+            <div class="grid">
+                <!-- What We NEVER Collect -->
+                <div class="card negative">
+                    <div class="card-header">
+                        <div class="card-icon icon-red">🚫</div>
+                        <h2>What We NEVER Collect</h2>
+                    </div>
+                    <p>We believe your personal documents and pictures belong only to you:</p>
+                    <ul>
+                        <li><strong>Your Documents & Files:</strong> We never upload, read, store, or inspect your PDF files, Word docs, or notes.</li>
+                        <li><strong>Your Photos & Scans:</strong> Photos from your camera or library are processed entirely on your device's memory.</li>
+                        <li><strong>Printer Details & Network Credentials:</strong> Your WiFi network passwords and printer configurations stay strictly local.</li>
+                        <li><strong>Personal Identification:</strong> No accounts, sign-ups, names, or phone numbers are required.</li>
+                    </ul>
+                </div>
+
+                <!-- 100% Local Storage Guarantee -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon icon-green">💾</div>
+                        <h2>100% Local Sandbox Storage</h2>
+                    </div>
+                    <p>Smart Print operates strictly within Apple's secure iOS Application Sandbox:</p>
+                    <ul>
+                        <li>All temporary print spooling occurs solely in volatile local memory (RAM).</li>
+                        <li>Recent file history and print preferences are saved strictly in your phone's isolated local sandbox.</li>
+                        <li>Deleting the app immediately and permanently erases all associated local app preferences.</li>
+                    </ul>
+                </div>
+
+                <!-- Permissions Explained -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon icon-blue">🔐</div>
+                        <h2>Device Permissions & Why We Need Them</h2>
+                    </div>
+                    <ul>
+                        <li><strong>Local Wi-Fi Network:</strong> Required by iOS to discover nearby AirPrint and wireless printers over Bonjour/mDNS without internet access.</li>
+                        <li><strong>Camera:</strong> Used strictly in real-time when you choose to scan physical papers or passport photos.</li>
+                        <li><strong>Photo Library:</strong> Used only when you manually select an image to print or choose to save a scanned file.</li>
+                    </ul>
+                </div>
+
+                <!-- In-App Purchases & Advertising -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon icon-amber">💳</div>
+                        <h2>In-App Purchases & AdMob (ATT Compliant)</h2>
+                    </div>
+                    <ul>
+                        <li><strong>Apple In-App Purchase:</strong> All subscription transactions are processed directly by Apple StoreKit. We never see or store your payment cards.</li>
+                        <li><strong>App Tracking Transparency (ATT):</strong> For non-premium users, Smart Print complies with Apple Guideline 5.1.2. Tracking permission is explicitly prompted on launch. If declined, non-personalized ads are served and IDFA is zeroed.</li>
+                        <li><strong>PRO Users:</strong> Enjoy a 100% ad-free experience with zero tracking frameworks active.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Support Footer -->
+            <div class="support-card">
+                <h2>Have Questions or Need Help?</h2>
+                <p style="color: var(--text-muted); margin-top: 6px;">Our team is here to assist you with any questions regarding your privacy.</p>
+                <a href="mailto:spport.apps24@icloud.com" class="support-btn">✉️ Contact Support: spport.apps24@icloud.com</a>
+            </div>
+        </div>
+
+        <!-- ==================== ARABIC SECTION ==================== -->
+        <div id="content-ar" style="display: none;">
+            <div class="header-card">
+                <div class="app-icon">🖨️</div>
+                <h1>سياسة خصوصية تطبيق الطباعة الذكية</h1>
+                <p class="effective-date">تاريخ السريان وآخر تحديث: نوفمبر 2026</p>
+                <div class="badge-zero">🛡️ معالجة محلية 100% وبدون أي تخزين سحابي</div>
+            </div>
+
+            <div class="grid">
+                <!-- ما لا نطلبه ولا نجمعه -->
+                <div class="card negative">
+                    <div class="card-header">
+                        <div class="card-icon icon-red">🚫</div>
+                        <h2>بيانات لا نجمعها ولا نطلع عليها نهائياً</h2>
+                    </div>
+                    <p>نؤمن بأن مستنداتك وصورك الشخصية ملك خاص بك وحدك:</p>
+                    <ul>
+                        <li><strong>مستنداتك وملفاتك:</strong> لا نقوم برفع أو قراءة أو تخزين أي ملف PDF أو مستند نصي على الإطلاق.</li>
+                        <li><strong>صورك ومسوحك الضوئية:</strong> تتم معالجة الصور ومسح الكاميرا كلياً داخل الذاكرة المؤقتة لجهازك.</li>
+                        <li><strong>بيانات الشبكة والطابعة:</strong> كلمات مرور الواي فاي ومعلومات اتصال الطابعة تبقى محلياً ولا تغادر هاتفك.</li>
+                        <li><strong>الهوية الشخصية:</strong> لا نطلب إنشاء أي حساب، ولا نسجل بريدك، اسمك، أو رقم هاتفك.</li>
+                    </ul>
+                </div>
+
+                <!-- ضمان التخزين المحلي -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon icon-green">💾</div>
+                        <h2>ضمان التخزين المحلي الآمن (Sandbox)</h2>
+                    </div>
+                    <p>يعمل تطبيق "الطباعة الذكية" تحت نظام الأمان المعزول من Apple:</p>
+                    <ul>
+                        <li>تجهيز مهام الطباعة (Print Spooling) يتم محلياً في الذاكرة العشوائية السريعة للجهاز.</li>
+                        <li>سجل الملفات الأخيرة وإعدادات التطبيق تخزن حصرياً داخل المساحة المشفرة الخاصة بالتطبيق في هاتفك.</li>
+                        <li>حذف التطبيق من هاتفك يؤدي فوراً لحذف كافة الملفات والإعدادات المحلية المرتبطة به نهائياً.</li>
+                    </ul>
+                </div>
+
+                <!-- أذونات الجهاز -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon icon-blue">🔐</div>
+                        <h2>أذونات الجهاز وأسباب طلبها بكل شفافية</h2>
+                    </div>
+                    <ul>
+                        <li><strong>شبكة الواي فاي المحلية:</strong> مطلوبة من نظام iOS لاكتشاف الطابعات اللاسلكية القريبة عبر AirPrint والاتصال بها مباشرة دون إنترنت.</li>
+                        <li><strong>الكاميرا:</strong> تُستخدم فقط ولحظياً عند مسح ورقة أو التقاط صورة جواز السفر.</li>
+                        <li><strong>ألبوم الصور:</strong> يُستخدم فقط عند اختيارك لصورة ترغب بطباعتها أو عند حفظ صورة ممسوحة ضوئياً.</li>
+                    </ul>
+                </div>
+
+                <!-- الاشتراكات والإعلانات -->
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon icon-amber">💳</div>
+                        <h2>الاشتراكات والإعلانات (متوافقة مع سياسات آبل)</h2>
+                    </div>
+                    <ul>
+                        <li><strong>مدفوعات Apple StoreKit:</strong> تتم جميع عمليات الاشتراك حصرياً عبر نظام آبل الآمن، ولا نطلع على بطاقاتك الائتمانية.</li>
+                        <li><strong>شفافية تتبع التطبيقات (ATT):</strong> نلتزم بإرشادات آبل الصارمة (Guideline 5.1.2) ونطلب الإذن فور فتح التطبيق. في حال الرفض، لا يتم تتبعك إطلاقاً وتظهر إعلانات عامة غير مخصصة.</li>
+                        <li><strong>مشتركو PRO:</strong> يحصلون على تجربة خالية من الإعلانات بنسبة 100% مع تعطيل تام لأي كود إعلاني.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- الدعم الفني العربي -->
+            <div class="support-card">
+                <h2>هل لديك أي استفسار أو تحتاج لمساعدة؟</h2>
+                <p style="color: var(--text-muted); margin-top: 6px;">فريق الدعم الفني جاهز لمساعدتك في أي وقت بخصوص خصوصيتك واستخدام التطبيق.</p>
+                <a href="mailto:spport.apps24@icloud.com" class="support-btn">✉️ التواصل مع الدعم: spport.apps24@icloud.com</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function setLang(lang) {
+            const enContent = document.getElementById('content-en');
+            const arContent = document.getElementById('content-ar');
+            const buttons = document.querySelectorAll('.lang-btn');
+
+            if (lang === 'ar') {
+                enContent.style.display = 'none';
+                arContent.style.display = 'block';
+                document.body.classList.add('rtl');
+                buttons[0].classList.remove('active');
+                buttons[1].classList.add('active');
+            } else {
+                enContent.style.display = 'block';
+                arContent.style.display = 'none';
+                document.body.classList.remove('rtl');
+                buttons[0].classList.add('active');
+                buttons[1].classList.remove('active');
+            }
+        }
+    </script>
+</body>
+  </html>
