@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — Hani Codes Lab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-1: #0b1020;
+      --bg-2: #131c3a;
+      --accent-1: #38bdf8;
+      --accent-2: #818cf8;
+      --accent-3: #2dd4bf;
+      --glass-bg: rgba(255, 255, 255, 0.06);
+      --glass-border: rgba(255, 255, 255, 0.14);
+      --glass-highlight: rgba(255, 255, 255, 0.22);
+      --text-main: #f8fafc;
+      --text-muted: #cbd5e1;
+      --text-soft: #94a3b8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background: radial-gradient(circle at 15% 15%, rgba(56, 189, 248, 0.18), transparent 40%),
+                  radial-gradient(circle at 85% 20%, rgba(129, 140, 248, 0.20), transparent 42%),
+                  radial-gradient(circle at 50% 90%, rgba(45, 212, 191, 0.14), transparent 45%),
+                  linear-gradient(135deg, var(--bg-1), var(--bg-2));
+      color: var(--text-main);
+      min-height: 100vh;
+      line-height: 1.75;
+      padding: 36px 18px 64px;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(80px);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .orb-1 {
+      width: 320px;
+      height: 320px;
+      background: rgba(56, 189, 248, 0.22);
+      top: -80px;
+      left: -60px;
+    }
+
+    .orb-2 {
+      width: 360px;
+      height: 360px;
+      background: rgba(129, 140, 248, 0.18);
+      bottom: -100px;
+      right: -80px;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .glass-card {
+      background: var(--glass-bg);
+      backdrop-filter: blur(18px) saturate(140%);
+      -webkit-backdrop-filter: blur(18px) saturate(140%);
+      border: 1px solid var(--glass-border);
+      border-top-color: var(--glass-highlight);
+      border-radius: 24px;
+      padding: 28px 30px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35),
+                  inset 0 1px 0 rgba(255, 255, 255, 0.12);
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .glass-card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(129, 140, 248, 0.38);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45),
+                  inset 0 1px 0 rgba(255, 255, 255, 0.18);
+    }
+
+    .hero {
+      text-align: center;
+      padding: 36px 28px;
+      margin-bottom: 24px;
+      background: linear-gradient(145deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.03));
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--accent-1);
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.28);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 3.6vw, 2.45rem);
+      font-weight: 800;
+      letter-spacing: -0.4px;
+      margin-bottom: 12px;
+      background: linear-gradient(90deg, #ffffff, var(--accent-1), var(--accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1rem;
+      max-width: 720px;
+      margin: 0 auto 18px;
+    }
+
+    .meta-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      font-size: 0.86rem;
+      color: var(--text-soft);
+    }
+
+    .meta-pill {
+      background: rgba(15, 23, 42, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 6px 14px;
+      border-radius: 12px;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+
+    .step-num {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 13px;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 0.95rem;
+      color: #091122;
+      background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
+      box-shadow: 0 6px 18px rgba(56, 189, 248, 0.28);
+    }
+
+    h2 {
+      font-size: 1.18rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 0.96rem;
+      margin-bottom: 10px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 8px;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 22px;
+      margin-bottom: 8px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    ul li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent-1), var(--accent-3));
+    }
+
+    .notice-box {
+      margin-top: 12px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: rgba(56, 189, 248, 0.08);
+      border: 1px solid rgba(56, 189, 248, 0.22);
+      color: #e2e8f0;
+      font-size: 0.92rem;
+    }
+
+    .contact-card {
+      margin-top: 22px;
+      text-align: center;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .btn-glass {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 700;
+      font-size: 0.92rem;
+      padding: 10px 20px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.09);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      transition: all 0.2s ease;
+    }
+
+    .btn-glass:hover {
+      background: rgba(56, 189, 248, 0.2);
+      border-color: var(--accent-1);
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 28px;
+      color: var(--text-soft);
+      font-size: 0.86rem;
+    }
+
+    @media (max-width: 600px) {
+      .glass-card {
+        padding: 20px 18px;
+        border-radius: 20px;
+      }
+
+      h2 {
+        font-size: 1.06rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <div class="container">
+    <header class="glass-card hero">
+      <div class="badge">UNIFIED TERMS OF SERVICE</div>
+      <h1>Terms of Service</h1>
+      <p class="subtitle">
+        These Terms of Service apply to all applications, software, and digital services published under
+        <strong>Hani Codes Lab</strong> across supported app stores.
+      </p>
+      <div class="meta-bar">
+        <span class="meta-pill">Developer: Hani Codes Lab</span>
+        <span class="meta-pill">Last Updated: November 22, 2026</span>
+        <span class="meta-pill">Scope: All Hani Codes Lab Apps</span>
+      </div>
+    </header>
+
+    <main class="cards-grid">
+      <section class="glass-card">
+        <div class="card-header">
+          <span class="step-num">01</span>
+          <h2>Acceptance of Terms</h2>
+        </div>
+        <p>
+          By downloading, installing, accessing, or using any application published by <strong>Hani Codes Lab</strong>, you agree to be bound by these Terms of Service as well as the rules and policies of the app store through which you obtained the application. If you do not agree to these terms, please do not use the applications.
+        </p>
+      </section>
+
+      <section class="glass-card">
+        <div class="card-header">
+          <span class="step-num">02</span>
+          <h2>Permitted Use &amp; User Responsibilities</h2>
+        </div>
+        <p>
+          We grant you a limited, personal, non-exclusive, non-transferable, and revocable license to use our applications for lawful personal purposes in accordance with their intended features.
+        </p>
+        <ul>
+          <li>You must not misuse, disrupt, tamper with, hack, or attempt unauthorized access to any application, server, API, or associated service.</li>
+          <li>You must not copy, modify, distribute, reverse engineer, or decompile any application except to the extent permitted by applicable law.</li>
+          <li>You are solely responsible for any data, configurations, or inputs you enter, as well as complying with applicable local laws (including traffic, communications, and device usage laws) while using the applications.</li>
+        </ul>
+      </section>
+
+      <section class="glass-card">
+        <div class="card-header">
+          <span class="step-num">03</span>
+          <h2>Subscriptions, In-App Purchases &amp; Billing</h2>
+        </div>
+        <p>
+          Certain applications may offer paid features, premium tools, or digital content through recurring subscriptions or one-time in-app purchases via the relevant app store (such as Google Play or the Apple App Store).
+        </p>
+        <ul>
+          <li>All payments, billing cycles, and applicable taxes or store fees are handled directly through your app store account in accordance with that store's terms.</li>
+          <li>Subscriptions renew automatically at the end of each billing period unless canceled through your app store account settings prior to the renewal date.</li>
+          <li>Uninstalling or deleting an application from your device does not automatically cancel an active subscription.</li>
+          <li>Refund requests are governed by the policies of the respective app store and mandatory consumer protection laws.</li>
+        </ul>
+      </section>
+
+      <section class="glass-card">
+        <div class="card-header">
+          <span class="step-num">04</span>
+          <h2>Advertisements &amp; Third-Party Services</h2>
+        </div>
+        <p>
+          Applications may display advertisements or integrate with third-party services, SDKs, mapping/location providers, connectivity services, or external hardware/platforms.
+        </p>
+        <ul>
+          <li>Third-party ad networks and partners may use device identifiers or similar measurement technologies in accordance with our Privacy Policy and your consent where required by regional law.</li>
+          <li>We are not responsible for the accuracy, availability, legality, or content of third-party advertisements, websites, or external services.</li>
+          <li>Feature availability and accuracy may depend on network connectivity, operating system permissions, device capabilities, and third-party service availability.</li>
+        </ul>
+      </section>
+
+      <section class="glass-card">
+        <div class="card-header">
+          <span class="step-num">05</span>
+          <h2>Intellectual Property</h2>
+        </div>
+        <p>
+          All intellectual property rights in the applications, including their source code, UI/UX design, graphics, branding, and original content, are owned by <strong>Hani Codes Lab</strong> or its licensors. Nothing in these terms transfers ownership rights to you. Any third-party trademarks, product names, or device references remain the property of their respective owners.
+        </p>
+      </section>
+
+      <section class="glass-card">
+        <div class="card-header">
+          <span class="step-num">06</span>
+          <h2>Disclaimer &amp; Limitation of Liability</h2>
+        </div>
+        <p>
+          All applications and services are provided on an "As Is" and "As Available" basis without express or implied warranties of uninterrupted operation, error-free performance, or fitness for a particular purpose.
+        </p>
+        <div class="notice-box">
+          To the fullest extent permitted by applicable law, Hani Codes Lab shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data, revenue, or profits arising out of or related to your use of or inability to use the applications. Nothing in these terms limits any non-waivable rights you may have under applicable consumer protection laws.
+        </div>
+      </section>
+
+      <section class="glass-card">
+        <div class="card-header">
+          <span class="step-num">07</span>
+          <h2>Updates &amp; Changes to Terms</h2>
+        </div>
+        <p>
+          We may update our applications or revise these Terms of Service from time to time to reflect feature changes, operational updates, or legal requirements. Continued use of any application after updated terms are published constitutes your acceptance of the revised terms. You may stop using the applications at any time.
+        </p>
+      </section>
+    </main>
+
+    <section class="glass-card contact-card">
+      <h2>Privacy &amp; Contact</h2>
+      <p>
+        To learn how we handle data, please review our Privacy Policy. For support or questions regarding these Terms of Service, contact us at:
+      </p>
+      <div class="contact-links">
+        <a class="btn-glass" href="mailto:support.apps24@icloud.com">support.apps24@icloud.com</a>
+        <a class="btn-glass" href="privacy-policy.html">Privacy Policy</a>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year">2026</span> Hani Codes Lab. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    const currentYear = new Date().getFullYear();
+    document.getElementById("year").textContent = currentYear > 2026 ? `2026–${currentYear}` : "2026";
+  </script>
+</body>
+</html>
