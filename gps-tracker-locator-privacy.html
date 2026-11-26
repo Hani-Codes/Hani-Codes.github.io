@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy · GPS Tracker &amp; Locator</title>
+  <meta name="description" content="GPS Tracker &amp; Locator Privacy Policy - GPS tracker companion app for iOS. Learn how we handle your data, permissions, and security." />
+  <style>
+    :root {
+      --bg-gradient-start: #020d1a;
+      --bg-gradient-end: #010810;
+      --card-bg: rgba(5, 18, 35, 0.75);
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.4);
+      --accent-soft: rgba(59, 130, 246, 0.1);
+      --green: #22c55e;
+      --green-glow: rgba(34, 197, 94, 0.4);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --code-bg: #020c18;
+    }
+    * {
+      box-sizing: border-box; margin: 0; padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    }
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--bg-gradient-end); }
+    ::-webkit-scrollbar-thumb { background: #0a1e35; border-radius: 999px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+    body {
+      min-height: 100vh;
+      background: radial-gradient(ellipse at top, #041428, #010810);
+      padding: 32px 16px 64px; display: flex; justify-content: center;
+      color: var(--text-main); line-height: 1.6;
+    }
+    .shell { width: 100%; max-width: 920px; }
+    .top-controls {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 20px; flex-wrap: wrap; gap: 12px;
+    }
+    .top-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 6px 16px; border-radius: 999px; background: rgba(4, 14, 28, 0.9);
+      border: 1px solid rgba(59, 130, 246, 0.15);
+      color: #94a3b8; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase;
+    }
+    .top-badge .dot {
+      width: 7px; height: 7px; border-radius: 999px;
+      background: var(--green); box-shadow: 0 0 10px var(--green-glow);
+      animation: pulse-dot 2s infinite;
+    }
+    @keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+    .lang-switcher {
+      display: flex; background: rgba(4, 14, 28, 0.9);
+      border: 1px solid var(--border-subtle); border-radius: 999px; padding: 4px; gap: 4px;
+    }
+    .lang-btn {
+      border: none; background: transparent; color: var(--text-muted);
+      padding: 6px 14px; border-radius: 999px; font-size: 12px; font-weight: 600;
+      cursor: pointer; transition: all 0.2s ease;
+    }
+    .lang-btn.active { background: var(--accent); color: #fff; box-shadow: 0 0 14px var(--accent-glow); }
+    .card {
+      background: var(--card-bg);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      border-radius: 22px; padding: 36px 28px 44px;
+      border: 1px solid var(--border-subtle);
+      box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.6);
+    }
+    .header { text-align: center; margin-bottom: 32px; }
+    .app-icon {
+      width: 68px; height: 68px; border-radius: 20px;
+      background: linear-gradient(135deg, #0f3460, #1e5f9f);
+      border: 1.5px solid rgba(59, 130, 246, 0.35);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 16px; font-size: 32px;
+      box-shadow: 0 8px 24px rgba(59, 130, 246, 0.28);
+    }
+    .header-title { font-size: 26px; font-weight: 800; color: #fff; letter-spacing: -0.02em; }
+    .header-sub { margin-top: 8px; font-size: 13px; color: var(--text-muted); }
+    .tagline {
+      margin-top: 12px; display: inline-flex; align-items: center; gap: 6px;
+      padding: 5px 16px; border-radius: 999px;
+      background: var(--accent-soft); border: 1px solid rgba(59, 130, 246, 0.18);
+      color: #93c5fd; font-size: 11px; font-weight: 600;
+    }
+    .divider { margin: 28px 0; border: none; border-top: 1px dashed rgba(255, 255, 255, 0.08); }
+    .code-strip {
+      padding: 10px 16px; border-radius: 12px; font-size: 11px;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      background: var(--code-bg); border: 1px solid rgba(59, 130, 246, 0.08);
+      color: #64748b; display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 24px;
+    }
+    .code-strip .status { color: var(--green); display: inline-flex; align-items: center; gap: 6px; }
+    .section-title {
+      font-size: 18px; font-weight: 700; color: #fff;
+      margin-top: 28px; margin-bottom: 12px;
+      border-left: 3px solid var(--accent); padding-left: 10px;
+    }
+    p { font-size: 14px; color: var(--text-muted); margin-bottom: 12px; line-height: 1.75; }
+    ul { margin-top: 8px; margin-bottom: 16px; padding-left: 20px; }
+    li { font-size: 14px; color: var(--text-muted); margin-bottom: 10px; line-height: 1.7; }
+    li strong { color: #e2e8f0; }
+    code {
+      background: rgba(59, 130, 246, 0.10); color: #93c5fd;
+      padding: 2px 6px; border-radius: 6px; font-size: 11.5px;
+      font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+      border: 1px solid rgba(59, 130, 246, 0.12);
+    }
+    .perm-card {
+      background: rgba(2, 12, 24, 0.6); border: 1px solid var(--border-subtle);
+      border-radius: 12px; padding: 14px 18px; margin-bottom: 10px;
+      display: flex; flex-direction: column; gap: 4px;
+    }
+    .perm-title { font-size: 14.5px; font-weight: 700; color: #f1f5f9; display: flex; align-items: center; gap: 8px; }
+    .perm-desc { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+    .contact-box {
+      margin-top: 26px;
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(34, 197, 94, 0.05));
+      border: 1px solid rgba(59, 130, 246, 0.18); border-radius: 16px; padding: 22px; text-align: center;
+    }
+    .contact-title { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 6px; }
+    .contact-email {
+      display: inline-block; margin-top: 10px; padding: 10px 22px; border-radius: 999px;
+      background: var(--accent); color: #fff; font-size: 13px; font-weight: 700;
+      text-decoration: none; box-shadow: 0 4px 16px var(--accent-glow); transition: transform 0.2s ease;
+    }
+    .contact-email:hover { transform: translateY(-2px); }
+    .footer-text { text-align: center; margin-top: 28px; font-size: 12px; color: #64748b; }
+    .lang-content { display: none; }
+    .lang-content.active { display: block; }
+    .lang-content[dir="rtl"] .section-title {
+      border-left: none; border-right: 3px solid var(--accent);
+      padding-left: 0; padding-right: 10px;
+    }
+    .lang-content[dir="rtl"] ul { padding-left: 0; padding-right: 20px; }
+    .lang-content[dir="rtl"] .perm-title { flex-direction: row-reverse; justify-content: flex-start; }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="top-controls">
+      <div class="top-badge">
+        <span class="dot"></span>
+        <span>Apple App Store Guidelines Compliant</span>
+      </div>
+      <div class="lang-switcher">
+        <button class="lang-btn active" onclick="switchLanguage('en')">English 🇬🇧</button>
+        <button class="lang-btn" onclick="switchLanguage('ar')">العربية 🇸🇦</button>
+        <button class="lang-btn" onclick="switchLanguage('de')">Deutsch 🇩🇪</button>
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">
+        <div class="app-icon">🛰️</div>
+        <h1 class="header-title">GPS Tracker &amp; Locator</h1>
+        <p class="header-sub">Privacy Policy · سياسة الخصوصية · Datenschutzerklärung</p>
+        <div class="tagline">📍 4G GPS Tracker Companion for iPhone</div>
+      </div>
+      <div class="code-strip">
+        <span>SECURITY_PROTOCOL: TLS 1.3 ENCRYPTION</span>
+        <span class="status"><span class="dot"></span> ACTIVE &amp; ENCRYPTED</span>
+      </div>
+      <hr class="divider" />
+
+      <!-- ENGLISH -->
+      <div id="content-en" class="lang-content active" dir="ltr">
+        <p><strong>Last Updated:</strong> November 26, 2026</p>
+        <p>Welcome to <strong>GPS Tracker &amp; Locator</strong> ("we", "our", or "us"). This Privacy Policy explains how we collect, use, and safeguard your information when you use our iOS application <strong>GPS Tracker &amp; Locator</strong>. By using the app you agree to this policy. If you do not agree, please do not use the application.</p>
+        <h2 class="section-title">1. Information We Collect &amp; iOS Permissions</h2>
+        <p>To provide live GPS tracking, trip history and report exports, the app uses the following, and only when needed:</p>
+        <div class="perm-card">
+          <div class="perm-title">📍 Location — While Using the App</div>
+          <div class="perm-desc">With your permission (<code>NSLocationWhenInUseUsageDescription</code>) we access your location <strong>only while the app is open</strong>, to show your own position on the live map next to your GPS trackers. We do <strong>not</strong> track your location in the background.</div>
+        </div>
+        <div class="perm-card">
+          <div class="perm-title">📡 Your GPS Tracker's IMEI / Serial</div>
+          <div class="perm-desc">You manually enter the <code>IMEI</code> or serial number printed on your GPS tracker to pair it to your account. This is the identifier of your separate tracking hardware — <strong>not</strong> your iPhone. iOS does not allow apps to read your phone's IMEI, and we never do.</div>
+        </div>
+        <div class="perm-card">
+          <div class="perm-title">🔐 Automatic Secure Account</div>
+          <div class="perm-desc">To store your paired trackers and their trip history, the app creates a private account for you on our tracking server automatically and silently. You are never asked for a password, and no server address or credentials are shown to you.</div>
+        </div>
+        <div class="perm-card">
+          <div class="perm-title">📄 On-Device Exports (PDF &amp; CSV)</div>
+          <div class="perm-desc">Trip reports are generated on your device and shared through the standard iOS Share Sheet. No photo-library or file-system permission is required.</div>
+        </div>
+        <h2 class="section-title">2. How We Use Your Information</h2>
+        <ul>
+          <li><strong>Live Map:</strong> Show your tracker's position on interactive Apple Maps (standard and satellite).</li>
+          <li><strong>Trip History:</strong> Retrieve and display past routes, speeds and durations for up to 30 days.</li>
+          <li><strong>Safety:</strong> Geofence radius and speed-alert features you configure.</li>
+          <li><strong>Premium:</strong> Process subscriptions to unlock unlimited devices, full history and an ad-free experience.</li>
+        </ul>
+        <h2 class="section-title">3. Advertising &amp; Apple App Tracking Transparency</h2>
+        <p>Non-subscribed users may see banner advertisements served by <strong>Google AdMob</strong>, which may use advertising identifiers. In line with Apple's <strong>App Tracking Transparency</strong>, you control whether apps may track you in <code>Settings › Privacy &amp; Security › Tracking</code>. We <strong>never sell, trade, or rent</strong> your GPS or location data. Subscribing to Premium removes all ads.</p>
+        <h2 class="section-title">4. Subscriptions &amp; Payments</h2>
+        <p>Premium is sold through <strong>Apple In-App Purchase (StoreKit)</strong>. Payment is charged to your Apple ID. You can manage or cancel your subscription anytime in <code>App Store › Account › Subscriptions</code>. We never see or store your card or payment details — these are handled entirely by Apple.</p>
+        <h2 class="section-title">5. Data Security &amp; Retention</h2>
+        <p>Location and telemetry data are transmitted over encrypted TLS/SSL connections. Your account credentials are stored securely in the device Keychain. We retain data only as long as necessary to provide the service.</p>
+        <h2 class="section-title">6. Your Rights &amp; Data Deletion</h2>
+        <p>You can remove individual trackers in the app using <code>Unlink / Reset Device</code>. To request full deletion of your account and tracking history, email us at the address below. Subscriptions are cancelled through the App Store.</p>
+        <h2 class="section-title">7. Children's Privacy</h2>
+        <p>GPS Tracker &amp; Locator is not directed to children and does not knowingly collect personal information from children under 13.</p>
+        <div class="contact-box">
+          <div class="contact-title">📬 Questions &amp; Data Deletion Requests</div>
+          <p>For any question about this Privacy Policy or to request full data deletion, contact us at:</p>
+          <a href="mailto:hanii.ahmed209@gmail.com" class="contact-email">📩 support.apps24@icloud.com</a>
+        </div>
+      </div>
+
+      <!-- ARABIC -->
+      <div id="content-ar" class="lang-content" dir="rtl">
+        <p><strong>آخر تحديث:</strong> 26 نوفمبر 2026</p>
+        <p>مرحبًا بك في <strong>GPS Tracker &amp; Locator</strong> («نحن» أو «لنا»). توضّح سياسة الخصوصية هذه كيف نجمع معلوماتك ونستخدمها ونحميها عند استخدامك لتطبيقنا على iOS <strong>GPS Tracker &amp; Locator</strong>. باستخدامك التطبيق فإنك توافق على هذه السياسة. إن لم توافق، فالرجاء عدم استخدام التطبيق.</p>
+        <h2 class="section-title">١. المعلومات التي نجمعها وأذونات iOS</h2>
+        <p>لتقديم التتبع المباشر وسجل الرحلات وتصدير التقارير، يستخدم التطبيق ما يلي وعند الحاجة فقط:</p>
+        <div class="perm-card">
+          <div class="perm-title">📍 الموقع — أثناء استخدام التطبيق</div>
+          <div class="perm-desc">بإذنك (<code>NSLocationWhenInUseUsageDescription</code>) نصل إلى موقعك <strong>أثناء فتح التطبيق فقط</strong>، لعرض موقعك على الخريطة المباشرة بجانب أجهزة التتبع. ولا نتتبّع موقعك في الخلفية.</div>
+        </div>
+        <div class="perm-card">
+          <div class="perm-title">📡 رقم IMEI / التسلسلي لجهاز التتبع</div>
+          <div class="perm-desc">تُدخل يدويًا رقم <code>IMEI</code> أو الرقم التسلسلي المطبوع على جهاز التتبع لربطه بحسابك. هذا معرّف جهاز التتبع المنفصل، <strong>وليس</strong> هاتفك. نظام iOS لا يسمح بقراءة IMEI الهاتف، ونحن لا نفعل ذلك إطلاقًا.</div>
+        </div>
+        <div class="perm-card">
+          <div class="perm-title">🔐 حساب آمن تلقائي</div>
+          <div class="perm-desc">لتخزين أجهزتك وسجل رحلاتها، يُنشئ التطبيق لك حسابًا خاصًا على خادم التتبع تلقائيًا وبصمت. لا يُطلب منك كلمة مرور، ولا يُعرض لك أي عنوان خادم أو بيانات دخول.</div>
+        </div>
+        <div class="perm-card">
+          <div class="perm-title">📄 تصدير على الجهاز (PDF و CSV)</div>
+          <div class="perm-desc">تُنشأ تقارير الرحلات على جهازك وتُشارك عبر نافذة المشاركة القياسية في iOS. لا يلزم أي إذن لمكتبة الصور أو الملفات.</div>
+        </div>
+        <h2 class="section-title">٢. كيف نستخدم معلوماتك</h2>
+        <ul>
+          <li><strong>الخريطة المباشرة:</strong> عرض موقع جهازك على خرائط Apple (العادية والقمر الصناعي).</li>
+          <li><strong>سجل الرحلات:</strong> عرض المسارات والسرعات والمدد السابقة حتى 30 يومًا.</li>
+          <li><strong>الأمان:</strong> نطاق السياج الجغرافي وتنبيهات السرعة التي تضبطها.</li>
+          <li><strong>المميّز:</strong> معالجة الاشتراكات لفتح أجهزة غير محدودة وسجل كامل وتجربة بلا إعلانات.</li>
+        </ul>
+        <h2 class="section-title">٣. الإعلانات وشفافية تتبّع تطبيقات Apple</h2>
+        <p>قد يرى المستخدمون غير المشتركين إعلانات بانر من <strong>Google AdMob</strong>، وقد تستخدم معرّفات إعلانية. تماشيًا مع <strong>شفافية تتبّع التطبيقات (ATT)</strong> من Apple، تتحكّم أنت في السماح بالتتبّع من <code>الإعدادات ‹ الخصوصية والأمان ‹ التتبّع</code>. ونحن <strong>لا نبيع أو نؤجّر</strong> بيانات موقعك إطلاقًا. والاشتراك في المميّز يزيل كل الإعلانات.</p>
+        <h2 class="section-title">٤. الاشتراكات والمدفوعات</h2>
+        <p>يُباع الاشتراك المميّز عبر <strong>مشتريات Apple داخل التطبيق (StoreKit)</strong>. تُخصم المدفوعات من حساب Apple الخاص بك. يمكنك الإدارة أو الإلغاء في أي وقت من <code>App Store ‹ الحساب ‹ الاشتراكات</code>. ولا نرى أو نخزّن بيانات بطاقتك إطلاقًا — فكلها تُدار عبر Apple.</p>
+        <h2 class="section-title">٥. أمان البيانات والاحتفاظ بها</h2>
+        <p>تُنقل بيانات الموقع عبر اتصالات مشفّرة TLS/SSL. وتُخزّن بيانات حسابك بأمان في Keychain على جهازك. ونحتفظ بالبيانات فقط للمدة اللازمة لتقديم الخدمة.</p>
+        <h2 class="section-title">٦. حقوقك وحذف البيانات</h2>
+        <p>يمكنك إزالة أي جهاز من التطبيق عبر <code>فصل / إعادة ضبط الجهاز</code>. ولطلب حذف حسابك وسجلّك بالكامل، راسلنا على البريد أدناه. وتُلغى الاشتراكات عبر App Store.</p>
+        <h2 class="section-title">٧. خصوصية الأطفال</h2>
+        <p>تطبيق GPS Tracker &amp; Locator غير موجّه للأطفال ولا يجمع عن قصد معلومات من أطفال دون سن 13.</p>
+        <div class="contact-box">
+          <div class="contact-title">📬 الأسئلة وطلبات حذف البيانات</div>
+          <p>لأي سؤال حول سياسة الخصوصية أو لطلب حذف بياناتك بالكامل، تواصل معنا على:</p>
+          <a href="mailto:hanii.ahmed209@gmail.com" class="contact-email">📩 support.apps24@icloud.com</a>
+        </div>
+      </div>
+
+      <!-- GERMAN -->
+      <div id="content-de" class="lang-content" dir="ltr">
+        <p><strong>Zuletzt aktualisiert:</strong> 26. November 2026</p>
+        <p>Willkommen bei <strong>GPS Tracker &amp; Locator</strong> („wir“, „unser“ oder „uns“). Diese Datenschutzerklärung erläutert, wie wir Ihre Informationen erfassen, verwenden und schützen, wenn Sie unsere iOS-App <strong>GPS Tracker &amp; Locator</strong> nutzen. Mit der Nutzung der App stimmen Sie dieser Erklärung zu.</p>
+        <h2 class="section-title">1. Erfasste Informationen &amp; iOS-Berechtigungen</h2>
+        <p>Für Live-Ortung, Fahrtenverlauf und Berichtsexporte nutzt die App Folgendes – und nur bei Bedarf:</p>
+        <div class="perm-card">
+          <div class="perm-title">📍 Standort — während der App-Nutzung</div>
+          <div class="perm-desc">Mit Ihrer Erlaubnis (<code>NSLocationWhenInUseUsageDescription</code>) greifen wir <strong>nur bei geöffneter App</strong> auf Ihren Standort zu, um Ihre Position auf der Live-Karte neben Ihren Trackern anzuzeigen. Wir verfolgen Ihren Standort <strong>nicht</strong> im Hintergrund.</div>
+        </div>
+        <div class="perm-card">
+          <div class="perm-title">📡 IMEI / Seriennummer Ihres Trackers</div>
+          <div class="perm-desc">Sie geben die auf Ihrem Tracker aufgedruckte <code>IMEI</code> bzw. Seriennummer manuell ein, um ihn zu koppeln. Dies ist die Kennung Ihrer separaten Tracking-Hardware — <strong>nicht</strong> Ihres iPhones. iOS erlaubt Apps nicht, die IMEI des Telefons zu lesen.</div>
+        </div>
+        <div class="perm-card">
+          <div class="perm-title">🔐 Automatisches sicheres Konto</div>
+          <div class="perm-desc">Zur Speicherung Ihrer Tracker und deren Verlauf erstellt die App automatisch und unsichtbar ein privates Konto für Sie auf unserem Server. Es wird nie ein Passwort abgefragt, und es werden keine Serveradressen oder Zugangsdaten angezeigt.</div>
+        </div>
+        <div class="perm-card">
+          <div class="perm-title">📄 Exporte auf dem Gerät (PDF &amp; CSV)</div>
+          <div class="perm-desc">Fahrtberichte werden auf Ihrem Gerät erstellt und über das Standard-iOS-Teilen-Menü geteilt. Es ist keine Foto- oder Dateisystem-Berechtigung erforderlich.</div>
+        </div>
+        <h2 class="section-title">2. Nutzung Ihrer Informationen</h2>
+        <ul>
+          <li><strong>Live-Karte:</strong> Anzeige der Tracker-Position auf Apple Karten (Standard &amp; Satellit).</li>
+          <li><strong>Fahrtenverlauf:</strong> Abruf von Routen, Geschwindigkeiten und Dauer für bis zu 30 Tage.</li>
+          <li><strong>Sicherheit:</strong> Von Ihnen konfigurierte Geofence- und Geschwindigkeitswarnungen.</li>
+          <li><strong>Premium:</strong> Abonnements für unbegrenzte Geräte, vollen Verlauf und werbefreie Nutzung.</li>
+        </ul>
+        <h2 class="section-title">3. Werbung &amp; Apple App Tracking Transparency</h2>
+        <p>Nicht abonnierte Nutzer sehen möglicherweise Banner von <strong>Google AdMob</strong>, die Werbe-IDs verwenden können. Gemäß Apples <strong>App Tracking Transparency</strong> steuern Sie das Tracking unter <code>Einstellungen › Datenschutz &amp; Sicherheit › Tracking</code>. Wir <strong>verkaufen oder vermieten niemals</strong> Ihre Standortdaten. Ein Premium-Abo entfernt alle Werbung.</p>
+        <h2 class="section-title">4. Abonnements &amp; Zahlungen</h2>
+        <p>Premium wird über <strong>Apple In-App-Kauf (StoreKit)</strong> verkauft. Die Zahlung erfolgt über Ihre Apple-ID. Sie können jederzeit unter <code>App Store › Account › Abonnements</code> verwalten oder kündigen. Zahlungsdaten sehen oder speichern wir nie — sie werden vollständig von Apple verarbeitet.</p>
+        <h2 class="section-title">5. Datensicherheit &amp; Aufbewahrung</h2>
+        <p>Standortdaten werden über verschlüsselte TLS/SSL-Verbindungen übertragen. Ihre Zugangsdaten werden sicher im Geräte-Keychain gespeichert. Wir speichern Daten nur so lange wie nötig.</p>
+        <h2 class="section-title">6. Ihre Rechte &amp; Datenlöschung</h2>
+        <p>Sie können einzelne Tracker in der App über <code>Gerät trennen / zurücksetzen</code> entfernen. Für eine vollständige Löschung Ihres Kontos schreiben Sie uns an die untenstehende Adresse. Abonnements werden über den App Store gekündigt.</p>
+        <h2 class="section-title">7. Datenschutz für Kinder</h2>
+        <p>GPS Tracker &amp; Locator richtet sich nicht an Kinder und erfasst wissentlich keine Daten von Kindern unter 13 Jahren.</p>
+        <div class="contact-box">
+          <div class="contact-title">📬 Fragen &amp; Datenlöschungsanfragen</div>
+          <p>Bei Fragen zu dieser Datenschutzerklärung oder für eine vollständige Löschung kontaktieren Sie uns unter:</p>
+          <a href="mailto:support.apps24@icloud.com" class="contact-email">📩 hanii.ahmed209@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="footer-text">
+        © 2026 GPS Tracker &amp; Locator. All Rights Reserved. Compliant with the Apple App Store Review Guidelines.
+      </div>
+    </div>
+  </div>
+  <script>
+    function switchLanguage(lang) {
+      var ids = { en: 'content-en', ar: 'content-ar', de: 'content-de' };
+      var order = ['en', 'ar', 'de'];
+      var buttons = document.querySelectorAll('.lang-btn');
+      order.forEach(function (key, i) {
+        var el = document.getElementById(ids[key]);
+        if (key === lang) { el.classList.add('active'); buttons[i].classList.add('active'); }
+        else { el.classList.remove('active'); buttons[i].classList.remove('active'); }
+      });
+      document.documentElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+      document.documentElement.setAttribute('lang', lang);
+    }
+  </script>
+</body>
+</html>
