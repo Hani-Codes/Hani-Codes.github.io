@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Find Phone & Family Tracker</title>
+<meta name="description" content="How Find Phone & Family Tracker collects, uses and protects your family's data.">
+<link rel="icon" href="icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F5F7FA; --surface:#FFFFFF; --border:#E2E8F0;
+    --primary:#0E7C7B; --primary-dark:#0B5F5E; --primary-light:#E6F4F3;
+    --text:#0F172A; --muted:#64748B; --dim:#94A3B8;
+    --green:#16A34A; --green-bg:#ECFDF3; --red:#DC2626; --red-bg:#FEF2F2; --amber:#B7791F; --amber-bg:#FEF7E6;
+    --radius:20px; --shadow:0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#0B1220; --surface:#111A2B; --border:#1F2A3D; --primary:#2BB3A8; --primary-dark:#7AD9D1; --primary-light:#0F2A2C;
+      --text:#E5EDF6; --muted:#9AA8BC; --dim:#6B7A90; --green-bg:#0E2A1B; --red-bg:#2C1213; --amber-bg:#2B2210;
+      --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.25);
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+  html[lang="ar"] body{font-family:"IBM Plex Sans Arabic",Inter,system-ui,sans-serif}
+  .wrap{max-width:980px;margin:0 auto;padding:0 16px}
+  header.hero{background:linear-gradient(135deg,#14A098 0%,#0E7C7B 55%,#0B5F5E 100%);color:#fff;padding:28px 0 72px}
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:700}
+  .brand img{width:44px;height:44px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,.18)}
+  .lang{display:flex;background:rgba(255,255,255,.16);border-radius:999px;padding:4px}
+  .lang button{border:0;background:transparent;color:#fff;font:inherit;font-weight:600;font-size:14px;padding:6px 14px;border-radius:999px;cursor:pointer}
+  .lang button[aria-pressed="true"]{background:#fff;color:var(--primary-dark)}
+  .hero h1{font-size:clamp(30px,5vw,44px);line-height:1.15;margin:40px 0 10px;font-weight:800;letter-spacing:-.02em}
+  .hero p{margin:0;max-width:640px;opacity:.92;font-size:17px}
+  .meta{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
+  .chip{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.25);padding:4px 12px;border-radius:999px;font-size:13px;font-weight:500}
+  main{margin-top:-44px;padding-bottom:48px}
+  .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+  .promise{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+  .promise .card{display:flex;gap:12px;align-items:flex-start;padding:18px}
+  .ico{flex:none;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:20px;background:var(--primary-light)}
+  .promise h3{margin:0 0 2px;font-size:15px}
+  .promise p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.45}
+  section{margin-top:28px}
+  h2{font-size:22px;margin:0 0 14px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+  h2 .num{font-size:13px;font-weight:700;color:var(--primary);background:var(--primary-light);border-radius:8px;padding:2px 8px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media (max-width:720px){.grid2{grid-template-columns:1fr}}
+  .list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+  .item{display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:14px;border:1px solid var(--border);background:var(--surface)}
+  .item .ico{width:36px;height:36px;font-size:17px}
+  .item b{display:block;font-size:14.5px}
+  .item span{color:var(--muted);font-size:13.5px;line-height:1.45}
+  .yes .ico{background:var(--green-bg)} .no .ico{background:var(--red-bg)}
+  .panel-title{display:flex;align-items:center;gap:8px;font-weight:700;margin:0 0 12px;font-size:16px}
+  .badge{font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px}
+  .badge.g{background:var(--green-bg);color:var(--green)} .badge.r{background:var(--red-bg);color:var(--red)}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{text-align:start;padding:12px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+  th{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:700}
+  tr:last-child td{border-bottom:0}
+  .tbl{overflow-x:auto}
+  .prose p{margin:0 0 10px;color:var(--text)} .prose p:last-child{margin:0}
+  .prose ul{margin:0;padding-inline-start:20px;color:var(--text)} .prose li{margin:4px 0}
+  .note{background:var(--amber-bg);border:1px solid rgba(183,121,31,.25);color:var(--text);border-radius:14px;padding:14px 16px;font-size:14px}
+  .note b{color:var(--amber)}
+  .contact{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px;background:var(--primary-light);border-color:transparent}
+  .btn{display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:#fff;text-decoration:none;font-weight:600;padding:12px 18px;border-radius:12px}
+  footer{color:var(--dim);font-size:13px;text-align:center;padding:24px 0 40px}
+  [data-lang]{display:none}
+  html[lang="en"] [data-lang="en"], html[lang="ar"] [data-lang="ar"]{display:revert}
+  html[lang="en"] span[data-lang="en"], html[lang="ar"] span[data-lang="ar"]{display:inline}
+  a{color:var(--primary)}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand"><img src="icon.png" alt=""><span>Find Phone &amp; Family Tracker</span></div>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-set="en" aria-pressed="true">English</button>
+        <button type="button" data-set="ar" aria-pressed="false">العربية</button>
+      </div>
+    </div>
+    <h1><span data-lang="en">Privacy Policy</span><span data-lang="ar">سياسة الخصوصية</span></h1>
+    <p data-lang="en">Find Phone helps families share their location — only with everyone's agreement. This page explains, in plain language, what we collect, why, and how you stay in control.</p>
+    <p data-lang="ar">يساعد Find Phone العائلات على مشاركة مواقعها — فقط بموافقة الجميع. توضح هذه الصفحة بلغة بسيطة ما نجمعه ولماذا، وكيف تبقى البيانات تحت سيطرتك.</p>
+    <div class="meta">
+      <span class="chip"><span data-lang="en">Effective: November 26, 2026</span><span data-lang="ar">سارية من: 26 نوفمبر 2026</span></span>
+      <span class="chip"><span data-lang="en">Applies to iOS &amp; Android</span><span data-lang="ar">تنطبق على iOS وAndroid</span></span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- Our promises -->
+  <div class="promise">
+    <div class="card"><div class="ico">🤝</div><div>
+      <h3><span data-lang="en">Consent first</span><span data-lang="ar">الموافقة أولاً</span></h3>
+      <p data-lang="en">Nothing is shared until the person agrees on their own phone.</p>
+      <p data-lang="ar">لا يُشارَك شيء قبل موافقة الشخص من هاتفه.</p></div></div>
+    <div class="card"><div class="ico">👁️</div><div>
+      <h3><span data-lang="en">Never hidden</span><span data-lang="ar">لا شيء مخفي</span></h3>
+      <p data-lang="en">"Sharing is ON" is always visible and can be stopped anytime.</p>
+      <p data-lang="ar">"المشاركة مفعّلة" ظاهرة دائماً ويمكن إيقافها في أي وقت.</p></div></div>
+    <div class="card"><div class="ico">🚫</div><div>
+      <h3><span data-lang="en">No data selling</span><span data-lang="ar">لا نبيع البيانات</span></h3>
+      <p data-lang="en">We never sell or rent your family's location.</p>
+      <p data-lang="ar">لا نبيع ولا نؤجر مواقع عائلتك أبداً.</p></div></div>
+    <div class="card"><div class="ico">🗑️</div><div>
+      <h3><span data-lang="en">Delete anytime</span><span data-lang="ar">احذف متى شئت</span></h3>
+      <p data-lang="en">Delete your account and location data from Settings.</p>
+      <p data-lang="ar">احذف حسابك وبيانات المواقع من الإعدادات.</p></div></div>
+  </div>
+
+  <!-- 1. What we collect / don't -->
+  <section id="data">
+    <h2><span class="num">1</span><span data-lang="en">What we collect — and what we don't</span><span data-lang="ar">ما نجمعه — وما لا نجمعه</span></h2>
+    <div class="grid2">
+      <div class="card">
+        <p class="panel-title"><span class="badge g">✓</span><span data-lang="en">We collect</span><span data-lang="ar">ما نجمعه</span></p>
+        <ul class="list yes">
+          <li class="item"><div class="ico">📍</div><div>
+            <b><span data-lang="en">Precise location</span><span data-lang="ar">الموقع الدقيق</span></b>
+            <span data-lang="en">Only from a phone that chose "Share my location", after consent, while sharing is ON — including in the background if that phone allows location "Always". iPhone shows a blue location indicator whenever it is shared.</span>
+            <span data-lang="ar">فقط من الهاتف الذي اختار "مشاركة موقعي"، بعد الموافقة، وأثناء تفعيل المشاركة — بما في ذلك في الخلفية إذا سمح الهاتف بالموقع "دائماً". ويعرض الآيفون مؤشر موقع أزرق كلما تمت المشاركة.</span></div></li>
+          <li class="item"><div class="ico">🔋</div><div>
+            <b><span data-lang="en">Battery level &amp; time of update</span><span data-lang="ar">نسبة البطارية ووقت التحديث</span></b>
+            <span data-lang="en">Sent with each location so the family knows the phone may switch off soon.</span>
+            <span data-lang="ar">تُرسل مع كل موقع ليعرف أفراد العائلة إن كان الهاتف قد ينطفئ قريباً.</span></div></li>
+          <li class="item"><div class="ico">🆘</div><div>
+            <b><span data-lang="en">SOS alerts</span><span data-lang="ar">نداءات الاستغاثة</span></b>
+            <span data-lang="en">When SOS is pressed and confirmed: the alert, location, battery level and time.</span>
+            <span data-lang="ar">عند الضغط على SOS وتأكيده: التنبيه والموقع ونسبة البطارية والوقت.</span></div></li>
+          <li class="item"><div class="ico">👨‍👩‍👧</div><div>
+            <b><span data-lang="en">Family member name &amp; relationship</span><span data-lang="ar">اسم فرد العائلة وصلة القرابة</span></b>
+            <span data-lang="en">Entered by the parent when inviting (e.g. "Emma – Daughter"). You can use a nickname.</span>
+            <span data-lang="ar">يكتبها ولي الأمر عند الدعوة (مثل "سارة – ابنة"). يمكنك استخدام اسم مستعار.</span></div></li>
+          <li class="item"><div class="ico">🔑</div><div>
+            <b><span data-lang="en">Random account ID</span><span data-lang="ar">معرّف حساب عشوائي</span></b>
+            <span data-lang="en">Created automatically on install, with a random password. Not linked to your name, email or phone number.</span>
+            <span data-lang="ar">يُنشأ تلقائياً عند التثبيت مع كلمة مرور عشوائية، وغير مرتبط باسمك أو بريدك أو رقم هاتفك.</span></div></li>
+          <li class="item"><div class="ico">📢</div><div>
+            <b><span data-lang="en">Advertising data</span><span data-lang="ar">بيانات الإعلانات</span></b>
+            <span data-lang="en">The free version shows ads by Google AdMob. On the parent's phone the advertising identifier is used only if you tap "Allow" on Apple's tracking prompt. On the sharing phone ads are non-personalized, family-safe (rated G), and the tracking prompt is never shown. Premium has no ads.</span>
+            <span data-lang="ar">النسخة المجانية تعرض إعلانات Google AdMob. على هاتف ولي الأمر يُستخدم المعرّف الإعلاني فقط إذا ضغطت "السماح" في طلب التتبع من Apple. وعلى الهاتف المُشارِك تكون الإعلانات غير مخصصة ومناسبة للعائلة (تصنيف G) ولا يظهر طلب التتبع أبداً. بريميوم بدون إعلانات.</span></div></li>
+        </ul>
+      </div>
+      <div class="card">
+        <p class="panel-title"><span class="badge r">✕</span><span data-lang="en">We never collect</span><span data-lang="ar">ما لا نجمعه أبداً</span></p>
+        <ul class="list no">
+          <li class="item"><div class="ico">🌙</div><div>
+            <b><span data-lang="en">Hidden or secret tracking</span><span data-lang="ar">التتبع الخفي أو السري</span></b>
+            <span data-lang="en">Background sharing only happens after consent, is always shown by iPhone's blue indicator, and stops when the person pauses or leaves.</span>
+            <span data-lang="ar">لا تتم المشاركة في الخلفية إلا بعد الموافقة، ويظهرها الآيفون دائماً بالمؤشر الأزرق، وتتوقف عندما يوقفها الشخص أو يغادر.</span></div></li>
+          <li class="item"><div class="ico">🪪</div><div>
+            <b><span data-lang="en">Your name, email or phone number</span><span data-lang="ar">اسمك أو بريدك أو رقم هاتفك</span></b>
+            <span data-lang="en">No sign-up, no login, no account details.</span>
+            <span data-lang="ar">لا تسجيل ولا دخول ولا بيانات حساب.</span></div></li>
+          <li class="item"><div class="ico">📇</div><div>
+            <b><span data-lang="en">Contacts, photos, files or messages</span><span data-lang="ar">جهات الاتصال أو الصور أو الملفات أو الرسائل</span></b>
+            <span data-lang="en">The app never asks for access to them.</span>
+            <span data-lang="ar">التطبيق لا يطلب الوصول إليها أبداً.</span></div></li>
+          <li class="item"><div class="ico">🎙️</div><div>
+            <b><span data-lang="en">Microphone or camera recordings</span><span data-lang="ar">تسجيلات الميكروفون أو الكاميرا</span></b>
+            <span data-lang="en">The camera is used only to scan the invite QR code. Images are not stored or sent.</span>
+            <span data-lang="ar">تُستخدم الكاميرا فقط لمسح رمز الدعوة، ولا تُحفظ الصور ولا تُرسل.</span></div></li>
+          <li class="item"><div class="ico">💳</div><div>
+            <b><span data-lang="en">Payment information</span><span data-lang="ar">بيانات الدفع</span></b>
+            <span data-lang="en">Purchases are handled entirely by Apple / Google. We only learn whether Premium is active.</span>
+            <span data-lang="ar">تتم المشتريات بالكامل عبر Apple / Google، ونعرف فقط إن كان بريميوم مفعّلاً.</span></div></li>
+          <li class="item"><div class="ico">🧒</div><div>
+            <b><span data-lang="en">Ad tracking on the sharing phone</span><span data-lang="ar">التتبع الإعلاني على هاتف المُشارِك</span></b>
+            <span data-lang="en">The phone that shares its location (often a child's) never shows Apple's tracking prompt and only gets non-personalized, family-safe ads.</span>
+            <span data-lang="ar">الهاتف الذي يشارك موقعه (غالباً هاتف الطفل) لا يعرض طلب التتبع أبداً، ولا تظهر فيه إلا إعلانات غير مخصصة ومناسبة للعائلة.</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. How we use -->
+  <section id="use">
+    <h2><span class="num">2</span><span data-lang="en">How we use your data</span><span data-lang="ar">كيف نستخدم البيانات</span></h2>
+    <div class="card prose">
+      <ul data-lang="en">
+        <li>To show family members on the live map and in route history.</li>
+        <li>To deliver SOS and low-battery alerts to the family.</li>
+        <li>To provide Premium features you subscribed to.</li>
+        <li>To show ads in the free version (personalized only on the parent's phone, with permission).</li>
+      </ul>
+      <ul data-lang="ar">
+        <li>لعرض أفراد العائلة على الخريطة المباشرة وفي سجل المسارات.</li>
+        <li>لإيصال نداءات الاستغاثة وتنبيهات البطارية المنخفضة للعائلة.</li>
+        <li>لتقديم مزايا بريميوم التي اشتركت بها.</li>
+        <li>لعرض الإعلانات في النسخة المجانية (مخصصة فقط على هاتف ولي الأمر وبإذنه).</li>
+      </ul>
+      <p data-lang="en" style="margin-top:10px">We do <b>not</b> use location to build advertising profiles, and we do <b>not</b> sell, rent or share it with data brokers.</p>
+      <p data-lang="ar" style="margin-top:10px">لا نستخدم الموقع لبناء ملفات إعلانية، <b>ولا</b> نبيعه أو نؤجره أو نشاركه مع وسطاء البيانات.</p>
+    </div>
+  </section>
+
+  <!-- 3. Who can see -->
+  <section id="share">
+    <h2><span class="num">3</span><span data-lang="en">Who can see it</span><span data-lang="ar">من يمكنه رؤيتها</span></h2>
+    <div class="card tbl">
+      <table>
+        <thead><tr>
+          <th><span data-lang="en">Who</span><span data-lang="ar">الجهة</span></th>
+          <th><span data-lang="en">What</span><span data-lang="ar">ماذا</span></th>
+          <th><span data-lang="en">Why</span><span data-lang="ar">لماذا</span></th>
+        </tr></thead>
+        <tbody>
+          <tr><td><b><span data-lang="en">Your family</span><span data-lang="ar">عائلتك</span></b></td>
+            <td><span data-lang="en">Location, battery, SOS of members who agreed</span><span data-lang="ar">الموقع والبطارية ونداءات الاستغاثة للأفراد الموافقين</span></td>
+            <td><span data-lang="en">The purpose of the app</span><span data-lang="ar">الغرض من التطبيق</span></td></tr>
+          <tr><td><b>Traccar (traccar.com)</b></td>
+            <td><span data-lang="en">Hosts our location server and stores the data</span><span data-lang="ar">يستضيف خادم المواقع ويخزّن البيانات</span></td>
+            <td><span data-lang="en">Service provider acting on our instructions</span><span data-lang="ar">مزوّد خدمة يعمل وفق تعليماتنا</span></td></tr>
+          <tr><td><b>Google AdMob</b></td>
+            <td><span data-lang="en">Device &amp; ad data (free version). Personalized only on the parent's phone with permission; non-personalized on the sharing phone</span><span data-lang="ar">بيانات الجهاز والإعلانات (المجاني). مخصصة فقط على هاتف ولي الأمر وبإذنه، وغير مخصصة على الهاتف المُشارِك</span></td>
+            <td><span data-lang="en">Showing ads — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></span><span data-lang="ar">عرض الإعلانات — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">سياسة Google</a></span></td></tr>
+          <tr><td><b>Apple / Google Play</b></td>
+            <td><span data-lang="en">Subscription purchases</span><span data-lang="ar">الاشتراكات</span></td>
+            <td><span data-lang="en">Payments &amp; renewals</span><span data-lang="ar">الدفع والتجديد</span></td></tr>
+          <tr><td><b><span data-lang="en">Map providers</span><span data-lang="ar">مزوّدو الخرائط</span></b></td>
+            <td><span data-lang="en">Map area being viewed (Apple Maps on iPhone; OpenStreetMap / Esri on Android)</span><span data-lang="ar">منطقة الخريطة المعروضة (خرائط Apple على iPhone، وOpenStreetMap / Esri على Android)</span></td>
+            <td><span data-lang="en">Drawing the map</span><span data-lang="ar">رسم الخريطة</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 4. Retention & deletion -->
+  <section id="retention">
+    <h2><span class="num">4</span><span data-lang="en">How long we keep it &amp; how to delete it</span><span data-lang="ar">مدة الاحتفاظ وطريقة الحذف</span></h2>
+    <div class="grid2">
+      <div class="card prose">
+        <p data-lang="en"><b>Location history</b> is kept so the app can show past routes (7 days free, 30 days Premium) and is removed after that period.</p>
+        <p data-lang="ar"><b>سجل المواقع</b> يُحفظ ليعرض التطبيق المسارات السابقة (7 أيام مجاناً، 30 يوماً مع بريميوم) ويُحذف بعد هذه المدة.</p>
+        <p data-lang="en"><b>SOS log</b> is stored on the parent's phone and can be cleared in History.</p>
+        <p data-lang="ar"><b>سجل الاستغاثة</b> يُحفظ على هاتف ولي الأمر ويمكن مسحه من السجل.</p>
+      </div>
+      <div class="card prose">
+        <ul data-lang="en">
+          <li><b>Delete everything:</b> Settings → "Delete account &amp; data" removes your account, members and their stored locations.</li>
+          <li><b>Remove one member:</b> Settings → "Remove family member".</li>
+          <li><b>Stop sharing:</b> on the sharing phone, "Stop sharing &amp; leave family".</li>
+          <li>Or email us and we will delete your data within 30 days.</li>
+        </ul>
+        <ul data-lang="ar">
+          <li><b>حذف كل شيء:</b> الإعدادات ← "حذف الحساب والبيانات" يحذف حسابك والأفراد ومواقعهم المخزنة.</li>
+          <li><b>إزالة فرد:</b> الإعدادات ← "إزالة فرد من العائلة".</li>
+          <li><b>إيقاف المشاركة:</b> من الهاتف المُشارِك ← "إيقاف المشاركة ومغادرة العائلة".</li>
+          <li>أو راسلنا وسنحذف بياناتك خلال 30 يوماً.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Children -->
+  <section id="children">
+    <h2><span class="num">5</span><span data-lang="en">Children</span><span data-lang="ar">الأطفال</span></h2>
+    <div class="card prose">
+      <p data-lang="en">The app is meant to be set up by a parent or legal guardian. A child's location is shared only after the parent invites them and the child agrees on their own device; the child can see when sharing is on and can pause or stop it. On the sharing phone we never show the tracking prompt and only serve non-personalized, family-safe ads, and we do not knowingly collect a child's name, email or contact details. Parents can request access to or deletion of their child's data at any time (COPPA / GDPR-K).</p>
+      <p data-lang="ar">يُعدّ التطبيق ليُهيّئه ولي الأمر. لا يُشارَك موقع الطفل إلا بعد دعوة ولي الأمر وموافقة الطفل من جهازه، ويرى الطفل متى تكون المشاركة مفعّلة ويمكنه إيقافها. لا نعرض طلب التتبع على الهاتف المُشارِك ولا تظهر فيه إلا إعلانات غير مخصصة ومناسبة للعائلة، ولا نجمع عن قصد اسم الطفل أو بريده أو بيانات الاتصال به. يمكن لولي الأمر طلب الاطلاع على بيانات طفله أو حذفها في أي وقت.</p>
+      <div class="note" style="margin-top:12px">
+        <b data-lang="en">Responsible use:</b><b data-lang="ar">الاستخدام المسؤول:</b>
+        <span data-lang="en"> using the app to monitor anyone without their knowledge is prohibited and may be illegal.</span>
+        <span data-lang="ar"> يُمنع استخدام التطبيق لمراقبة أي شخص دون علمه، وقد يكون ذلك مخالفاً للقانون.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Security & rights -->
+  <section id="rights">
+    <h2><span class="num">6</span><span data-lang="en">Security &amp; your rights</span><span data-lang="ar">الأمان وحقوقك</span></h2>
+    <div class="grid2">
+      <div class="card prose">
+        <p data-lang="en">Each install has its own account protected by a random password, and family data is visible only to that account. Like any online service, no system is 100% secure, but we work to protect your data and limit what we collect.</p>
+        <p data-lang="ar">لكل تثبيت حساب خاص محمي بكلمة مرور عشوائية، ولا تظهر بيانات العائلة إلا لهذا الحساب. لا يوجد نظام آمن 100%، لكننا نعمل على حماية بياناتك وتقليل ما نجمعه.</p>
+      </div>
+      <div class="card prose">
+        <p data-lang="en">Depending on where you live (e.g. GDPR in the EU/UK, CCPA/CPRA in California), you may <b>access, correct, delete or export</b> your data and object to processing. We do not sell or "share" personal information as defined by the CCPA. Contact us to exercise any right.</p>
+        <p data-lang="ar">بحسب مكان إقامتك (مثل GDPR في أوروبا وCCPA في كاليفورنيا) يحق لك <b>الاطلاع على بياناتك أو تصحيحها أو حذفها أو تصديرها</b> والاعتراض على معالجتها. لا نبيع البيانات الشخصية. راسلنا لممارسة أي حق.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Changes -->
+  <section id="changes">
+    <h2><span class="num">7</span><span data-lang="en">Changes to this policy</span><span data-lang="ar">التغييرات على هذه السياسة</span></h2>
+    <div class="card prose">
+      <p data-lang="en">If we change this policy we will update the date at the top. Significant changes — for example new data types — will be announced in the app before they take effect.</p>
+      <p data-lang="ar">عند تعديل هذه السياسة سنحدّث التاريخ في أعلاها، وسنعلن عن أي تغيير جوهري — مثل جمع نوع جديد من البيانات — داخل التطبيق قبل تطبيقه.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="card contact">
+      <div>
+        <h2 style="margin:0 0 4px"><span data-lang="en">Questions?</span><span data-lang="ar">لديك سؤال؟</span></h2>
+        <span style="color:var(--muted)"><span data-lang="en">We usually reply within 2 business days.</span><span data-lang="ar">نرد عادةً خلال يومي عمل.</span></span>
+      </div>
+      <a class="btn" href="mailto:support.apps24@icloud.com?subject=Find%20Phone%20Privacy">✉️ support.apps24@icloud.com</a>
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Find Phone &amp; Family Tracker · <span data-lang="en">Privacy Policy</span><span data-lang="ar">سياسة الخصوصية</span></footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    function setLang(l) {
+      root.lang = l; root.dir = l === 'ar' ? 'rtl' : 'ltr';
+      document.querySelectorAll('.lang button').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.set === l); });
+      document.title = l === 'ar' ? 'سياسة الخصوصية – Find Phone' : 'Privacy Policy – Find Phone & Family Tracker';
+      try { localStorage.setItem('lang', l); } catch (e) {}
+    }
+    document.querySelectorAll('.lang button').forEach(function (b) { b.addEventListener('click', function () { setLang(b.dataset.set); }); });
+    var saved = null; try { saved = localStorage.getItem('lang'); } catch (e) {}
+    var q = new URLSearchParams(location.search).get('lang');
+    setLang(q === 'ar' || q === 'en' ? q : (saved || 'en')); // English by default
+  })();
+</script>
+</body>
+</html>
